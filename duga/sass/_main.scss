@@ -1,0 +1,283 @@
+/*-------------- hero-section --------------*/
+.scroll-down {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  color: #fff;
+  font-size: 13px;
+  line-height: 18px;
+  transition: all 0.3s;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  @include tablets() {
+    left: 20px;
+  }
+}
+
+.hero-section {
+  height: 100vh;
+  background-image: url('../img/images/main-hero-bg@2x.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  margin-bottom: 200px;
+  overflow: hidden;
+
+  @include tablets() {
+    margin-bottom: 100px;
+  }
+
+  h1 {
+    color: #fff;
+    font-weight: 400;
+  }
+
+  p {
+    color: #fff;
+    padding-left: 40px;
+  }
+
+  .container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__video {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateY(-50%);
+  }
+}
+
+/*-------------- featured-section --------------*/
+.featured-section {
+  margin-bottom: 200px;
+
+  @include tablets() {
+    margin-bottom: 100px;
+  }
+
+  .section-title {
+    margin-left: 50%;
+    margin-bottom: 40px;
+
+    @include tablets() {
+      margin-left: 0;
+    }
+  }
+
+  .col-1 {
+    vertical-align: top;
+    width: 50%;
+
+    @include tablets() {
+      width: 100%;
+    }
+  }
+}
+
+.main-slider {
+  margin-right: -40px;
+
+  @include tablets() {
+    margin-right: -20px;
+    margin-left: -20px;
+    margin-bottom: 40px;
+  }
+
+  &__controls {
+    margin-left: 50%;
+
+    @include laptop() {
+      margin-left: 0;
+    }
+
+    &.mobail {
+      display: none;
+    }
+
+    @include tablets() {
+      margin-left: 0;
+      display: none;
+
+      &.mobail {
+        display: block;
+      }
+    }
+
+    h2 {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__btns {
+    margin-bottom: 40px;
+
+    a {
+      display: inline-block;
+      transition: all 0.3s;
+
+      &:first-child {
+        margin-right: 40px;
+      }
+
+      &:hover {
+        opacity: 0.5;
+      }
+
+      img {
+        width: 28px;
+        height: 17px;
+      }
+    }
+  }
+}
+
+/*-------------- about-section --------------*/
+.about-section {
+  margin-bottom: 200px;
+
+  @include tablets() {
+    margin-bottom: 100px;
+  }
+
+  // .section-title {
+  //   margin-bottom: 40px;
+  // }
+
+  .col-1 {
+    vertical-align: top;
+    width: 50%;
+
+    @include tablets() {
+      width: 100%;
+    }
+  }
+
+  &__image {
+    padding-right: 12.5%;
+    margin-left: -40px;
+
+    @include desktop() {
+      margin-left: -20px;
+    }
+
+    @include laptop() {
+      padding-right: 25%;
+    }
+
+    @include tablets() {
+      padding-right: 40px;
+    }
+
+    @include tablets() {
+      padding-right: 0;
+      margin-right: -20px;
+      margin-bottom: 40px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    h2 {
+      margin-bottom: 40px;
+    }
+    p {
+      margin-bottom: 40px;
+      width: 100%;
+      max-width: 285px;
+    }
+  }
+}
+
+/*-------------- contacts-section --------------*/
+.contacts-section {
+  margin-bottom: 200px;
+
+  @include tablets() {
+    margin-bottom: 100px;
+  }
+
+  // .section-title {
+  //   margin-left: 50%;
+  //   margin-bottom: 80px;
+
+  //   @include tablets-min() {
+  //     margin-left: 0;
+  //     margin-bottom: 40px;
+  //   }
+  // }
+
+  &__content {
+    margin-left: 50%;
+
+    @include tablets() {
+      margin-left: 0;
+    }
+  }
+
+  &__address {
+    margin-bottom: 80px;
+    font-size: 0;
+
+    @include tablets() {
+      margin-bottom: 40px;
+    }
+
+    li {
+      font-size: 25px;
+      line-height: 25px;
+      display: inline-block;
+      width: 50%;
+      padding-right: 15px;
+      vertical-align: top;
+
+      @include laptop() {
+        font-size: 20px;
+        line-height: 20px;
+        width: 100%;
+        margin-bottom: 40px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      // @include tablets() {
+        
+      // }
+
+      @include phones() {
+        display: block;
+        margin-bottom: 20px;
+        width: 100%;
+        padding-right: 0;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      a {
+        font-size: 25px;
+        line-height: 25px;
+
+        @include laptop() {
+          font-size: 20px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

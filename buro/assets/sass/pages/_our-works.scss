@@ -1,0 +1,386 @@
+.works-hero {
+  height: rem(845);
+  background-image: linear-gradient(to left, #0c000e 50%, #08000b 50%);
+  position: relative;
+  color: $white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/images/our-works/works-hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: rem(2534);
+    background-position: center;
+  }
+
+  @include tablets-down() {
+    height: rem(700);
+
+    &::before {
+      background-position: 55%;
+    }
+  }
+
+  @include phones-lg-down() {
+    &::before {
+      background-position: 60%;
+    }
+  }
+
+  &__container {
+    position: relative;
+    height: 100%;
+  }
+
+  &__inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  &__label {
+    font-weight: 300;
+    @include fz(24, 37);
+    margin-bottom: rem(28);
+  }
+
+  &__content {
+    max-width: rem(710);
+    h1 {
+      margin-bottom: rem(100);
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+
+    & > * {
+      margin-right: rem(60);
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    @include phones-lg-down() {
+      & > * {
+        margin-right: rem(40);
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.works-cont {
+  padding: rem(185) 0 rem(230);
+
+  @include tablets-down() {
+    padding: rem(60) 0;
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: rem(150);
+
+    @include tablets-down() {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: rem(60);
+
+      .folow-block {
+        margin-bottom: rem(40);
+      }
+    }
+  }
+
+  &__body {
+    &-top {
+      max-width: rem(935);
+      margin-bottom: rem(120);
+
+      @include tablets-down() {
+        margin-bottom: rem(70);
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    @include fz(46, 55);
+    margin-bottom: rem(56);
+    color: #1F1F1F;
+
+    @include tablets-down() {
+      @include fz(32);
+      margin-bottom: rem(32);
+    }
+  }
+
+  &__desc {
+    font-weight: 300;
+    @include fz(20, 24);
+    color: #1F1F1F;
+
+    p {
+      margin: rem(28) 0;
+    }
+  }
+}
+
+.folow-block {
+  &__title {
+    margin-bottom: rem(12);
+    font-weight: bold;
+    @include fz(14, 23);
+    color: #7D7F7E;
+  }
+
+  &__list {
+    & > ul {
+      display: flex;
+      align-items: center;
+
+      & > li {
+        margin-right: rem(16);
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        a {
+          display: block;
+          width: rem(24);
+          height: rem(24);
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.common-categories {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: rem(432);
+
+  &__category {
+    font-weight: 300;
+    @include fz(24, 37);
+    color: rgba(47, 47, 47, 0.57);
+    margin-right: rem(36);
+    position: relative;
+
+    &::after {
+      content: "/";
+      @include fz(24, 37);
+      color: rgba(47, 47, 47, 0.57);
+      position: absolute;
+      top: 50%;
+      right: rem(-24);
+      margin-top: rem(-18);
+    }
+
+    &:last-child {
+      margin-right: 0;
+
+      &::after {
+        content: none;
+      }
+    }
+
+    sup {
+      font-weight: normal;
+      @include fz(18, 29);
+      color: #A247FA;
+    }
+  }
+}
+
+.works-list {
+  .works-item {
+    margin-bottom: rem(100);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include phones-lg-down() {
+      margin-bottom: rem(60);
+    }
+  }
+}
+
+.works-card {
+  $works-card: &;
+
+  &:hover {
+    #{$works-card} {
+      &__right {
+        &::before {
+          transform: scaleX(1);
+        }
+      }
+
+      &__cont {
+        color: $white;
+      }
+
+      &__desc {
+        color: $white;
+      }
+
+      &__action {
+        color: $white;
+
+        &::after {
+          border-color: $white;
+          background-image: url("../img/icons/arrow-right-white.svg");
+        }
+      }
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: stretch;
+    height: rem(480);
+
+    @include tablets-down() {
+      height: rem(400);
+    }
+
+    @include phones-lg-down() {
+      flex-direction: column;
+      height: auto;
+    }
+  }
+
+  &__left {
+    width: 55%;
+    height: 100%;
+
+    @include phones-lg-down() {
+      width: 100%;
+      height: rem(400);
+    }
+  }
+
+  &__right {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #A247FA;
+      transform: scaleX(0);
+      transform-origin: left center;
+      transition: transform $tr-hover;
+    }
+
+    @include phones-lg-down() {
+      width: 100%;
+    }
+  }
+
+  &__pic {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      @include object-fit(cover);
+    }
+  }
+
+  &__cont {
+    padding-left: rem(80);
+    color: #0F0F0F;
+    font-weight: 300;
+    transition: color $tr-hover;
+    position: relative;
+
+    @include tablets-down() {
+      padding-left: rem(40);
+    }
+
+    @include phones-lg-down() {
+      padding: rem(32) rem(24);
+    }
+  }
+
+  &__label {
+    @include fz(20, 31);
+  }
+
+  &__title {
+    @include fz(40, 62);
+  }
+
+  &__desc {
+    font-weight: normal;
+    @include fz(18, 29);
+    color: #AEB2B5;
+    transition: color $tr-hover;
+    margin-bottom: rem(30);
+    max-width: rem(150);
+
+    @include phones-lg-down() {
+      max-width: rem(260);
+    }
+  }
+
+  &__action {
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+    @include fz(16, 26);
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #1F1F1F;
+    position: relative;
+    transition: color $tr-hover;
+
+    &::after {
+      content: "";
+      display: block;
+      width: rem(50);
+      height: rem(50);
+      border: 1px solid #252525;
+      margin-left: rem(30);
+      border-radius: 50%;
+      background-image: url("../img/icons/arrow-right-dark.svg");
+      background-repeat: no-repeat;
+      background-size: rem(13) rem(26);
+      background-position: 50% 50%;
+      transition: border $tr-hover, background $tr-hover;
+    }
+  }
+}

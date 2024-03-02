@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155989268-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-155989268-1');
+	</script>
+	<meta charset="UTF-8">
+	<title>CityLancer - the recruitment marketplace</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" as="style">
+	<link rel="preload" href="libs/material-components-web/material-components-web.min.css" as="style">
+
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+	<link href="libs/material-components-web/material-components-web.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="shortcut icon" href="img/icons/bottom-logo.png" type="image/png">
+	
+</head>
+<body class="mdc-typography">
+	
+	<header class="header mdc-top-app-bar js-header-page header-white-bg header-2">
+		<div class="page-container-middle">
+			<div class="mdc-top-app-bar__row">
+				<div class="mdc-top-app-bar__section">
+					<div class="header-left">
+						<a href="index.html" class="logo">
+							
+							<img class="logo__green-ico" src="img/logo_city_lancer__green_.svg" alt="">
+						</a>
+						<ul class="nav">
+							<li><a href="how-it-works.html">How It Works</a></li>
+							<li><a href="help-center.html">Help Center</a></li>
+							<li><a href="about.html">About Us</a></li>
+						</ul>
+					</div>
+					<div class="side-menu__head-profile-wrap js-user-menu">
+						<a href="#" class="side-menu__head-profile">
+							<div class="side-menu__head-profile-ico">
+								<img src="img/icons/Log-In-Status-Icon.png" alt="">
+							</div>
+						</a>
+						<div class="head-profile-menu">
+							<div class="head-profile-menu__head">
+								<i class="head-profile-menu__head-ico">
+									<img src="img/icons/Lancer-profile.png" alt="">
+								</i>
+								<p class="head-profile-menu__name">Adrian Filat</p>
+								<p class="head-profile-menu__post">Lancer</p>
+							</div>
+							<div class="head-profile-menu__main">
+								<ul class="profile-user-menu">
+									<li><a href="lancer-profile.html"><i><img src="img/icons/menu-profile.png" alt=""></i> My Profile</a></li>
+									<li><a href="job-board.html"><i><img src="img/icons/menu-jobs.png" alt=""></i> My Jobs</a></li>
+									<li><a href="search-lanser.html"><i><img src="img/icons/menu-search.png" alt=""></i> Search Lancers</a></li>
+									<li><a href="history.html"><i><img src="img/icons/menu-history.png" alt=""></i> Account History</a></li>
+									<li><a href="search-lanser.html"><i><img src="img/icons/lancers-icon.png" alt=""></i> My Lancers</a></li>
+								</ul>
+							</div>
+							<div class="head-profile-menu__action-btn">
+								<a href="#" class="mdc-button mdc-button--unelevated mdc-ripple-upgraded"><span class="mdc-button__ripple"></span>Log Out</a>
+							</div>
+							<div class="head-profile-menu__footer">
+								<p class="head-profile-menu__footer-desc head-profile-menu__footer-terms-privacy"><a href="terms-of-use.html">Terms of use</a>
+									<a href="privacy-policy.html" class="">Privacy Policy</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button js-menu-btn mob-menu-btn">menu</button>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<aside class="mdc-drawer side-menu">
+		<div class="mdc-drawer__content">
+			<div class="side-menu__head-profile">
+				<img src="img/icons/Lancer-profile.png" alt="">
+				<p>Sign In</p>
+			</div>
+			<div class="mdc-menu">
+				<ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
+					<li class="mdc-list-item active" role="menuitem">
+						<a href="#" class="mdc-list-item__text">My Profile</a>
+					</li>
+					<li class="mdc-list-item" role="menuitem">
+						<a href="job-board.html" class="mdc-list-item__text">My Jobs</a>
+					</li>
+					<li class="mdc-list-item" role="menuitem">
+						<a href="search-lanser.html" class="mdc-list-item__text">Search Lancers</a>
+					</li>
+					<li class="mdc-list-item" role="menuitem">
+						<a href="history.html" class="mdc-list-item__text">Account History</a>
+					</li>
+					<li class="mdc-list-item" role="menuitem">
+						<a href="how-it-works.html" class="mdc-list-item__text">How It Works</a>
+					</li>
+					<li class="mdc-list-item" role="menuitem">
+						<a href="help-center.html" class="mdc-list-item__text">Help Center</a>
+					</li>
+					<li class="mdc-list-item" role="menuitem">
+						<a href="about.html" class="mdc-list-item__text">About Us</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</aside>
+
+	<div class="overlay"></div>
+	
+
+	<div class="page-container">
+		<div class="main-content">
+			<div class="main-content__img">
+				<img src="img/images/helmet.png" alt="">
+			</div>
+
+			<h1 class="main-content__title">help center</h1>
+
+			<div class="tab-bar-wrap">
+				<div class="mdc-tab-bar fag-tab-bar" role="tablist">
+				  <div class="mdc-tab-scroller">
+				    <div class="mdc-tab-scroller__scroll-area">
+				      <div class="mdc-tab-scroller__scroll-content">
+				        <button class="mdc-tab mdc-tab--stacked mdc-tab--active" role="tab" aria-selected="false" tabindex="-1">
+								  <span class="mdc-tab__content">
+								    <span class="mdc-tab__text-label">Lancer questions</span>
+								  </span>
+								  <span class="mdc-tab-indicator mdc-tab-indicator--active">
+								    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+								  </span>
+								  <span class="mdc-tab__ripple"></span>
+								</button>
+								<button class="mdc-tab mdc-tab--stacked" role="tab" aria-selected="false" tabindex="-1">
+								  <span class="mdc-tab__content">
+								    <span class="mdc-tab__text-label">Recruiter Questions</span>
+								  </span>
+								  <span class="mdc-tab-indicator">
+								    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+								  </span>
+								  <span class="mdc-tab__ripple"></span>
+								</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+			<div class="accordion-wrap js-accordion-wrap-content active">
+				<div class="page-container-small">
+					<div class="accordion js-accordion active">
+						<h3 class="accordion__title js-accordion-title">Who is a Lancer?</h3>
+						<div class="accordion__content js-accordion-content">
+							<p>A Lancer is a modern day professional office worker armed with skills and knowledge, presently employed in the industry</p>
+						</div>
+					</div>
+					<div class="accordion js-accordion">
+						<h3 class="accordion__title js-accordion-title">Why should I join?</h3>
+						<div class="accordion__content js-accordion-content">
+							<p>
+								<br>1) Because you are pivotal, the most active yet unrewarded part of the recruitment process!
+								You worked hard to reach this stage of your career, you sweat over your CV, you brushed up your skills and attended the interviews suited and booted. And at the end the person who recommended you or recruiter who placed you gets the reward -- Not you! We think  this is not fair - Lancer is a very active part of the process and deserves a share of recruitment bonus.
+								<br>
+								<br>
+								2) Because you will get a real time anonymous appraisal of your skills by  those in the real world marketplace. 
+								<br>
+								<br>
+								3) Because you should capture more of the financial rewards from your next job placement.
+								<br>
+							</p>
+						</div>
+					</div>
+					<div class="accordion js-accordion">
+						<h3 class="accordion__title js-accordion-title">Is it for me?</h3>
+						<div class="accordion__content js-accordion-content">
+							<p>CityLancer is a marketplace for professional office workers: the real workhorses of the corporate world. It is <b>not</b> a marketplace for freelancers.
+							You should have experience in the industry and be currently employed in your profession in order to qualify for an invitation.
+							</p>
+						</div>
+					</div>
+
+					<div class="accordion js-accordion">
+						<h3 class="accordion__title js-accordion-title">How do I get an invite to CityLancer?</h3>
+						<div class="accordion__content js-accordion-content">
+							<p>Please follow the <a href="https://citylancer.app/invite">link</a> and request an invite to CityLancer. We shall process your request within 48 hours and further inform you by email</p>
+						</div>
+					</div>
+					<div class="accordion js-accordion">
+						<h3 class="accordion__title js-accordion-title">What is my profile?</h3>
+						<div class="accordion__content js-accordion-content">
+							<p>Your profile on CityLancer consists of a concise version of your skills, preferred location, job history and expected remuneration.</p>
+						</div>
+					</div>
+					<div class="accordion js-accordion">
+						<h3 class="accordion__title js-accordion-title">Will recruiters see my personal contact details?</h3>
+						<div class="accordion__content js-accordion-content">
+							<p>No, but recruiters will see your contact information after you review and accept the preliminary offer.</p>
+						</div>
+					</div>
+					<div class="accordion js-accordion">
+						<h3 class="accordion__title js-accordion-title">Is it free for Lancers?</h3>
+						<div class="accordion__content js-accordion-content">
+							<p>Yes, this service is not only free but also guarantees financial rewards to every successfully placed Lancer.</p>
+						</div>
+					</div>
+					<div class="accordion js-accordion">
+						<h3 class="accordion__title js-accordion-title">How big a financial reward can I expect?</h3>
+						<div class="accordion__content js-accordion-content">
+							<p>You will get the best negotiated market salary offers for your next job. In addition, the recruiter will offer a guaranteed minimum Referral Fee in the range of $250-$5000.
+							<br>
+							If you have more than five years of experience in the workplace, you can opt in for Split Fee (10-45% of total recruiter commission) <br> </p>
+						</div>
+					</div>
+					<div class="accordion js-accordion">
+						<h3 class="accordion__title js-accordion-title">Who will pay the bonus?</h3>
+						<div class="accordion__content js-accordion-content">
+							<p>The recruiter who places you or the company that hires you in case no external recruiter is involved. Depending on the job offer terms, you will agree to a Referral OR Split fee type of agreement with the recruiter even before you disclose your identity.
+							You and the recruiter enter into Signup bonus Agreements that come into force only in case of a successful placement. </p>
+						</div>
+					</div>
+					<div class="accordion js-accordion">
+						<h3 class="accordion__title js-accordion-title">Can I trust every offer I get on CityLancer?</h3>
+						<div class="accordion__content js-accordion-content">
+							<p>No. Unfortunately some recruiters try to abuse and game the system to entice candidates. At CityLancer we identify and block such accounts as soon as possible. However, you should treat job offers on CityLancer with the same degree of caution as you would those from any other source.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="accordion-wrap js-accordion-wrap-content">
+				<div class="page-container-small">
+					<div class="accordion js-accordion active">
+						<h3 class="accordion__title js-accordion-title">What is CityLancer marketplace?</h3>
+						<div class="accordion__content js-accordion-content">
+							<p>The CityLancer marketplace is a platform where recruiters can invest their candidate acquisition budget by offering part of that money directly to the Lancer as an incentive package. The message for the Lancer is: <b>Work with me on this job (if you like the role) and get a part of my fee if I place you</b></p>
+						</div>
+					</div>
+					<div class="accordion js-accordion">
+						<h3 class="accordion__title js-accordion-title">Why should I join?</h3>
+						<div class="accordion__content js-accordion-content">
+							<p><br><b>To save money. And time.</b> CityLancer is the marketplace where where you INVITE active and financially motivated candidates to work on your jobs. <br>
+							<br>						
+							Our pool of Candidates is comprised of currently employed office professionals who are ready to change career subject to motivating offer. At CityLancer marketplace we let you introduce yourself and propose to this pool.  <br>
+							<br>
+							CityLancer is <b>free of charge</b> at the moment (Please see the How it Works <a href="https://citylancer.app/how-it-works">page</a>)<br>
+							<br>
+							You have <b>ZERO upfront costs</b> - you only pay a predetermined bonus in CASE OF a successful placement.<br></p>
+						</div>
+					</div>
+					<div class="accordion js-accordion">
+						<h3 class="accordion__title js-accordion-title">How to access the CityLancer marketplace?</h3>
+						<div class="accordion__content js-accordion-content">
+							<p><br>To make the Recruiter experience more successful and profitable, we limit the number of competing agencies in any given geographical area. We will review every recruiter application as part of our standard verification process. <br>
+							<br>
+							There are no restrictions for hiring company HR.<br>
+							<br>
+							Please follow this <a href="https://citylancer.app/invite">link</a> to request your invite.<br></p>
+						</div>
+					</div>
+
+					<div class="accordion js-accordion">
+						<h3 class="accordion__title js-accordion-title">Exactly how much will CityLancer cost me?</h3>
+						<div class="accordion__content js-accordion-content">
+							<p>Currently, CityLancer is <b>totally free of charge for Recruiters. Your monthly invoice will be automatically marked as paid by us.</b> 
+							For the future, we have implemented a Fair Recruiter Incentive Credit System in which Recruiters receive a FREE monthly credit worth $200 and a further $200 for each successful Placement. So you can practically use CityLancer Free of Charge.
+							<br>
+							Please remember, your main cost of Lancer acquisition is the Signup Bonus amount you agree to pay in case of placement. See an example <a href="https://citylancer.app/how-it-works">here</a><br></p>
+						</div>
+					</div>
+					<div class="accordion js-accordion">
+						<h3 class="accordion__title js-accordion-title">Exactly how can I save money?</h3>
+						<div class="accordion__content js-accordion-content">
+							<p>Let’s assume your candidate acquisition budget is $X’000. On CityLancer you will always reward your successfully placed candidate with an amount less than $X’000. The CityLancer difference is what you save. </p>
+						</div>
+					</div>
+					<div class="accordion js-accordion">
+						<h3 class="accordion__title js-accordion-title">Exactly how can I save time?</h3>
+						<div class="accordion__content js-accordion-content">
+							<p><br>On CityLancer it takes a few minutes to setup your recruiter profile,  list jobs, and invite lancers. The CityLancer System will automatically update you with matching Lancers, their CVs and counteroffers. <br>
+							<br>
+							Consider how much time you spend on job boards and social networks, reviewing endless stream of irrelevant CVs and chasing “passive job seekers” on the phone. CityLancer lets you achieve the same in just a few minutes!<br>
+							<br>
+							The CityLancer difference is what you save in terms of valuable time.<br></p>
+						</div>
+					</div>
+					<div class="accordion js-accordion">
+						<h3 class="accordion__title js-accordion-title">Is it always necessary to offer a Signup bonus to Lancers?</h3>
+						<div class="accordion__content js-accordion-content">
+							<p>Rewarding Lancers is not a mandatory option on CityLancer. A Lancer can also be attracted with a higher salary package, a blue chip company, a challenging job or other exciting benefits. 
+							<br><b>Lancers will evaluate your offer against offers from other recruiters.</b>
+							The Signup bonus is a sure way to promote yourself and engage candidates into an active recruitment process. <br></p>
+						</div>
+					</div>
+					<div class="accordion js-accordion">
+						<h3 class="accordion__title js-accordion-title">Do you favor Recruitment Agencies or Internal HR Departments?</h3>
+						<div class="accordion__content js-accordion-content">
+							<p>Professional Recruitment Agencies and Inhouse HR teams are equally welcome on CityLancer. This is an open marketplace where you present your offers and bonuses. It is up to the Lancers to decide which offers they find the most appealing.</p>
+						</div>
+					</div>
+					<div class="accordion js-accordion">
+						<h3 class="accordion__title js-accordion-title">What are the main guidelines to follow on CityLancer as a Recruiter?</h3>
+						<div class="accordion__content js-accordion-content">
+							<p>It's all about <b>healthy relations</b> between you and your pool of professional City Lancers. Don’t treat this marketplace as a CV database. Every Lancer is experienced and employed in the industry - <b>treat them as your partners for a successful collaboration towards a placement</b></p>
+						</div>
+					</div>
+					<div class="accordion js-accordion">
+						<h3 class="accordion__title js-accordion-title">Why I must always reveal the offered salary and bonus in advance? Will my bargaining position suffer?</h3>
+						<div class="accordion__content js-accordion-content">
+							<p>In order not to lose yours and the candidates’ time and effort, Lancers set certain expectations for the next job, particularly the remuneration package. We need to guide you to those Lancers who are in your compensation bracket and hence set the tone for further negotiation. </p>
+						</div>
+					</div>
+					<div class="accordion js-accordion">
+						<h3 class="accordion__title js-accordion-title">Do I enter into a binding agreement with Lancers on the CityLancer marketplace?</h3>
+						<div class="accordion__content js-accordion-content">
+							<p>Yes you do. But only in case of a successful placement you are required to make a payment to the successfully placed Lancer. 
+							<br>
+							Everything that takes place after the successful introduction at CityLancer is handled by you entirely. CityLancer does not get involved in the recruitment process beyond the invitation of Lancers to a job. You continue from here on your own.<br></p>
+						</div>
+					</div>
+					<div class="accordion js-accordion">
+						<h3 class="accordion__title js-accordion-title">Can I see an example of a ReferralFee and/or SplitFee Agreement?</h3>
+						<div class="accordion__content js-accordion-content">
+							<p>Example: <a href="https://citylancer.app/referralfeepdf">ReferralFee.pdf</a>,  <a href="https://citylancer.app/splitfeepdf">SplitFee.pdf</a></p>
+						</div>
+					</div>
+					<div class="accordion js-accordion">
+						<h3 class="accordion__title js-accordion-title">How do you verify Lancers who enter the marketplace?</h3>
+						<div class="accordion__content js-accordion-content">
+							<p>All our Lancers are currently part of the active workforce. We cannot guarantee that Lancers will not attempt to provide false information about themselves but we have created an environment to discourage and prevent such behaviour. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="bottom-content no-bt bottom-content-2">  
+		<div class="page-container-small">
+			<div class="mdc-grid-list custom-grid-list">
+				<ul class="mdc-grid-list__tiles">
+					<li class="mdc-grid-tile">
+						<a href="index.html" class="top-link">Home</a>
+						<a href="index.html" class="bottom-link">Homepage</a>
+					</li>
+					<li class="mdc-grid-tile">
+						<a href="about.html" class="top-link">About</a>
+						<a href="about.html" class="bottom-link">About Us</a>
+						
+					</li>
+					<li class="mdc-grid-tile">
+						<a href="help-center.html" class="top-link">Support</a>
+						<a href="help-center.html" class="bottom-link">Help Center</a>
+			
+					</li>
+					<li class="mdc-grid-tile">
+						<a href="how-it-works.html" class="top-link">The Process</a>
+						<a href="how-it-works.html" class="bottom-link">How it works</a>
+						
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<footer class="footer footer-2">
+		<div class="page-container-small">
+			<div class="logo-wrap">
+				<div class="footer-logo">
+					<img src="img/icons/bottom-logo.png" alt="">
+				</div>
+				<div class="copyright">
+					© Copyright 2020 CITYLANCER.APP All Rights Reserved.
+				</div>
+			</div>
+			<ul class="footer-links">
+				<li>
+					<a href="contact-us.html" class="footer-link">Contact Us</a>
+				</li>
+				<li>
+					<a href="terms-of-use.html" class="footer-link">Terms of use</a>
+				</li>
+				<li>
+					<a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<div class="cookies-block">
+		<div class="page-container-small">
+			<h6 class="cookies-block__title">About our cookies</h6>
+			<p class="cookies-block__desc">This site uses cookies to improve your navigation experience and to collect information on the way the site is used. By continuing to navigate this site, you implicitly accept our use of cookies. You may disable cookies with your browser settings. Find out more <a href="terms-of-use.html">here</a></p>
+			<a href="#" class="cookies-close js-cookies-close"></a>
+		</div>
+	</div>
+	
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="libs/material-components-web/material-components-web.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

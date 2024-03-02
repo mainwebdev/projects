@@ -1,0 +1,60 @@
+$browser-context: 16; // Default
+
+@function rem($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem;
+}
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+@function lh($lh, $fs) {
+  @return #{$lh/$fs};
+}
+
+@import "_media";
+@import "_fonts";
+@import "_reset";
+
+html {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: 1940px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 2200px) {
+    font-size: 22px;
+  }
+
+  @media (min-width: 2500px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 1440px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 1160px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 1020px) {
+    font-size: 10px;
+  }
+
+  @media (max-width: 850px) {
+    font-size: 9px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+@import "_common.scss";
+@import "_header.scss";
+@import "_index.scss";
+@import "_footer.scss";

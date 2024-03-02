@@ -1,0 +1,153 @@
+@import "_media.scss";
+
+* strong {
+	font-weight: 900;
+}
+
+h1, h2 {
+	font-weight: 500;
+	font-size: rem(60);
+  line-height: 119.7%;
+  margin: 0;
+  
+  @include tablets-down() {
+    font-size: rem(40);
+  }
+}
+
+h3 {
+	font-weight: 500;
+	font-size: rem(36);
+	line-height: rem(58);
+}
+
+.hide-phone-lg {
+  @media screen and (max-width: 575.98px) {
+    display: none !important;
+  }
+}
+
+.show-phone-lg {
+  @media screen and (min-width: 576px) {
+    display: none !important;
+  }
+}
+
+.hide-tablet {
+  @media screen and (max-width: 767.98px) {
+    display: none !important;
+  }
+}
+
+.show-tablet {
+  @media screen and (min-width: 768px) {
+    display: none !important;
+  }
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.hide {
+  display: none !important;
+}
+
+.offset-header {
+  padding-top: rem($header-h);
+
+	@include tablets-down() {
+		padding-top: rem($header-h-m);
+	}
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: rem(8);
+  height: rem(54);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  padding: rem(0) rem(40);
+  padding-top: rem(3);
+  letter-spacing: 0.07em;
+  font-weight: bold;
+  font-size: rem(16);
+  line-height: 1;
+  text-transform: uppercase;
+  transition: .3s;
+}
+
+.btn-primary {
+  background: #A247FA;
+  color: #FFFFFF;
+
+  &:hover {
+    background-color: #fff;
+    color: #A247FA;
+  }
+}
+
+.btn-border-primary {
+  border: rem(1) solid #A247FA;
+  color: #A247FA;
+
+  &:hover {
+    background: #A247FA;
+    color: #FFFFFF;
+    // background-color: #fff;
+    // color: #A247FA;
+  }
+}
+
+.btn-secondary {
+  border: rem(1) solid #2F2F2F;
+  color: #404040;
+
+  &:hover {
+    background: #2F2F2F;
+    color: #fff;
+  }
+}
+
+.watch-link {
+  font-weight: bold;
+  font-size: rem(16);
+  line-height: rem(26);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+
+  .icon {
+    margin-right: rem(25);
+  }
+}
+
+input, textarea {
+  background: none;
+  border: none;
+  border-bottom: rem(0.5) solid #181818;
+  height: rem(45);
+  font-size: rem(18);
+  line-height: rem(29);
+  color: #181818;
+  font-family: inherit;
+  width: 100%;
+  outline: none;
+
+  &::placeholder { 
+    opacity: 1;
+    color: #181818;
+  }
+}
+
+textarea {
+  padding: 0 rem(10);
+  height: rem(65);
+  resize: none;
+}

@@ -1,0 +1,323 @@
+{
+	"questions":[
+		{
+			"text":"How often during the last month have you had <b>feelings of incomplete emptying of the bladder</b> after urinating?",
+			"options":[
+				{
+					"text":"None",
+					"weight":0
+				},
+				{
+					"text":"Less than once a week",
+					"weight":1
+				},
+				{
+					"text":"Less than half the time",
+					"weight":2
+				},
+				{
+					"text":"About half the space",
+					"weight":3
+				},
+				{
+					"text":"More than half the time",
+					"weight":4
+				},
+				{
+					"text":"Almost always",
+					"weight":5
+				}
+			]
+		},
+		{
+			"text":"How often during the last month have you had <b>intermittent urination</b>?",
+			"options":[
+				{
+					"text":"None",
+					"weight":0
+				},
+				{
+					"text":"Less than once a week",
+					"weight":1
+				},
+				{
+					"text":"Less than half the time",
+					"weight":2
+				},
+				{
+					"text":"About half the space",
+					"weight":3
+				},
+				{
+					"text":"More than half the time",
+					"weight":4
+				},
+				{
+					"text":"Almost always",
+					"weight":5
+				}
+			]
+		},
+		{
+			"text":"How often during the last month have you had a <b>weak stream of urine</b>?",
+			"options":[
+				{
+					"text":"None",
+					"weight":0
+				},
+				{
+					"text":"Less than once a week",
+					"weight":1
+				},
+				{
+					"text":"Less than half the time",
+					"weight":2
+				},
+				{
+					"text":"About half the space",
+					"weight":3
+				},
+				{
+					"text":"More than half the time",
+					"weight":4
+				},
+				{
+					"text":"Almost always",
+					"weight":5
+				}
+			]
+		},
+		{
+			"text":"How often during the last month have you had to <b>strain</b> to start urinating?",
+			"options":[
+				{
+					"text":"None",
+					"weight":0
+				},
+				{
+					"text":"Less than once a week",
+					"weight":1
+				},
+				{
+					"text":"Less than half the time",
+					"weight":2
+				},
+				{
+					"text":"About half the space",
+					"weight":3
+				},
+				{
+					"text":"More than half the time",
+					"weight":4
+				},
+				{
+					"text":"Almost always",
+					"weight":5
+				}
+			]
+		},
+		{
+			"text":"How often during the last month have you had <b>the need to urinate more often than two hours</b> after your last urination?",
+			"options":[
+				{
+					"text":"None",
+					"weight":0
+				},
+				{
+					"text":"Less than once a week",
+					"weight":1
+				},
+				{
+					"text":"Less than half the time",
+					"weight":2
+				},
+				{
+					"text":"About half the space",
+					"weight":3
+				},
+				{
+					"text":"More than half the time",
+					"weight":4
+				},
+				{
+					"text":"Almost always",
+					"weight":5
+				}
+			]
+		},
+		{
+			"text":"How often during the last month have you found it <b>difficult to temporarily refrain from urinating</b>?",
+			"options":[
+				{
+					"text":"None",
+					"weight":0
+				},
+				{
+					"text":"Less than once a week",
+					"weight":1
+				},
+				{
+					"text":"Less than half the time",
+					"weight":2
+				},
+				{
+					"text":"About half the space",
+					"weight":3
+				},
+				{
+					"text":"More than half the time",
+					"weight":4
+				},
+				{
+					"text":"Almost always",
+					"weight":5
+				}
+			]
+		},
+		{
+			"text":"How often during the last month have you had to <b>get out of bed</b> at night to urinate?",
+			"options":[
+				{
+					"text":"Never",
+					"weight":0
+				},
+				{
+					"text":"1 time",
+					"weight":1
+				},
+				{
+					"text":"2 times",
+					"weight":2
+				},
+				{
+					"text":"3 times",
+					"weight":3
+				},
+				{
+					"text":"4 times",
+					"weight":4
+				},
+				{
+					"text":"5 or more times",
+					"weight":5
+				}
+			]
+		}
+	],
+	"results":[
+		{
+			"result_text":"easy"
+		},
+		{
+			"result_text":"easy"
+		},
+		{
+			"result_text":"easy"
+		},
+		{
+			"result_text":"easy"
+		},
+		{
+			"result_text":"easy"
+		},
+		{
+			"result_text":"easy"
+		},
+		{
+			"result_text":"easy"
+		},
+		{
+			"result_text":"easy"
+		},
+		{
+			"result_text":"average"
+		},
+		{
+			"result_text":"average"
+		},
+		{
+			"result_text":"average"
+		},
+		{
+			"result_text":"average"
+		},
+		{
+			"result_text":"average"
+		},
+		{
+			"result_text":"average"
+		},
+		{
+			"result_text":"average"
+		},
+		{
+			"result_text":"average"
+		},
+		{
+			"result_text":"average"
+		},
+		{
+			"result_text":"average"
+		},
+		{
+			"result_text":"average"
+		},
+		{
+			"result_text":"average"
+		},
+		{
+			"result_text":"heavy"
+		},
+		{
+			"result_text":"heavy"
+		},
+		{
+			"result_text":"heavy"
+		},
+		{
+			"result_text":"heavy"
+		},
+		{
+			"result_text":"heavy"
+		},
+		{
+			"result_text":"heavy"
+		},
+		{
+			"result_text":"heavy"
+		},
+		{
+			"result_text":"heavy"
+		},
+		{
+			"result_text":"heavy"
+		},
+		{
+			"result_text":"heavy"
+		},
+		{
+			"result_text":"heavy"
+		},
+		{
+			"result_text":"heavy"
+		},
+		{
+			"result_text":"heavy"
+		},
+		{
+			"result_text":"heavy"
+		},
+		{
+			"result_text":"heavy"
+		},
+		{
+			"result_text":"heavy"
+		},
+		{
+			"result_text":"heavy"
+		},
+		{
+			"result_text":"heavy"
+		}
+	]
+}

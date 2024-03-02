@@ -1,0 +1,117 @@
+@import "_media.scss";
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 13px;
+
+	@include desktop-lg-down() {
+		font-size: 12px;
+	}
+
+	@include desktop-down() {
+		font-size: 11px;
+	}
+
+	@include desktop-sm-down() {
+		font-size: 10px;
+	}
+
+	@include tablets-lg-down() {
+		font-size: 9px;
+	}
+
+	@include tablets-down() {
+		font-size: 12px;
+	}
+
+	@include phones-lg-down() {
+		font-size: 10px;
+	}
+
+	@include phones-sm-down() {
+		font-size: 8px;
+	}
+
+
+}
+
+p {
+	margin: 0;
+}
+
+ol, ul {
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	cursor: pointer;
+}
+
+html,
+body {
+  max-width: 100%;
+	height: 100%;
+}
+
+body {
+	font-family: 'Axiforma', sans-serif;
+	font-weight: normal;
+	color: #2F2F2F;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+ul, li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+// footer down start
+.header,
+.footer {
+  flex: 0 0 auto;
+}
+
+.main {
+  flex: 1 0 auto;
+	position: relative;
+}
+
+.wrapper {
+  display: flex;
+	flex-direction: column;
+	position: relative;
+	overflow: hidden;
+}
+// footer down end
+
+.container {
+	width: 100%;
+	max-width: rem(1290);
+	padding: 0 rem(25);
+	margin: 0 auto;
+}
+
+.container-lg {
+	width: 100%;
+	max-width: rem(1990);
+	padding: 0 rem(25);
+	margin: 0 auto;
+}

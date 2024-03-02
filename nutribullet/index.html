@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nutribullet</title>
+	
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<div class="wrapper">
+		<header class="header d-flex align-items-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-2 header__humburger">
+						<div class="humburger">
+							<div class="humburger__line"></div>
+							<div class="humburger__line"></div>
+							<div class="humburger__line"></div>
+						</div>
+					</div>
+					<a href="#" class="header__logo col-8 col-md-3">nutribullet</a>
+					<nav class="nav justify-content-center col-sm-6">
+					  <a class="nav-link nav-link-shop" href="#">Shop</a>
+					  <a class="nav-link" href="#">Recipes</a>
+					  <a class="nav-link" href="#">Blog</a>
+					  <a class="nav-link" href="#">Support</a>
+					</nav>
+					<div class="header__right col-2 col-md-3 d-flex justify-content-end align-items-center">
+						<div class="header__right--search">
+							<input type="text" placeholder="">
+							<i class="fas fa-search"></i>
+						</div>
+						<div class="header__right--basket">
+							<i class="fas fa-shopping-bag"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="header__menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-3 col-md-2">
+							<span class="header__menu--title">All blenders</span>
+							<span class="header__menu--title">Blender recommender</span>
+						</div>
+						<div class="col-sm-3 col-md-2">
+							<span class="header__menu--title">Compact blenders</span>
+							<ul>
+								<li><a href="#">nutribullet Pro</a></li>
+								<li><a href="#">nutribullet Select</a></li>
+								<li><a href="#">nutribullet Balance</a></li>
+								<li><a href="#">nutribullet Rx</a></li>
+								<li><a href="#">nutribullet Baby</a></li>
+								<li><a href="#">nutribullet 600</a></li>
+								<li><a href="#">nutribullet 900</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-3 col-md-2">
+							<span class="header__menu--title">Full size blenders</span>
+							<ul>
+								<li><a href="#">nutribullet Blender</a></li>
+								<li><a href="#">nutribullet Flex Blender</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-3 col-md-2">
+							<span class="header__menu--title">Accessories</span>
+							<ul>
+								<li><a href="#">Blades</a></li>
+								<li><a href="#">Cups & Lids</a></li>
+								<li><a href="#">Upgrade Kits</a></li>
+								<li><a href="#">Storage</a></li>
+							</ul>
+
+							<span class="header__menu--title">More</span>
+							<ul>
+								<li><a href="#">Superfoods</a></li>
+								<li><a href="#">Recipe Books</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<img src="img/menu-img.jpg" alt="" class="header__menu--img">
+			</div>
+
+			<div class="mob-menu">
+				<div class="mob-menu__search">
+					<div class="container">
+						<div class="mob-menu__search--title">
+							<i class="fas fa-search"></i>
+							<span>Search</span>
+						</div>
+						<input type="text" placeholder="Green smoothie recipe">
+						<button><i class="fas fa-arrow-right"></i></button>
+					</div>
+				</div>
+
+				<div class="mob-menu__content">
+					<div class="container">
+						<ul>
+							<li>
+								<a href="#" class="to-submenu">
+									Shop
+									<span class="mob-menu__plus"></span>
+								</a>
+								
+								<ul class="mob-menu__sublist">
+									<li>
+										<a href="#" class="mob-menu__sublist--close">
+											<i class="fas fa-arrow-left"></i>
+										</a>
+									</li>
+									<li><a href="#">All blenders</a></li>
+									<li><a href="#">Blender recommender</a></li>
+									<li><a href="#">Compact blenders</a></li>
+									<li><a href="#">Full size blenders</a></li>
+									<li><a href="#">Accessories</a></li>
+									<li><a href="#">More</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Recipes</a>
+							</li>
+							<li>
+								<a href="#">Blog</a>
+							</li>
+							<li>
+								<a href="#" class="to-submenu">
+									Support
+									<span class="mob-menu__plus"></span>
+								</a>
+								
+								<ul class="mob-menu__sublist">
+									<li>
+										<a href="#" class="mob-menu__sublist--close">
+											<i class="fas fa-arrow-left"></i>
+										</a>
+									</li>
+									<li><a href="#">FAQ</a></li>
+									<li><a href="#">Shipping and Delivery</a></li>
+									<li><a href="#">Returns</a></li>
+									<li><a href="#">Warranty</a></li>
+									<li><a href="#">User Manuals</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="mob-menu__bottom">
+					<div class="container">
+						<a href="#">Sign in / Sign up</a>
+						<a href="#">
+							English
+							<i class="fas fa-chevron-down"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="main-screen section section-1 active">
+				<div class="main-screen__slider">
+					<div class="main-screen__slider--1 d-flex align-items-center">
+						<div class="container">
+							<div class="row">
+								<div class="main-screen__content">
+									<h1>
+										<span>Say hello</span> 
+										<span>to Pro.</span>
+									</h1>
+									<p>Unlock the goodies hiding in<br> the toughest ingredients 900-<br> watts of extraction power.</p>
+
+									<div class="main-screen__buttons">
+										<a class="btn btn-primary" href="#" role="button">Add to cart.</a>
+										<a class="btn" href="#" role="button">Learn more.</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="main-screen__slider--2 d-flex align-items-center">
+						<div class="container">
+							<div class="row">
+								<div class="main-screen__content">
+									<h1>
+										<span>This&nbsp;one's</span> 
+										<span>for&nbsp;mom.</span>
+									</h1>
+									<p>The perfect Mother's Day gift can<br> chop, blend and extract almost<br> as well as she raised you.</p>
+
+									<div class="main-screen__buttons">
+										<a class="btn btn-primary" href="#" role="button">Shop sale.</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="main-screen__slider--3 d-flex align-items-center">
+						<div class="container">
+							<div class="row">
+								<div class="main-screen__content">
+									<h1>
+										<span>Sunshine</span> 
+										<span>and&nbsp;smoothie</span>
+										<span>season.</span>
+									</h1>
+									<p>When it gets balmy out, your fave tropical<br> beverages won't make themselves! Be<br> prepared with help from any one of our<br> Compact or Full size blenders</p>
+
+									<div class="main-screen__buttons">
+										<a class="btn btn-primary" href="#" role="button">Shop sale.</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section-2 d-flex align-items-center">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5 d-flex align-items-center">
+							<div class="section-2__content">
+								<h2>
+									<span>All for</span> 
+									<span>one.</span>
+								</h2>
+								<p>Compact blenders that <br>quickly get down to <br>business, just like you.</p>
+								<a class="btn btn-primary" href="#" role="button">Shop compact.</a>
+							</div>
+						</div>
+						<div class="col-md-7">
+							<div class="section-2__img"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section-3 d-flex align-items-center">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-7">
+							<div class="section-3__img"></div>
+						</div>
+						<div class="col-md-5 d-flex align-items-center">
+							<div class="section-2__content">
+								<h2>
+									<span>One</span> 
+									<span>for all.</span>
+								</h2>
+								<p>Full Size blenders that have <br>the power and the space to do <br>just about everything.</p>
+								<a class="btn btn-primary" href="#" role="button">Shop full size.</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section-4 d-flex align-items-center">
+				<div class="section-4__content">
+					<h3>Find 'the one.'</h3>
+					<p>Your kitchen is 90 seconds away <br>from a serious upgrade.</p>
+					<div class="section-4__products d-flex justify-content-center">
+						<div class="section-4__products--item">
+							<img src="img/product.jpg" alt="">
+						</div>
+						<div class="section-4__products--item">
+							<img src="img/product.jpg" alt="">
+						</div>
+						<div class="section-4__products--item">
+							<img src="img/product.jpg" alt="">
+						</div>
+						<div class="section-4__products--item">
+							<img src="img/product.jpg" alt="">
+						</div>
+						<div class="section-4__products--item">
+							<img src="img/product.jpg" alt="">
+						</div>
+						<div class="section-4__products--item">
+							<img src="img/product.jpg" alt="">
+						</div>
+						<div class="section-4__products--item">
+							<img src="img/product.jpg" alt="">
+						</div>
+					</div>
+					<a href="#" class="btn btn-primary" role="button">Get matched.</a>
+				</div>
+			</section>
+
+			<section class="section section-5 d-flex align-items-center">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5 d-flex align-items-center">
+							<div class="section-5__content">
+								<div class="section-5__content--inner">
+									<span class="section-5__subtitle">Nutrient extraction</span>
+									<h3>Drink it all in.</h3>
+									<p>From specialized components <br>to exclusive cyclonic action, <br>every design helps unlock the <br>best your food has to offer.</p>
+									<a href="#" class="section-5__play">
+										<i class="fas fa-play"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-7">
+							<div class="section-5__img">
+								<video preload="auto" loop muted playsinline>
+									<source src="video/1.mp4" type="video/mp4">
+								</video>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section-6 d-flex align-items-center">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-7 d-flex justify-content-start">
+							<div class="section-6__img">
+								<video preload="auto" loop muted playsinline>
+									<source src="video/2.mp4" type="video/mp4">
+								</video>
+							</div>
+						</div>
+						<div class="col-md-5 d-flex align-items-center">
+							<div class="section-6__content">
+								<div class="section-6__content--inner">
+									<span class="section-6__subtitle">Simple and easy</span>
+									<h3>It's almost <br>too simple.</h3>
+									<p>Just wash and rinse your <br>nutribullet's blade with soap <br>and water, and boom, you're <br>ready to get back to it!</p>
+									<a href="#" class="section-6__play">
+										<i class="fas fa-play"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section-7 d-flex align-items-center">
+				<div class="container">
+					<div class="row">
+						<div class="section-7__content">
+							<h3>A little TLC goes <br>a long way.</h3>
+							<p>Nutriliving is your one stop shop for <br>staying strong, healthy and in-the-know</p>
+							<a href="#" class="btn btn-primary" role="button">Learn more.</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section-8">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h3>Make, <br>learn, live.</h3>
+							<p>Find the best recipes, tips, tricks <br>and stories right here.</p>
+						</div>
+						<div class="col-sm-4 section-8__left-col">
+							<div class="section-8__item">
+								<div class="section-8__item--img">
+									<img src="img/section-8_1.jpg" alt="">
+									<a href="#" class="section-8__item--hover">
+										<div class="section-8__item--hover__arrow">
+											<i class="fas fa-arrow-right"></i>
+										</div>
+									</a>
+								</div>
+								<p>DIY natural beauty products <br>made in your nutribullet.</p>
+								
+							</div>
+							<div class="section-8__item">
+								<div class="section-8__item--img">
+									<img src="img/section-8_2.jpg" alt="">
+									<a href="#" class="section-8__item--hover">
+										<div class="section-8__item--hover__arrow">
+											<i class="fas fa-arrow-right"></i>
+										</div>
+									</a>
+								</div>
+								<p>Strawberry hair mask.</p>
+								
+							</div>
+						</div>
+						<div class="col-sm-4 section-8__center-col">
+							<div class="section-8__item">
+								<div class="section-8__item--img">
+									<img src="img/section-8_3.jpg" alt="">
+									<a href="#" class="section-8__item--hover">
+										<div class="section-8__item--hover__arrow">
+											<i class="fas fa-arrow-right"></i>
+										</div>
+									</a>
+								</div>
+								<p>Aloe face mist.</p>
+								
+							</div>
+							<div class="section-8__item">
+								<div class="section-8__item--img">
+									<img src="img/section-8_4.jpg" alt="">
+									<a href="#" class="section-8__item--hover">
+										<div class="section-8__item--hover__arrow">
+											<i class="fas fa-arrow-right"></i>
+										</div>
+									</a>
+								</div>
+								<p>Avocado yogurt <br>champion.</p>
+								
+							</div>
+						</div>
+						<div class="col-sm-4 section-8__right-col">
+							<div class="section-8__item">
+								<div class="section-8__item--img">
+									<img src="img/section-8_5.jpg" alt="">
+									<a href="#" class="section-8__item--hover">
+										<div class="section-8__item--hover__arrow">
+											<i class="fas fa-arrow-right"></i>
+										</div>
+									</a>
+								</div>
+								<p>Moisturizing <br>oat face mask.</p>
+								
+							</div>
+							<div class="section-8__item">
+								<div class="section-8__item--img">
+									<img src="img/section-8_6.jpg" alt="">
+									<a href="#" class="section-8__item--hover">
+										<div class="section-8__item--hover__arrow">
+											<i class="fas fa-arrow-right"></i>
+										</div>
+									</a>
+								</div>
+								<p>7 foods <br>to promote sleep.</p>
+								
+							</div>
+						</div>
+
+						<div class="section-8__mob col-12">
+							<div class="section-8__slider">
+								<div class="section-8__slider--item">
+									<div class="section-8__slider--img section-8__slider--img-1"></div>
+									<p>DIY natural beauty products <br>made in your nutribullet.</p>
+								</div>
+								<div class="section-8__slider--item">
+									<div class="section-8__slider--img section-8__slider--img-2"></div>
+									<p>Strawberry hair mask.</p>
+								</div>
+								<div class="section-8__slider--item">
+									<div class="section-8__slider--img section-8__slider--img-3"></div>
+									<p>Aloe face mist.</p>
+								</div>
+								<div class="section-8__slider--item">
+									<div class="section-8__slider--img section-8__slider--img-4"></div>
+									<p>Avocado yogurt <br>champion.</p>
+								</div>
+								<div class="section-8__slider--item">
+									<div class="section-8__slider--img section-8__slider--img-5"></div>
+									<p>Moisturizing <br>oat face mask.</p>
+								</div>
+								<div class="section-8__slider--item">
+									<div class="section-8__slider--img section-8__slider--img-6"></div>
+									<p>7 foods <br>to promote sleep.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section-9 d-flex align-items-center">
+				<a href="#" class="section-9__item">
+					<h3>Shop.</h3>
+					<p>Meet every member of our <br>nutribullet family.</p>
+				</a>
+				<a href="#" class="section-9__item">
+					<h3>Ask.</h3>
+					<p>Our registered dietitians are here <br>to answer your toughest question.</p>
+				</a>
+			</section>
+
+			<section class="section section-10 d-flex align-items-center">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h3>Kick things up <br>a notch.</h3>
+						</div>
+						<div class="col-6 col-sm-3">
+							<a href="#" class="section-10__item">
+								<div class="section-10__item--img">
+									<img src="img/section-10_1.jpg" alt="">
+									<img src="img/section-10_4.jpg" alt="" class="section-10__item--img__hover">
+								</div>
+								<p>Superfood fat <br>burning boost.</p>
+								<span>$10</span>
+							</a>
+						</div>
+						<div class="col-6 col-sm-3">
+							<a href="#" class="section-10__item">
+								<div class="section-10__item--img">
+									<img src="img/section-10_2.jpg" alt="">
+									<img src="img/section-10_3.jpg" alt="" class="section-10__item--img__hover">
+								</div>
+								<p>Superfood <br>superboost.</p>
+								<span>$10</span>
+							</a>
+						</div>
+						<div class="col-6 col-sm-3">
+							<a href="#" class="section-10__item">
+								<div class="section-10__item--img">
+									<img src="img/section-10_3.jpg" alt="">
+									<img src="img/section-10_2.jpg" alt="" class="section-10__item--img__hover">
+								</div>
+								<p>Organic pea protein <br>blend tub.</p>
+								<span>$10</span>
+							</a>
+						</div>
+						<div class="col-6 col-sm-3">
+							<a href="#" class="section-10__item">
+								<div class="section-10__item--img">
+									<img src="img/section-10_4.jpg" alt="">
+									<img src="img/section-10_1.jpg" alt="" class="section-10__item--img__hover">
+								</div>
+								<p>Super food <br>cleansing greens.</p>
+								<span>$10</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section-11">
+				<div class="section-11__slider">
+					<div class="section-11__slider--item">
+						<h3>I put off being healthy for way <br>too long. With nutribullet, <br>it really was one easy step.</h3>
+						<p>John M</p>
+					</div>
+					<div class="section-11__slider--item">
+						<h3>I put off being healthy for way <br>too long. With nutribullet, <br>it really was one easy step.</h3>
+						<p>John M</p>
+					</div>
+					<div class="section-11__slider--item">
+						<h3>I put off being healthy for way <br>too long. With nutribullet, <br>it really was one easy step.</h3>
+						<p>John M</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section-12">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h3>We're on<br> the 'gram <br>@nutribullet</h3>
+						</div>
+						<div class="col-6 col-sm-3">
+							<a href="#" class="section-12__img">
+								<img src="img/section-12_1.jpg" alt="">
+							</a>
+						</div>	
+						<div class="col-6 col-sm-3">
+							<a href="#" class="section-12__img">
+								<img src="img/section-12_2.jpg" alt="">
+							</a>
+						</div>
+						<div class="col-6 col-sm-3">
+							<a href="#" class="section-12__img">
+								<img src="img/section-12_3.jpg" alt="">
+							</a>
+						</div>
+						<div class="col-6 col-sm-3">
+							<a href="#" class="section-12__img">
+								<img src="img/section-12_4.jpg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer section section-13">
+			<div class="container">
+				<div class="row">
+					<div class="footer__mob col-12">
+						<ul class="footer__socials d-flex">
+							<li class="footer__socials--item">
+								<a href="#"><i class="fab fa-facebook-f"></i></a>
+							</li>
+							<li class="footer__socials--item">
+								<a href="#"><i class="fab fa-youtube"></i></a>
+							</li>
+							<li class="footer__socials--item">
+								<a href="#"><i class="fab fa-pinterest-p"></i></a>
+							</li>
+							<li class="footer__socials--item">
+								<a href="#"><i class="fab fa-instagram"></i></a>
+							</li>
+							<li class="footer__socials--item">
+								<a href="#"><i class="fas fa-mobile-alt"></i></a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-2">
+						<div class="footer__title">
+							Products
+							<div class="footer__title--plus"></div>
+						</div>
+						<div class="footer__list">
+							<a href="#">Compact blenders</a>
+							<a href="#">Full-size blenders</a>
+							<a href="#">All blenders</a>
+							<a href="#">Blender recommender</a>
+							<a href="#">Accessories</a>
+							<a href="#">Superfoods</a>
+							<a href="#">Recipe books</a>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="footer__title">
+							Nutriliving
+							<div class="footer__title--plus"></div>
+						</div>
+						<div class="footer__list">
+							<a href="#">Recipes</a>
+							<a href="#">Articles</a>
+							<a href="#">Videos</a>
+							<a href="#">Ask an RD</a>
+							<a href="#">Health quiz</a>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="footer__title">
+							Support
+							<div class="footer__title--plus"></div>
+						</div>
+						<div class="footer__list">
+							<a href="#">Contact us</a>
+							<a href="#">Shipping</a>
+							<a href="#">Returns</a>
+							<a href="#">FAQs</a>
+							<a href="#">Sign up</a>
+							<a href="#">Sign in</a>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="footer__title">
+							Company
+							<div class="footer__title--plus"></div>
+						</div>
+						<div class="footer__list">
+							<a href="#">Why nutribullet</a>
+							<a href="#">Corporate site</a>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<span class="footer__title">Subscribe</span>
+						<form action="#" class="footer__form">
+							<input type="text" placeholder="you@email.com" required="">
+							<button><i class="fas fa-arrow-right"></i></button>
+						</form>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2">
+						<span class="footer__title active">
+							Country
+							<span class="footer__title--arrow">
+								<i class="fas fa-chevron-down"></i>
+							</span>
+							<span class="footer__title--plus"></span>
+						</span>
+						<div class="footer__list">
+							<a href="#">United States</a>	
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<span class="footer__title active">
+							Language
+							<span class="footer__title--arrow">
+								<i class="fas fa-chevron-down"></i>
+							</span>
+							<span class="footer__title--plus"></span>
+						</span>
+						<div class="footer__list">
+							<a href="#">English</a>
+						</div>
+					</div>
+					<div class="col-sm-4"></div>
+					<div class="col-sm-4">
+						<ul class="footer__socials d-flex">
+							<li class="footer__socials--item">
+								<a href="#"><i class="fab fa-facebook-f"></i></a>
+							</li>
+							<li class="footer__socials--item">
+								<a href="#"><i class="fab fa-youtube"></i></a>
+							</li>
+							<li class="footer__socials--item">
+								<a href="#"><i class="fab fa-pinterest-p"></i></a>
+							</li>
+							<li class="footer__socials--item">
+								<a href="#"><i class="fab fa-instagram"></i></a>
+							</li>
+							<li class="footer__socials--item">
+								<a href="#"><i class="fas fa-mobile-alt"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="container d-flex align-items-center">
+					<p>Nutribullet 2019 © All Rights Reserved</p>
+					<ul class="d-flex">
+						<li><a href="#">Terms</a></li>
+						<li><a href="#">Site map</a></li>
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">Safety</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+	<script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+@import "_media.scss";
+/*-------------- footer --------------*/
+.footer {
+  background: #191C26;
+  padding-top: rem(55);
+  color: #fff;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 rem(-15);
+    padding-bottom: rem(55);
+
+    @include tablets-down() {
+      flex-wrap: wrap;
+      margin-bottom: rem(-60);
+    }
+  }
+
+  &__col {
+    padding: 0 rem(15);
+
+    @include tablets-down() {
+      width: 50%;
+      margin-bottom: rem(60);
+    }
+  }
+
+  .logo {
+    display: block;
+    width: rem(114);
+    margin-bottom: rem(20);
+  }
+
+  &__bottom {
+    padding: rem(30) 0;
+    border-top: rem(0.5) solid rgba(#FFFFFF, 0.5);
+  }
+
+  h4 {
+    font-weight: bold;
+    font-size: rem(14);
+    line-height: rem(23);
+    margin-bottom: rem(12);
+  }
+
+  &__contact {
+    a {
+      display: block;
+      font-size: rem(14);
+      line-height: rem(25);
+    }
+  }
+
+  .copiring {
+    font-size: rem(14);
+    line-height: rem(22);
+    text-transform: capitalize;
+    color: #6F6F6F;
+  }
+
+  &__bottom {
+    font-size: rem(16);
+    line-height: rem(25);
+    color: #7D7F7E;
+    text-align: center;
+
+    a {
+      color: #AEB2B5;
+    }
+  }
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+
+  li {
+    margin-right: rem(15);
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      display: block;
+      background: url("../img/icons/social-sprite.svg") no-repeat 0 0 / rem(100);
+      
+      &.fb {
+        background-position: rem(3) 0;
+        width: rem(20);
+        padding-top: 125%;
+      }
+
+      &.ig {
+        width: rem(29);
+        padding-top: 100%;
+        background-position: rem(-28) 0;
+      }
+
+      &.be {
+        width: rem(29);
+        padding-top: 100%;
+        background-position: rem(-71) 0;
+      }
+    }
+  }
+}
+

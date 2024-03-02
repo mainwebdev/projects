@@ -1,0 +1,60 @@
+.header {
+  width: 100%;
+  z-index: 100;
+  background-color: #fff;
+  box-shadow: 0 0 40px 0 rgba(0,0,0,.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  padding: 1rem 0;
+  .header_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .logo {
+      margin-right: 25%;
+      width: 6.334rem;
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+    .header_menu {
+      max-width: 64rem;
+      width: 100%;
+      ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        a {
+          font-family: $title-font;
+          font-size: 2rem;
+          color: $menu-color;
+          transition: 0.3s;
+          &:hover{
+              color: $menu-active;
+          }
+        }
+      }
+    }
+    .soc_icons {
+      ul {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        li {
+          // margin: 2rem;
+          a {
+            margin-left: 1rem;
+            font-size: 3.5rem;
+            color: #8ed51a;
+          }
+        }
+      }
+    }
+  }
+}

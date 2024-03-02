@@ -1,0 +1,101 @@
+@import "_media";
+/*-------------- header --------------*/
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: rem($header-h);
+  z-index: 10;
+
+  @include desktop-lg() {
+    height: rem($header-h-sm);
+  }
+
+  @include tablets() {
+    height: rem($header-h-m);
+  }
+
+  &[data-show-menu="true"] {
+    .mob-menu {
+      transform: translate3d(0, 100%, 0);
+    }
+
+    .mob-burger__inner {
+      &::before {
+        left: 4px;
+        top: -3px;
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        left: 4px;
+        bottom: -3px;
+        transform: rotate(-45deg);
+      }
+    }
+
+    .header__logo-mob {
+      fill: $white;
+    }
+
+    .mob-burger__inner {
+      &::before,
+      &::after {
+        background-color: $white;
+      }
+    }
+  }
+
+  &__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    @include tablets() {
+      position: relative;
+    }
+  }
+
+  &__logo {
+    width: 100%;
+    max-width: rem(267);
+    margin-right: auto;
+
+    img {
+      width: 100%;
+    }
+
+    &-desk {
+      @include tablets() {
+        display: none;
+      }
+    }
+
+    &-mob {
+      fill: $black;
+      display: none;
+
+      @include tablets() {
+        display: block;
+      }
+    }
+  }
+
+  &__nav {
+    // margin-right: rem(160);
+
+    @include tablets() {
+      display: none;
+    }
+  }
+
+  &__lang {
+    @include tablets() {
+      display: none;
+    }
+  }
+
+}
+

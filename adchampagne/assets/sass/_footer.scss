@@ -1,0 +1,166 @@
+@import "_media";
+/*-------------- footer --------------*/
+.footer {
+  padding: rem(148) 0 rem(64);
+  background: $black;
+  color: $Ghost;
+
+  @include tablets() {
+    padding: rem(65) 0 rem(75);
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    @include tablets() {
+      flex-direction: column;
+    }
+  }
+
+  &__left {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    margin-right: rem(260);
+
+    @include desktop() {
+      margin-right: rem(160);
+    }
+
+    @include desktop-sm() {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-right: rem(100);
+    }
+
+    @include tablets() {
+      align-items: center;
+      margin-right: 0;
+      margin-bottom: rem(40);
+    }
+  }
+
+  &__right {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include tablets() {
+      flex-direction: column;
+    }
+  }
+
+  &__logo {
+    @include desktop-sm() {
+      margin-bottom: rem(30);
+    }
+
+    &-ico {
+      fill: $Ghost;
+      width: rem(30);
+      height: rem(32);
+    }
+  }
+
+  &__copyright {
+    position: relative;
+    margin-left: rem(78);
+
+    @include desktop-sm() {
+      margin-left: 0;
+    }
+
+    &-text {
+      @include fz(16, 24);
+      @include tablets() {
+        text-align: center;
+        margin-bottom: rem(16);
+      }
+    }
+
+    &-bottom {
+      position: absolute;
+      top: calc(100% + #{rem(34)});
+      left: 0;
+      display: flex;
+      align-items: center;
+
+      @include tablets() {
+        position: static;
+      }
+
+      a {
+        color: inherit;
+        opacity: 0.4;
+        font-weight: normal;
+        @include fz(14, 17);
+        display: block;
+        white-space: nowrap;
+        text-decoration: none;
+        transition: opacity $hover-dur;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        & + a {
+          margin-left: rem(15);
+        }
+      }
+    }
+  }
+
+  &__nav {
+    @include tablets() {
+      margin-bottom: rem(55);
+    }
+
+    ul {
+      li {
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &__lang {
+    @include tablets() {
+      margin-bottom: rem(55);
+    }
+  }
+
+  &__bottom {
+    margin-top: rem(70);
+    padding-left: rem(110);
+
+    @include desktop-sm() {
+      padding-left: 0;
+    }
+
+    @include tablets() {
+      margin-top: rem(60);
+    }
+  }
+
+  &__address {
+    color: inherit;
+    @include fz(16, 24);
+    text-align: left;
+    display: block;
+    width: 100%;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: rem(1.5);
+
+    @include tablets() {
+      margin: 0 auto;
+      text-align: center;
+      max-width: rem(500);
+    }
+  }
+}
+

@@ -1,0 +1,84 @@
+{
+  "status": 200,
+  "result": {
+    "projects": [
+      {
+        "id": "34qct",
+        "title": "Service of the future",
+        "type": "Branding",
+        "image": "assets/img/images/project-1.jpg",
+        "link": "https://some_project.com/"
+      },
+      {
+        "id": "456ca",
+        "title": "Izmeni Soznanie",
+        "type": "Design, Development",
+        "image": "assets/img/images/project-2.jpg",
+        "link": "https://some_project.com/"
+      },
+      {
+        "id": "546ba",
+        "title": "Service of the future",
+        "type": "Branding",
+        "image": "assets/img/images/project-3.jpg",
+        "link": "https://some_project.com/"
+      },
+      {
+        "id": "487fd",
+        "title": "Izmeni Soznanie",
+        "type": "Design, Development",
+        "image": "assets/img/images/project-4.jpg",
+        "link": "https://some_project.com/"
+      },
+      {
+        "id": "dfs80",
+        "title": "Service of the future",
+        "type": "Branding",
+        "image": "assets/img/images/project-5.jpg",
+        "link": "https://some_project.com/"
+      },
+      {
+        "id": "n3ds5",
+        "title": "Izmeni Soznanie",
+        "type": "Design, Development",
+        "image": "assets/img/images/project-6.jpg",
+        "link": "https://some_project.com/"
+      },
+      {
+        "id": "1342re",
+        "title": "Service of the future",
+        "type": "Branding",
+        "image": "assets/img/images/project-7.jpg",
+        "link": "https://some_project.com/"
+      },
+      {
+        "id": "487fd",
+        "title": "Izmeni Soznanie",
+        "type": "Design, Development",
+        "image": "assets/img/images/project-8.jpg",
+        "link": "https://some_project.com/"
+      },
+      {
+        "id": "dfs80",
+        "title": "Service of the future",
+        "type": "Branding",
+        "image": "assets/img/images/project-9.jpg",
+        "link": "https://some_project.com/"
+      },
+      {
+        "id": "n3ds5",
+        "title": "Izmeni Soznanie",
+        "type": "Design, Development",
+        "image": "assets/img/images/project-10.jpg",
+        "link": "https://some_project.com/"
+      },
+      {
+        "id": "1342re",
+        "title": "Service of the future",
+        "type": "Branding",
+        "image": "assets/img/images/project-11.jpg",
+        "link": "https://some_project.com/"
+      }
+    ]
+  }
+}

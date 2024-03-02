@@ -1,0 +1,181 @@
+/*-------------- contacts --------------*/
+.contacts {
+  padding-top: 200px;
+
+  @include tablets() {
+    padding-top: 100px;
+  }
+
+  &__body {
+    // width: 60%;
+    // margin-left: auto;
+    margin-left: 31.25%;
+    margin-bottom: 300px;
+
+    @include laptop() {
+      margin-left: 0;
+    }
+
+    @include tablets() {
+      margin-bottom: 150px;
+    }
+
+    .section-title {
+      margin-bottom: 160px;
+
+      @include tablets() {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  &__content {
+    margin-bottom: 240px;
+
+    @include laptop() {
+      margin-bottom: 140px;
+    }
+
+    @include tablets() {
+      margin-bottom: 70px;
+    }
+
+    .col,
+    .col-1 {
+      vertical-align: top;
+      margin-bottom: 60px;
+
+      @include tablets() {
+        margin-bottom: 30px;
+      }
+    }
+
+    .col-1 {
+      width: 45.5%;
+      padding-right: 10px;
+
+      @include laptop() {
+        width: 50%;
+      }
+
+      @include tablets() {
+        width: 100%;
+        padding-right: 0;
+      }
+    }
+
+    p {
+      color: #A6A6A6;
+      margin-bottom: 10px;
+
+      &+a {
+        margin-right: 40px;
+
+        @include laptop() {
+          display: block;
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    a {
+      display: inline-block;
+    }
+
+    h2 {
+      &+a {
+        color: #000;
+        margin-top: 10px;
+        font-size: 13px;
+        line-height: 18px;
+      }
+    }
+  }
+
+  &__form {
+    width: 100%;
+    max-width: 285px;
+
+    @include tablets() {
+      max-width: 100%;
+    }
+
+    label {
+      display: block;
+      width: 100%;
+      margin-bottom: 30px;
+      position: relative;
+
+      .placeholder {
+        pointer-events: none;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        font-size: 13px;
+        line-height: 18px;
+        color: #A6A6A6;
+        transition: all 0.2s;
+      }
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      outline: none;
+      border: 0;
+      padding: 10px 0;
+      color: #000000;
+      font-family: 'tt_hoves_regular', sans-serif;
+      font-size: 13px;
+      line-height: 18px;
+      border-bottom: 1px solid #A6A6A6;
+      background-color: transparent;
+
+      &:focus {
+        &+.placeholder {
+          opacity: 0;
+        }
+      }
+
+      &::-webkit-input-placeholder {
+        color: #A6A6A6;
+      }
+      &::-moz-placeholder {
+        color: #A6A6A6;
+      }
+      &:-ms-input-placeholder {
+        color: #A6A6A6;
+      }
+      &:-moz-placeholder {
+        color: #A6A6A6;
+      }
+    }
+
+    textarea {
+      height: 65px;
+      resize: none;
+      overflow: auto;
+    }
+
+    button {
+      outline: none;
+      cursor: pointer;
+      width: 100%;
+      padding: 0;
+      font-family: 'tt_hoves_regular', sans-serif;
+      font-size: 25px;
+      line-height: 25px;
+      color: #000;
+      background-color: transparent;
+      border: 0;
+      text-align: left;
+      margin-top: 30px;
+
+      @include laptop() {
+        font-size: 20px;
+        line-height: 20px;
+      }
+    }
+  }
+}

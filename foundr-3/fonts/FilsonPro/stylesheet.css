@@ -1,0 +1,35 @@
+
+@font-face {
+    font-family: 'Filson Pro';
+    src: url('FilsonPro-Bold.eot');
+    src: local('Filson Pro Bold'), local('FilsonPro-Bold'),
+        url('FilsonPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('FilsonPro-Bold.woff2') format('woff2'),
+        url('FilsonPro-Bold.woff') format('woff'),
+        url('FilsonPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Filson Pro';
+    src: url('FilsonPro-Medium.eot');
+    src: local('Filson Pro Medium'), local('FilsonPro-Medium'),
+        url('FilsonPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('FilsonPro-Medium.woff2') format('woff2'),
+        url('FilsonPro-Medium.woff') format('woff'),
+        url('FilsonPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Filson Pro';
+    src: url('FilsonPro-Regular.eot');
+    src: url('FilsonPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FilsonPro-Regular.woff2') format('woff2'),
+        url('FilsonPro-Regular.woff') format('woff'),
+        url('FilsonPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

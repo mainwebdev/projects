@@ -1,0 +1,149 @@
+/*-------------- about --------------*/
+.about {
+  padding-top: 200px;
+
+  @include tablets() {
+    padding-top: 80px;
+  }
+
+  &__head {
+    // width: 60%;
+    margin-left: 37.5%;
+    margin-bottom: 300px;
+
+    @include laptop() {
+      margin-bottom: 240px;
+    }
+
+    @include tablets() {
+      width: 100%;
+      margin-bottom: 120px;
+      margin-left: 0;
+    }
+
+    // .section-title {
+    //   margin-bottom: 160px;
+
+    //   @include tablets-min() {
+    //     margin-bottom: 80px;
+    //   }
+    // }
+  }
+
+  &__cover {
+    padding-top: 58.6%;
+    position: relative;
+    overflow: hidden;
+    margin-right: -40px;
+    margin-bottom: 160px;
+
+    @include laptop() {
+      margin-right: -20px;
+    }
+
+    @include tablets() {
+      margin-bottom: 80px;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      font-family: 'object-fit: cover;',serif;
+    }
+  }
+
+  &__desc {
+    font-size: 0;
+
+    .col-1 {
+      vertical-align: top;
+
+      @include laptop() {
+        width: 100%;
+        margin-bottom: 20px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    p {
+      width: 100%;
+      max-width: 285px;
+
+      @include laptop() {
+        max-width: 100%;
+      }
+
+      & + p {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__body {
+    margin-bottom: 140px;
+
+    @include laptop() {
+      margin-bottom: 80px;
+    }
+
+    // @include tablets() {
+    //   margin-bottom: 80px;
+    // }
+
+    .section-title {
+      margin-bottom: 160px;
+      margin-left: 50%;
+
+      @include laptop() {
+        margin-left: 0;
+      }
+
+      @include tablets() {
+        margin-bottom: 80px;
+      }
+    }
+
+    .section-galery__item {
+      &.big {
+        max-width: 50%;
+
+        @include laptop() {
+          max-width: 75%;
+        }
+
+        @include tablets() {
+          max-width: 100%;
+        }
+
+        & > div {
+          padding-top: 160%;
+        }
+      }
+    }
+
+    .section-galery__item {
+      &.small {
+        max-width: 62.5%;
+
+        @include laptop() {
+          max-width: 75%;
+        }
+
+        @include tablets() {
+          max-width: 100%;
+        }
+
+        & > div {
+          padding-top: 84%;
+        }
+      }
+    }
+  }
+}

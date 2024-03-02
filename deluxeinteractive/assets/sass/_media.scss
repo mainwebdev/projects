@@ -1,0 +1,153 @@
+$browser-context: 16; // Default
+
+$desktop-lg: 1439.98px;
+$desktop: 1199.98px;
+$desktop-sm: 991.98px;
+
+$tablets-lg: 899.98px;
+$tablets: 767.98px;
+$tablets-sm: 599.98px;
+
+$phones-lg: 575.98px;
+$phones: 374.98px;
+$phones-sm: 319.98px;
+
+$header-h: 80;
+$header-h-m: 70;
+
+$hover-dur: 0.2s;
+
+// colors
+$black: #000000;
+$white: #ffffff;
+$shark: #1B1B1D;
+
+@function rem($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem;
+}
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+@function lh($lh, $fs) {
+  @return #{$lh/$fs};
+}
+
+/// Replace `$search` with `$replace` in `$string`
+/// @author Hugo Giraudel
+/// @param {String} $string - Initial string
+/// @param {String} $search - Substring to replace
+/// @param {String} $replace ('') - New value
+/// @return {String} - Updated string
+@function str-replace($string, $search, $replace: '') {
+  $string: quote($string);
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+
+  @return unquote($string);
+}
+
+@mixin bg($url) {
+  background: url($url) no-repeat 50%/100%;
+}
+
+@mixin fz($fz, $lh) {
+  font-size: rem($fz);
+  line-height: lh($lh, $fz);
+}
+
+@mixin object-fit($fit: fill, $position: null){
+  -o-object-fit: $fit;
+    object-fit: $fit;
+  @if $position {
+    -o-object-position: $position;
+      object-position: $position;
+    font-family: 'object-fit: #{$fit}; object-position: #{$position}';
+  } @else {
+    font-family: 'object-fit: #{$fit}';
+  }
+}
+
+// IE10+ CSS styles go here
+@mixin target-ie11 {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @content;
+  }
+}
+
+@mixin target-edge {
+  @supports (-ms-ime-align: auto) {
+    @content;
+  }
+}
+
+@mixin target-safari {
+  @media not all and (min-resolution: .001dpcm) {
+    @content;
+  }
+}
+
+//-------------- media --------------
+@mixin desktop-lg {
+  @media screen and (max-width: $desktop-lg) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (max-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin desktop-sm {
+  @media screen and (max-width: $desktop-sm) {
+    @content;
+  }
+}
+
+@mixin tablets-lg {
+  @media screen and (max-width: $tablets-lg) {
+    @content;
+  }
+}
+
+@mixin tablets {
+  @media screen and (max-width: $tablets) {
+    @content;
+  }
+}
+
+@mixin tablets-sm {
+  @media screen and (max-width: $tablets-sm) {
+    @content;
+  }
+}
+
+@mixin phones-lg {
+  @media screen and (max-width: $phones-lg) {
+    @content;
+  }
+}
+
+@mixin phones {
+  @media screen and (max-width: $phones) {
+    @content;
+  }
+}
+
+@mixin phones-sm {
+  @media screen and (max-width: $phones-sm) {
+    @content;
+  }
+}
+
+@mixin custom($prop) {
+  @media screen and (max-width: $prop) {
+    @content;
+  }
+}

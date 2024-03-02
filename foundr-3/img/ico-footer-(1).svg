@@ -1,0 +1,25 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.8">
+<path d="M59 33V62C59 62.553 58.553 63 58 63H6C5.447 63 5 62.553 5 62V33" stroke="white" stroke-width="2"/>
+<path d="M38 37H50L54 33H64" stroke="white" stroke-width="2"/>
+<path d="M0 33H10L14 37H25" stroke="white" stroke-width="2"/>
+<path d="M5 59H59" stroke="white" stroke-width="2"/>
+<path d="M38 31L32 37L26 31" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path d="M32 37V12" stroke="white" stroke-width="2"/>
+<path d="M26 23L20 29L14 23" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path d="M50 23L44 29L38 23" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path d="M12 13H15C17.762 13 20 15.238 20 18V29" stroke="white" stroke-width="2"/>
+<path d="M52 13H49C46.238 13 44 15.238 44 18V29" stroke="white" stroke-width="2"/>
+<path d="M55 38V40C55 40.553 54.553 41 54 41H10C9.447 41 9 40.553 9 40V38" stroke="white" stroke-width="2"/>
+<path d="M4 13H6" stroke="white" stroke-width="2"/>
+<path d="M0 13H2" stroke="white" stroke-width="2"/>
+<path d="M8 13H10" stroke="white" stroke-width="2"/>
+<path d="M58 13H60" stroke="white" stroke-width="2"/>
+<path d="M54 13H56" stroke="white" stroke-width="2"/>
+<path d="M62 13H64" stroke="white" stroke-width="2"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35 51C35 52.656 33.656 54 32 54C30.344 54 29 52.656 29 51C29 49.344 30.344 48 32 48C33.656 48 35 49.344 35 51Z" stroke="white" stroke-width="2"/>
+<path d="M32 0V2" stroke="white" stroke-width="2"/>
+<path d="M32 4V6" stroke="white" stroke-width="2"/>
+<path d="M32 8V10" stroke="white" stroke-width="2"/>
+</g>
+</svg>

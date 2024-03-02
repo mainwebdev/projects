@@ -1,0 +1,38 @@
+.icon {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+  font-style: normal;
+}
+
+.icon-watch {
+  width: rem(51);
+  height: rem(51);
+  background-image: url("../img/icons/watch-white.svg");
+  background-size: rem(50);
+}
+
+.icon-fb {
+  width: rem(24);
+  height: rem(24);
+  background-image: url("../img/icons/fb-primary-ico.svg");
+}
+
+.icon-fb-2 {
+  width: rem(12);
+  height: rem(26);
+  background-image: url("../img/icons/fb-2-primary-ico.svg");
+}
+
+.icon-ig {
+  width: rem(29);
+  height: rem(29);
+  background-image: url("../img/icons/ig-primary-ico.svg");
+}
+
+.icon-be {
+  width: rem(42);
+  height: rem(42);
+  background-image: url("../img/icons/be-primary-ico.svg");
+}

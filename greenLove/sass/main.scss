@@ -1,0 +1,11 @@
+@function rem($size) {
+  $remSize: $size / 16;
+  @return #{$remSize}rem;
+}
+
+@import 'var.scss';
+@import 'common.scss';
+@import 'header.scss';
+@import 'main_block.scss';
+@import 'responsive.scss';
+@import 'video.scss';

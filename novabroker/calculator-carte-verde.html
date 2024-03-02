@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	<meta charset="UTF-8">
+	<title>NOVABROKER</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="libs/select2/select2.min.css">
+	<link rel="stylesheet" href="libs/rangeslider/rangeslider.css">
+	<link rel="stylesheet" href="libs/datepicker/datepicker.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="shortcut icon" href="#" type="image/x-icon">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-86048420-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-86048420-1');
+	</script>
+	<!--Start of Tawk.to Script-->
+	<script>
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+	s1.async=true;
+	s1.src='https://embed.tawk.to/5808bb04d0f23f0cd8db3ad6/default';
+	s1.charset='UTF-8';
+	s1.setAttribute('crossorigin','*');
+	s0.parentNode.insertBefore(s1,s0);
+	})();
+	</script>
+	<!--End of Tawk.to Script-->
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__main">
+				<div class="container">
+					<a href="#" class="menu-btn js-menu-btn">
+						<span class="lines">
+							<span class="line"></span>
+							<span class="line"></span>
+							<span class="line"></span>
+						</span>
+					</a>
+					<a href="index.html" class="logo">
+						<img src="assets/logo-red.svg" alt="">
+					</a>
+					<nav class="header__main-nav">
+						<ul>
+							<li><a href="./faq.html">INFORMAȚII UTILE</a></li>
+							<li><a href="./contacts.html">Contact</a></li>
+						</ul>
+					</nav>
+					<div class="lang">
+						<i><img src="assets/icons/chevron-up.svg" alt=""></i>
+						<span>Ro</span>
+						<ul>
+							<li><a href="#">En</a></li>
+							<li><a href="#">Ru</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="header__bottom">
+				<div class="container">
+					<nav class="header__bottom-nav">
+						<ul>
+							<li><a href="calculator-rca.html">RCA</a></li>
+							<li><a href="calculator-carte-verde.html" class="active">Carte Verde</a></li>
+							<li><a href="calculator-casco.html">CASCO</a></li>
+							<li><a href="calculator-med.html">Asigurare Medicală</a></li>
+							<li><a href="calculator-foreign-car.html">Asigurarea Bunurilor</a></li>
+						</ul>
+					</nav>
+					<span class="header__bottom-tel">
+						<i class="tel-ico">
+							<img src="assets/icons/tel.svg" alt="">
+						</i>
+						<a href="tel:068034340">
+							<span>Contactează-ne</span>
+							<span>068 034 340</span>
+						</a>
+					</span>
+				</div>
+			</div>
+			<div class="mob-menu js-mob-menu">
+				<nav class="header__main-nav">
+					<ul>
+						<li><a href="./faq.html">INFORMAȚII UTILE</a></li>
+						<li><a href="./contacts.html">Contact</a></li>
+					</ul>
+				</nav>
+				<nav class="header__bottom-nav">
+					<ul>
+						<li><a href="calculator-rca.html">RCA</a></li>
+						<li><a href="calculator-carte-verde.html" class="active">Carte Verde</a></li>
+						<li><a href="calculator-casco.html">CASCO</a></li>
+						<li><a href="calculator-med.html">Asigurare Medicală</a></li>
+						<li><a href="calculator-foreign-car.html">Asigurarea Bunurilor</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="calculator-block">
+				<div class="container">
+					<h2 class="section-title">Calculator Carte Verde</h2>
+					<ul class="calculator-steps js-calculator-steps">
+						<li class="active">
+							<span class="calculator-steps__step-num">1</span>
+							<h4 class="calculator-steps__title">Calculează asigurarea</h4>
+							<p class="calculator-steps__desc">Află prețul în <br> calculatorul on-line</p>
+						</li>
+						<li>
+							<span class="calculator-steps__step-num">2</span>
+							<h4 class="calculator-steps__title">Completează datele coducătorilor</h4>
+							<p class="calculator-steps__desc">Indică persoanele care vor <br>utiliza vehicolul în calitate <br>de conducători</p>
+						</li>
+						<li>
+							<span class="calculator-steps__step-num">3</span>
+							<h4 class="calculator-steps__title">Selectează metoda de livrare</h4>
+							<p class="calculator-steps__desc">Asigurarea va fi livrată <br>în scurt timp după <br>achitare</p>
+						</li>
+					</ul>
+					<div class="step-calc-wrap" data-calc="carte-verde">
+
+						<form class="step-form" id="carte-verde-form">
+							<div class="calculator step-calc-1 active preloader-wrap" data-step-calc='1'>
+								<div class="calculator__head">Completați datele asigurării (pasul 1 din 3)</div>
+								<div class="progress-bar">
+									<span class="progress-bar__load-bg" style="width: 15% "></span>
+									<span class="progress-bar__percent">0%</span>
+								</div>
+								<div class="calculator__main">
+									<h4 class="range__title">Selectați zona de asigurare „Carte Verde”</h4>
+									<div class="row">
+										<div class="col w-100">
+											<div class="input-wrap">
+												<div class="checkbox">
+													<input id="radio-2-1" type="radio" name="traveling-area" class="js-traveling-area" value="zone_1" checked>
+													<label for="radio-2-1"><span>Zona de deplasare (1)</span>Ucraina, Belarus</label>
+												</div>
+											</div>
+										</div>
+										<div class="col w-100">
+											<div class="input-wrap">
+												<div class="checkbox">
+													<input id="radio-2-2" type="radio" name="traveling-area" class="js-traveling-area" value="zone_2">
+													<label for="radio-2-2"><span>Zona de deplasare (2)</span>Ucraina, Belarus, Rusia</label>
+												</div>
+											</div>
+										</div>
+										<div class="col w-100">
+											<div class="input-wrap">
+												<div class="checkbox">
+													<input id="radio-2-3" type="radio" name="traveling-area" class="js-traveling-area" value="zone_3">
+													<label for="radio-2-3"><span>Zona de deplasare (3)</span>Toate țările din sistemul „Carte Verde” (Inclusiv Europa)</label>
+												</div>
+											</div>
+										</div>
+		
+										<div class="col w-100 js-insurance-period">
+											<div class="range">
+												<h4 class="range__title">Selectați valabilitatea asigurării</h4>
+												<input name="valabilitatea_asigurarii" class="js-input-range js-internship-persons" type="range" min="0" max="10" step="1" value="0" data-orientation="horizontal" data-rangeslider>
+												<ul class="range__ruler range__ruler-2">
+													<li>
+														<span>15</span>
+														<span>zile</span>
+													</li>
+													<li>
+														<span>1</span>
+														<span>lună</span>
+													</li>
+													<li>
+														<span>2</span>
+														<span>luni</span>
+													</li>
+													<li>
+														<span>3</span>
+														<span>luni</span>
+													</li>
+													<li>
+														<span>4</span>
+														<span>luni</span>
+													</li>
+													<li>
+														<span>5</span>
+														<span>luni</span>
+													</li>
+													<li>
+														<span>6</span>
+														<span>luni</span>
+													</li>
+													<li>
+														<span>7</span>
+														<span>luni</span>
+													</li>
+													<li>
+														<span>8</span>
+														<span>luni</span>
+													</li>
+													<li>
+														<span>9</span>
+														<span>luni</span>
+													</li>
+													<li>
+														<span>12</span>
+														<span>luni</span>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="col w-100">
+											<div class="input-wrap date-wrap">
+												<label>Indicați data emiterii poliței de asigurare</label>
+												<input name="data_contractului_precedent" data-toggle="datepicker" value="">
+											</div>
+										</div>
+		
+										<div class="col w-100">
+											<div class="input-wrap select-wrap">
+												<label>Valabilă din data</label>
+												<select name="valabila_din_data" class="js-select js-select-area-auto js-get-select-value">
+													<option value="0.7">Autoturisme</option>
+													<option value="0.6">Motociclete</option>
+													<option value="1.8">Autocamioane cu masa totală de pînă la 3,5 tone</option>
+													<option value="3">Autocamioane şi autotractoare cu masa totală de peste 3,5 tone</option>
+													<option value="1.7">Autovehicule destinate transportului de persoane cu pînă la 17 </option>
+													<option value="3">Autovehicule destinate transportului de persoane cu peste 17 locuri</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="calculator__cost-wrap center">
+									<div>
+										<p class="calculator__cost">
+											Prețul asigurării ~ <span><span class="js-summ-rca-calc"></span> lei</span>
+										</p>
+										<p class="calculator__cost-info">
+											Calculul asigurării realizat prin intermediul calculatorului online este orientativ.
+										</p>
+									</div>
+								</div>
+								<div class="calculator__footer">
+									<div class="checkbox nbd">
+										<input id="checkbox-5" class="js-allow-next-control" type="checkbox">
+										<label for="checkbox-5">
+											<span class="checkbox-text">
+												Sunt de acord cu <a href="./terms_and_conditions.html" target="_blank">Termeni și Condiții</a>
+											</span>
+										</label>
+									</div>
+									<a href="https://novabroker.md/index.php/carte-verde/" class="btn js-next-step-btn  js-calc-btn">Următorul</a>
+								</div>
+								<div class="preloader">
+									<div class="preloader-content"></div>
+								</div>
+								<div class="error-message">
+									<div class="error-message-content">
+										<h3>Sum Ting a mers prost!!!</h3>
+										<button class="js-error-message-close">închide</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="calculator step-calc-2" data-step-calc='2'>
+								<div class="calculator__head">Completați datele asigurării (pasul 2 din 3)</div>
+								<div class="progress-bar">
+									<span class="progress-bar__load-bg" style="width: 50% "></span>
+									<span class="progress-bar__percent"><span>5</span>0%</span>
+								</div>
+								<div class="calculator__main">
+									<h3 class="calculator__title">Tipul certificatului de înmatriculare</h3>
+									<div class="row">
+										<div class="col w-33">
+											<div class="input-wrap">
+												<div class="radio radio-additionally">
+													<input id="radio-1" type="radio" checked="" name="document-radio" value="Vechi">
+													<label for="radio-1">Vechi</label>
+													<div class="radio__additionally">
+														<img src="assets/images/Old.png" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col w-33">
+											<div class="input-wrap">
+												<div class="radio radio-additionally">
+													<input id="radio-2" type="radio" name="document-radio" value="Nou">
+													<label for="radio-2">Nou</label>
+													<div class="radio__additionally">
+														<img src="assets/images/New.png" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col w-33">
+											<div class="input-wrap">
+												<div class="radio radio-additionally">
+													<input id="radio-3" type="radio" name="document-radio" value="Provizoriu">
+													<label for="radio-3">Provizoriu</label>
+													<div class="radio__additionally">
+														<img src="assets/images/Temporar.png" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col">
+											<div class="input-wrap pos-label js-pos-label selected checkmark">
+												<label>Nr. certificatului de înmatriculare</label>
+												<input name="nr_certificatului" type="text" value="">
+												<!-- <a href="https://novabroker.md/index.php/rca/" class="help-link"></a> -->
+											</div>
+										</div>
+										<div class="col">
+											<div class="input-wrap pos-label js-pos-label selected checkmark">
+												<label>Nr. de înregistrare</label>
+												<input name="nr_de_inregistrare" type="text" value="">
+												<!-- <a href="https://novabroker.md/index.php/rca/" class="help-link"></a> -->
+											</div>
+										</div>
+									</div>
+
+									<h3 class="calculator__title">Date despre Asigurat</h3>
+									<div class="row">
+										<div class="col">
+											<div class="input-wrap pos-label js-pos-label selected">
+												<label>Numele, Prenumele conducătorului</label>
+												<input name="numele_prenumele" type="text" value="">
+											</div>
+										</div>
+										<div class="col">
+											<div class="input-wrap pos-label js-pos-label selected">
+												<label>Posesorul vehiculului</label>
+												<input name="posesorul_vehiculului" type="text" value="">
+											</div>
+										</div>
+										<div class="col">
+											<div class="input-wrap pos-label js-pos-label selected">
+												<label>Codul Personal (IDNP)</label>
+												<input name="codul_personal" type="text" value="">
+												<a href="https://novabroker.md/index.php/carte-verde/" class="help-link"></a>
+											</div>
+										</div>
+										<div class="col">
+											<div class="input-wrap select-wrap">
+												<label>Dreptul de posesiune a atovehiculului</label>
+												<select name="dreptul_de_posesiune_a_atovehiculului" class="js-select">
+													<option selected="">Proprietate proprie</option>
+													<option>Leasing</option>
+													<option>Contract de locațiune</option>
+												</select>
+											</div>
+										</div>
+									</div>
+							
+								</div>
+								<div class="calculator__cost-wrap center">
+									<div>
+										<p class="calculator__cost">
+											Prețul asigurării ~ <span><span class="js-summ-rca-calc"></span> lei</span>
+										</p>
+										<p class="calculator__cost-info">
+											Calculul asigurării realizat prin intermediul calculatorului online este orientativ.
+										</p>
+									</div>
+								</div>
+							
+								<div class="calculator__footer">
+									<a href="https://novabroker.md/index.php/carte-verde/" class="back-link js-prev-step-btn">Înapoi</a>
+									<a href="https://novabroker.md/index.php/carte-verde/" class="btn js-next-step-btn">Următorul Pas</a>
+								</div>
+							</div>
+
+							<div class="calculator step-calc-3" data-step-calc='3'>
+								<div class="calculator__head">Completați datele asigurării (pasul 2 din 3)</div>
+								<div class="progress-bar">
+									<span class="progress-bar__load-bg" style="width: 100% "></span>
+									<span class="progress-bar__percent">100%</span>
+								</div>
+								<div class="calculator__main">
+									<h3 class="calculator__title">Completează livrarea</h3>
+									<div class="row">
+										<div class="col">
+											<div class="input-wrap">
+												<div class="checkbox">
+													<input id="checkbox-6" type="radio" data-type-delivery="delivery" class="js-choice-deliver" name="delivery-type" value="Livrare gratuită">
+													<label for="checkbox-6">Livrare gratuită</label>
+												</div>
+											</div>
+										</div>
+										<div class="col">
+											<div class="input-wrap">
+												<div class="checkbox">
+													<input id="checkbox-7" type="radio" checked="" data-type-delivery="office-pickup" class="js-choice-deliver" name="delivery-type" value="Ridicare de la oficiu">
+													<label for="checkbox-7">Ridicare de la oficiu</label>
+												</div>
+											</div>
+										</div>
+							
+										<div class="col w-100">
+											<div class="input-wrap pos-label js-pos-label selected">
+												<label>Nume, Prenume</label>
+												<input name="nume_prenume" type="text" value="">
+											</div>
+										</div>
+										<div class="col">
+											<div class="input-wrap pos-label js-pos-label selected">
+												<label>Adresa Email</label>
+												<input name="adresa_email" type="email" value="">
+											</div>
+										</div>
+										<div class="col">
+											<div class="input-wrap pos-label js-pos-label selected">
+												<label>Telefon</label>
+												<input name="telefon" type="text" value="">
+											</div>
+										</div>
+										<div class="col w-100 js-delivery-option" data-office-pickup>
+											<div class="input-wrap select-wrap">
+												<label>Alege adresa de ridicare</label>
+												<select name="adresa_de_ridicare" class="js-select-address">
+												</select>
+											</div>
+										</div>
+										<div class="col js-delivery-option" data-delivery>
+											<div class="input-wrap select-wrap">
+												<label>Oraș</label>
+												<select name="oras" class="js-select">
+													<option selected="">Chișinău</option>
+													<option>Chișinău</option>
+												</select>
+											</div>
+										</div>
+										<div class="col js-delivery-option" data-delivery>
+											<div class="input-wrap pos-label js-pos-label selected">
+												<label>Strada</label>
+												<input name="strada" type="text" value="">
+											</div>
+										</div>
+										<div class="col js-delivery-option" data-delivery>
+											<div class="row">
+												<div class="col">
+													<div class="input-wrap pos-label js-pos-label selected">
+														<label>Nr.</label>
+														<input name="nr" type="text" value="">
+													</div>
+												</div>
+												<div class="col">
+													<div class="input-wrap pos-label js-pos-label selected">
+														<label>Blocul</label>
+														<input name="blocul" type="text" value="">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col js-delivery-option" data-delivery>
+											<div class="row">
+												<div class="col">
+													<div class="input-wrap pos-label js-pos-label selected">
+														<label>Scara</label>
+														<input name="scara" type="text" value="">
+													</div>
+												</div>
+												<div class="col">
+													<div class="input-wrap pos-label js-pos-label selected">
+														<label>Apartamentul</label>
+														<input name="apartamentul" type="text" value="">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col js-delivery-option" data-delivery>
+											<div class="input-wrap">
+												<div class="checkbox">
+													<input name="plata_cu_cardul" id="checkbox-8" type="checkbox">
+													<label for="checkbox-8">Plata cu cardul</label>
+												</div>
+											</div>
+										</div>
+										<div class="col js-delivery-option" data-delivery>
+											<div class="input-wrap">
+												<div class="checkbox">
+													<input name="achitare_prin_curier" id="checkbox-9" type="checkbox">
+													<label for="checkbox-9">Achitare prin curier</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="calculator__cost-wrap center">
+									<div>
+										<p class="calculator__cost">
+											Total - <span><span class="js-total-summ-calc">2275</span> lei</span>
+										</p>
+										<p class="calculator__cost-info">
+											Calculul asigurării realizat prin intermediul calculatorului online este orientativ.
+										</p>
+									</div>
+								</div>
+
+								<div class="calculator__footer">
+									<a href="https://novabroker.md/index.php/carte-verde/" class="back-link js-prev-step-btn">Înapoi</a>
+									<button type="submit" class="btn">Plasează comanda</button>
+								</div>
+							</div>
+
+							<div class="calculator step-calc-4" data-step-calc='4'>
+								<div class="calculator__head">Comanda dvs a fost plasată cu succes</div>
+								<div class="calculator__main">
+									<img class="img-succes" src="assets/images/img-succes.png" alt="">
+									<h2 class="calculator__succes-title">Comanda a fost plasată</h2>
+									<p class="calculator__succes-desc">În curând veți fi contactat de consultant pentru confirmare</p>
+								</div>
+							</div>
+						</form>
+
+						<div class="continue-phone js-continue-phone">
+							<a href="https://novabroker.md/index.php/carte-verde/" class="close js-continue-phone-close"><i class="close-ico"><img src="assets/icons/close.svg" alt=""></i></a>
+							<span class="continue-phone__not-time">nu ai timp?</span>
+							<h4 class="continue-phone__title">Continuă comanda prin telefon!</h4>
+							<form action="#">
+								<input class="continue-phone__input" type="text" placeholder="Nr de telefon">
+								<button type="submit" class="btn continue-phone__btn">Comandă <br>în 3-5 minute</button>
+							</form>
+						</div>
+						<div class="phone-order phone-order-succes js-succes-phone">
+							<div class="phone-order-inner">
+								<div class="phone-order-cont">
+									<div class="phone-order-top">
+										<div class="phone-order-ava-wrap">
+											<div class="phone-order-ava">
+												<img src="assets/icons/check-green-round.png" alt="">
+											</div>
+										</div>
+										<div class="phone-order-title">Mulțumim!</div>
+										<div class="phone-order-msg">În curând vei fi contactat de un operator</div>
+
+									</div>
+									<div class="phone-order-bottom">
+										<a href="#" class="phone-order-understand js-continue-phone-close ">Am înțeles</a>
+									</div>
+								</div>
+								<button class="phone-order-close js-continue-phone-close"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ticker-block">
+					<div class="container">
+						<div class="ticker-block__cover">
+							<div class="ticker js-ticker">
+								<div class="ticker__inner">
+									<p class="exchange-index" data-charcode="USD">
+										<span class="exchange-index__currency">USD</span>
+										<span class="exchange-index__name">BNM</span>
+										<span class="exchange-index__value">63,38</span>
+									</p>
+									<p class="exchange-index" data-charcode="EUR">
+										<span class="exchange-index__currency">EUR</span>
+										<span class="exchange-index__name">BNM</span>
+										<span class="exchange-index__value">70,06</span>
+									</p>
+									<p class="exchange-index" data-charcode="RUB">
+										<span class="exchange-index__currency">RUB</span>
+										<span class="exchange-index__name">BNM</span>
+										<span class="exchange-index__value">54,88</span>
+									</p>
+									<p class="exchange-index" data-charcode="RON">
+										<span class="exchange-index__currency">RON</span>
+										<span class="exchange-index__name">BNM</span>
+										<span class="exchange-index__value">63,74</span>
+									</p>
+									<p class="exchange-index" data-charcode="UAH">
+										<span class="exchange-index__currency">UAH</span>
+										<span class="exchange-index__name">BNM</span>
+										<span class="exchange-index__value">70,43</span>
+									</p>
+									<p class="exchange-index" data-charcode="USD">
+										<span class="exchange-index__currency">USD</span>
+										<span class="exchange-index__name">BNM</span>
+										<span class="exchange-index__value">63,38</span>
+									</p>
+									<p class="exchange-index" data-charcode="EUR">
+										<span class="exchange-index__currency">EUR</span>
+										<span class="exchange-index__name">BNM</span>
+										<span class="exchange-index__value">70,06</span>
+									</p>
+									<p class="exchange-index" data-charcode="RUB">
+										<span class="exchange-index__currency">RUB</span>
+										<span class="exchange-index__name">BNM</span>
+										<span class="exchange-index__value">54,88</span>
+									</p>
+									<p class="exchange-index" data-charcode="RON">
+										<span class="exchange-index__currency">RON</span>
+										<span class="exchange-index__name">BNM</span>
+										<span class="exchange-index__value">63,74</span>
+									</p>
+									<p class="exchange-index" data-charcode="UAH">
+										<span class="exchange-index__currency">UAH</span>
+										<span class="exchange-index__name">BNM</span>
+										<span class="exchange-index__value">70,43</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__top">
+					<a href="index.html" class="logo">
+						<img src="assets/logo-gray.svg" alt="">
+					</a>
+					<span class="footer__tel"><a href="tel:068034340">068 034 340</a> Sună acum la </span>
+				</div>
+				<div class="footer__middle">
+					<nav class="footer__nav">
+						<h4 class="footer__nav-title">Despre asigurări</h4>
+						<ul>
+							<li><a href="https://novabroker.md/index.php/carte-verde/">RCA</a></li>
+							<li><a href="https://novabroker.md/index.php/carte-verde/">Carte Verde</a></li>
+							<li><a href="https://novabroker.md/index.php/carte-verde/">CASCO</a></li>
+							<li><a href="https://novabroker.md/index.php/carte-verde/">Medicală peste hotare</a></li>
+							<li><a href="https://novabroker.md/index.php/carte-verde/">Medicală facultativă</a></li>
+							<li><a href="https://novabroker.md/index.php/carte-verde/">Locuință</a></li>
+							<li><a href="https://novabroker.md/index.php/carte-verde/">Bunuri</a></li>
+							<li><a href="https://novabroker.md/index.php/carte-verde/">Răspundere civilă</a></li>
+							<li><a href="https://novabroker.md/index.php/carte-verde/">Viață</a></li>
+							<li><a href="https://novabroker.md/index.php/carte-verde/">Acumulare pentru copii</a></li>
+							<li><a href="https://novabroker.md/index.php/carte-verde/">Fondul de pensii</a></li>
+						</ul>
+					</nav>
+					<nav class="footer__nav">
+						<h4 class="footer__nav-title">Calculatoare</h4>
+						<ul>
+							<li>
+								<a href="http://novabroker.md/calculator-rca.html">RCA</a>
+							</li>
+							<li>
+								<a href="http://novabroker.md/calculator-carte-verde.html">Carte Verde</a>
+							</li>
+							<li>
+								<a href="http://novabroker.md/calculator-casco.html">CASCO</a>
+							</li>
+							<li>
+								<a href="http://novabroker.md/calculator-med.html">Medicală peste hotare</a>
+							</li>
+							<li>
+								<a href="http://novabroker.md/calculator-foreign-car.html">Asigurarea Bunurilor</a>
+							</li>
+							<li>
+								<a href="https://servicii.fisc.md/" target="_blank">Impozit Auto</a>
+							</li>
+						</ul>
+					</nav>
+					<nav class="footer__nav">
+						<h4 class="footer__nav-title">Ajutor</h4>
+						<ul>
+							<li>
+								<a href="https://mpay.gov.md/Services/Service/TFD01" target="_blank">Achitare impozit rutier</a>
+							</li>
+							<li>
+								<a href="./terms_and_conditions.html" title="Termeni și Condiții">Termeni și Condiții</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__bottom">
+					<p class="copyring">&copy; 2006—2020, Nova Broker, All rights reserved</p>
+					<div class="footer__bottom-right">
+						<a href="https://novabroker.md/index.php/carte-verde/" class="maestro-link"><img src="assets/icons/maestro-logo.png" alt=""></a>
+						<a href="https://novabroker.md/index.php/carte-verde/" class="maestro-link"><img src="assets/icons/maestro-logo-2.png" alt=""></a>
+						<a href="https://novabroker.md/index.php/carte-verde/" class="visa-link"><img src="assets/icons/visa-logo.png" alt=""></a>
+						<a href="https://novabroker.md/index.php/carte-verde/" class="visa-link"><img src="assets/icons/visa-logo-2.png" alt=""></a>
+						<div class="lang">
+							<i><img src="assets/icons/chevron-up-white.svg" alt=""></i>
+							<span>Ro</span>
+							<ul>
+								<li><a href="https://novabroker.md/index.php/carte-verde/">En</a></li>
+								<li><a href="https://novabroker.md/index.php/carte-verde/">Ru</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="libs/jquery.min.js"></script>
+	<script src="libs/simplemarquee/jquery.simplemarquee.js"></script>
+	<script src="libs/select2/select2.full.min.js"></script>
+	<script src="libs/rangeslider/rangeslider.min.js"></script>
+	<script src="libs/datepicker/datepicker.min.js"></script>
+	<script src="libs/handlebars/handlebars.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

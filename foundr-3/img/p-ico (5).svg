@@ -1,0 +1,13 @@
+<svg width="64" height="56" viewBox="0 0 64 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M53 1C53 8 48.313 13 45 13C43 13 41 11 41 9C41 5.687 46 1 53 1Z" stroke="#844BEF" stroke-width="2"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M21 9C21 16 25.687 21 29 21C31 21 33 19 33 17C33 13.687 28 9 21 9Z" stroke="#844BEF" stroke-width="2"/>
+<path d="M37 30V9" stroke="#844BEF" stroke-width="2"/>
+<path d="M45 9L39 15C39 15 37 17 37 20" stroke="#844BEF" stroke-width="2"/>
+<path d="M29 17L35 23C35 23 37 25 37 28" stroke="#844BEF" stroke-width="2"/>
+<path d="M26 34C28.563 31.678 32.538 30 37 30C44.732 30 51 34.478 51 40" stroke="#222829" stroke-width="2"/>
+<path d="M13 33H22L33 37H42C43.656 37 45 38.343 45 40C45 41.657 43.656 43 42 43H31C29.344 43 28 44.343 28 46" stroke="#222829" stroke-width="2"/>
+<path d="M44 42L60 37C61.656 37 63 38.343 63 40C63 40.997 62 42 62 42L37 55H35L18 49H14" stroke="#222829" stroke-width="2"/>
+<path d="M10 47H8" stroke="#222829" stroke-width="2"/>
+<path d="M6 47H4" stroke="#222829" stroke-width="2"/>
+<path d="M0 31H12C12.553 31 13 31.447 13 32V50C13 50.553 12.553 51 12 51H0" stroke="#222829" stroke-width="2"/>
+</svg>

@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Neometric';
+    src: url('Neometric-Black.eot');
+    src: url('Neometric-Black.eot?#iefix') format('embedded-opentype'),
+        url('Neometric-Black.woff2') format('woff2'),
+        url('Neometric-Black.woff') format('woff'),
+        url('Neometric-Black.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neometric';
+    src: url('Neometric-Regular.eot');
+    src: url('Neometric-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Neometric-Regular.woff2') format('woff2'),
+        url('Neometric-Regular.woff') format('woff'),
+        url('Neometric-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neometric';
+    src: url('Neometric-Bold.eot');
+    src: url('Neometric-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Neometric-Bold.woff2') format('woff2'),
+        url('Neometric-Bold.woff') format('woff'),
+        url('Neometric-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neometric';
+    src: url('Neometric-BoldItalic.eot');
+    src: url('Neometric-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Neometric-BoldItalic.woff2') format('woff2'),
+        url('Neometric-BoldItalic.woff') format('woff'),
+        url('Neometric-BoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+

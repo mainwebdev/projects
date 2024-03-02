@@ -1,0 +1,133 @@
+.video_content {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  right: 0;
+  width: 440px;
+  height: 1460px;
+  transition: all ease-in-out 0.75s 0s;
+  transform: translate(-50%, 0);
+  .main_block.active & {
+    top: 50%;
+    transform: translate(-50%, -200px);
+  }
+
+  .main_block.inactive & {
+    top: -100%;
+  }
+}
+.video_content_custom {
+  top: -50%;
+  transform: translate(-50%, -26%);
+}
+.video_player {
+  height: 100%;
+}
+
+.main_page .main_block-1,
+.main_page .main_block-2,
+.main_page .main_block-3 {
+  ._title {
+    position: relative;
+    opacity: 0;
+    transition: all ease-in-out 0.4s 1.2s;
+    text-align: center;
+    width: 310px;
+    margin: 0 1.5rem;
+
+    h1 {
+      font-family: $title-font;
+      font-size: 6.6rem;
+      color: $menu-active;
+      line-height: 1;
+    }
+    p {
+      font-family: $title-font;
+      font-size: 5rem;
+      color: $menu-active;
+      opacity: 0.5;
+      line-height: 1;
+      &._title_text1 {
+        text-align: right;
+      }
+      &._title_text2 {
+        text-align: left;
+      }
+    }
+
+    &.left {
+      left: rem(-200);
+      margin-right: 170px;
+
+      & > * {
+        text-align: right;
+      }
+    }
+    &.right {
+      left: rem(200);
+
+      & > * {
+        text-align: left;
+      }
+    }
+    .left,
+    .right {
+      position: relative;
+      transition: all ease-in-out 0.4s 1.2s;
+    }
+    .left {
+      left: rem(-200);
+    }
+    .right {
+      left: rem(200);
+    }
+  }
+
+  &.active {
+    ._title {
+      opacity: 1;
+      transition: all ease-in-out 0.4s 1.2s;
+      left: 0;
+      .left,
+      .right {
+        left: 0;
+        transition: all ease-in-out 0.4s 1.2s;
+      }
+    }
+  }
+
+  &.inactive {
+    ._title {
+      opacity: 0;
+      transition: all ease-in-out 0.4s 0s;
+      &.left {
+        left: rem(-200);
+      }
+      &.right {
+        left: rem(200);
+      }
+      .left {
+        left: rem(-200);
+        transition: all ease-in-out 0.4s 0s;
+      }
+      .right {
+        left: rem(200);
+        transition: all ease-in-out 0.4s 0s;
+      }
+    }
+  }
+}
+
+.main_page .main_block-1 {
+  .main1_content {
+    align-items: flex-start;
+  }
+  ._title {
+    width: auto;
+    top: 15%;
+    text-align: center;
+    p._title_text1 {
+      text-align: center;
+    }
+  }
+}

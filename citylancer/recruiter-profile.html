@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155989268-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-155989268-1');
+	</script>
+	<meta charset="UTF-8">
+	<title>CityLancer - the recruitment marketplace</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" as="style">
+	<link rel="preload" href="libs/material-components-web/material-components-web.min.css" as="style">
+
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+	<link href="libs/material-components-web/material-components-web.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="libs/taggingJS/tag-basic-style.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="shortcut icon" href="img/icons/bottom-logo.png" type="image/png">
+	
+</head>
+<body class="mdc-typography complete-account">
+	
+	<header class="header mdc-top-app-bar js-header-page header-white-bg header-2">
+		<div class="page-container-middle">
+			<div class="mdc-top-app-bar__row">
+				<div class="mdc-top-app-bar__section">
+					<div class="header-left">
+						<a href="index.html" class="logo">
+							
+							<img class="logo__green-ico" src="img/logo_city_lancer__green_.svg" alt="">
+						</a>
+						<ul class="nav">
+							<li><a href="how-it-works.html">How It Works</a></li>
+							<li><a href="help-center.html">Help Center</a></li>
+							<li><a href="about.html">About Us</a></li>
+	
+						</ul>
+					</div>
+					<div class="side-menu__head-profile-wrap js-user-menu">
+						<a href="#" class="side-menu__head-profile">
+							<div class="side-menu__head-profile-ico">
+								<img src="img/icons/Log-In-Status-Icon.png" alt="">
+							</div>
+						</a>
+						<div class="head-profile-menu">
+							<div class="head-profile-menu__head">
+								<i class="head-profile-menu__head-ico">
+									<img src="img/icons/Lancer-profile.png" alt="">
+								</i>
+								<p class="head-profile-menu__name">Adrian Filat</p>
+								<p class="head-profile-menu__post">Lancer</p>
+							</div>
+							<div class="head-profile-menu__main">
+								<ul class="profile-user-menu">
+									<li><a href="lancer-profile.html"><i><img src="img/icons/menu-profile.png" alt=""></i> My Profile</a></li>
+									<li><a href="job-board.html"><i><img src="img/icons/menu-jobs.png" alt=""></i> My Jobs</a></li>
+									<li><a href="search-lanser.html"><i><img src="img/icons/menu-search.png" alt=""></i> Search Lancers</a></li>
+									<li><a href="history.html"><i><img src="img/icons/menu-history.png" alt=""></i> Account History</a></li>
+									<li><a href="search-lanser.html"><i><img src="img/icons/lancers-icon.png" alt=""></i> My Lancers</a></li>
+								</ul>
+							</div>
+							<div class="head-profile-menu__action-btn">
+								<a href="#" class="mdc-button mdc-button--unelevated mdc-ripple-upgraded"><span class="mdc-button__ripple"></span>Log Out</a>
+							</div>
+							<div class="head-profile-menu__footer">
+								<p class="head-profile-menu__footer-desc head-profile-menu__footer-terms-privacy"><a href="terms-of-use.html">Terms of use</a>
+									<a href="privacy-policy.html" class="">Privacy Policy</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button js-menu-btn mob-menu-btn">menu</button>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+
+
+	<aside class="mdc-drawer side-menu">
+		<div class="mdc-drawer__content">
+			<div class="side-menu__head-profile">
+				<img src="img/icons/Lancer-profile.png" alt="">
+				<p>Sign In</p>
+			</div>
+			<div class="mdc-menu">
+				<ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
+					<li class="mdc-list-item active" role="menuitem">
+						<a href="#" class="mdc-list-item__text">My Profile</a>
+					</li>
+					<li class="mdc-list-item" role="menuitem">
+						<a href="job-board.html" class="mdc-list-item__text">My Jobs</a>
+					</li>
+					<li class="mdc-list-item" role="menuitem">
+						<a href="search-lanser.html" class="mdc-list-item__text">Search Lancers</a>
+					</li>
+					<li class="mdc-list-item" role="menuitem">
+						<a href="history.html" class="mdc-list-item__text">Account History</a>
+					</li>
+					<li class="mdc-list-item" role="menuitem">
+						<a href="how-it-works.html" class="mdc-list-item__text">How It Works</a>
+					</li>
+					<li class="mdc-list-item" role="menuitem">
+						<a href="help-center.html" class="mdc-list-item__text">Help Center</a>
+					</li>
+					<li class="mdc-list-item" role="menuitem">
+						<a href="about.html" class="mdc-list-item__text">About Us</a>
+					</li>
+					
+
+				</ul>
+			</div>
+		</div>
+	</aside>
+
+	<div class="overlay"></div>
+	
+
+	<div class="page-container bg-gray pb-70">
+
+
+		<div class="main-content">
+			<!-- <div class="system-message">
+				<div class="page-container-small">
+					<h6 class="system-message__title">Your CityLancer profile has been verified and is now active</h6>
+				</div>
+			</div> -->
+
+			<div class="page-container-small">
+				
+				<div class="account-form main-content__form profile-form profile-form-recruiter">
+					<h1 class="page-title">Complete your profile</h1>
+					<div class="account-form__section">
+						<div class="account-form__section-head">
+							<h4 class="account-form__title"> <i class="account-form__title-num">1</i> User Information</h4>
+							<p class="account-form__incomplete">Incomplete</p>
+							
+						</div>
+				
+						
+						<div class="mdc-text-field text-field mdc-text-field--outlined mdc-text-field--with-trailing-icon">
+							<input type="text" class="mdc-text-field__input" value="Adrian">
+							<div class="mdc-notched-outline mdc-notched-outline--upgraded">
+								<div class="mdc-notched-outline__leading"></div>
+								<div class="mdc-notched-outline__notch">
+									<label class="mdc-floating-label">First Name <i>*</i></label>
+								</div>
+								<div class="mdc-notched-outline__trailing"></div>
+							</div>
+						</div>
+						<div class="mdc-text-field text-field mdc-text-field--outlined text-field-non-green">
+							<input type="text" class="mdc-text-field__input" value="Filat">
+							<div class="mdc-notched-outline mdc-notched-outline--upgraded">
+								<div class="mdc-notched-outline__leading"></div>
+								<div class="mdc-notched-outline__notch">
+									<label class="mdc-floating-label">Last Name <i>*</i></label>
+								</div>
+								<div class="mdc-notched-outline__trailing"></div>
+							</div>
+						</div>
+						<div class="mdc-text-field text-field mdc-text-field--outlined text-field-non-green">
+							<input type="text" class="mdc-text-field__input" value="HR Consulting">
+							<div class="mdc-notched-outline mdc-notched-outline--upgraded">
+								<div class="mdc-notched-outline__leading"></div>
+								<div class="mdc-notched-outline__notch">
+									<label class="mdc-floating-label">Company</label>
+								</div>
+								<div class="mdc-notched-outline__trailing"></div>
+							</div>
+						</div>
+
+
+						<div class="mdc-text-field text-field mdc-text-field--outlined text-field-non-green">
+							<input type="text" class="mdc-text-field__input" value="adrian.filat@hr.com">
+							<div class="mdc-notched-outline mdc-notched-outline--upgraded">
+								<div class="mdc-notched-outline__leading"></div>
+								<div class="mdc-notched-outline__notch">
+									<label class="mdc-floating-label">Email address</label>
+								</div>
+								<div class="mdc-notched-outline__trailing"></div>
+							</div>
+						</div>
+
+						<div class="mdc-text-field text-field mdc-text-field--outlined text-field-non-green">
+							<input type="text" class="mdc-text-field__input js-phone-mask" value="+1(586)-987-7962">
+							<div class="mdc-notched-outline mdc-notched-outline--upgraded">
+								<div class="mdc-notched-outline__leading"></div>
+								<div class="mdc-notched-outline__notch">
+									<label class="mdc-floating-label">Phone Number</label>
+								</div>
+								<div class="mdc-notched-outline__trailing"></div>
+							</div>
+						</div>
+
+					</div>
+
+
+					<div class="account-form__section">
+						<div class="account-form__section-head">
+							<h4 class="account-form__title"> <i class="account-form__title-num">2</i> Recruiter settings</h4>
+						</div>
+
+
+						<div class="mdc-select mdc-text-field--outlined mdc-text-field--with-trailing-icon text-field-non-green">
+							<div class="mdc-select__anchor mdc-ripple-upgraded">
+								<i class="mdc-select__dropdown-icon"></i>
+								<div class="mdc-select__selected-text"></div>
+								<span class="mdc-floating-label">Type of Recruitment Company</span>
+							</div>
+
+							<div class="mdc-select__menu mdc-menu mdc-menu-surface js-switch-agency-commission-slide">
+								<ul class="mdc-list">
+									<li class="mdc-list-item mdc-list-item--selected" data-value="Company_1">
+										Company_1
+									</li>
+									<li class="mdc-list-item js-show-slide-agency-commission" data-value="Recruitment Agency">
+										Recruitment Agency
+									</li>
+									<li class="mdc-list-item" data-value="Internal HR Department">
+										Internal HR Department
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- <div class="message-db-wrap message-db-wrap-pos1">
+							<div class="mdc-select mdc-text-field--outlined mdc-text-field--with-trailing-icon text-field-non-green">
+								<div class="mdc-select__anchor mdc-ripple-upgraded">
+									<i class="mdc-select__dropdown-icon"></i>
+									<div class="mdc-select__selected-text"></div>
+									<span class="mdc-floating-label">Default referral fee ($)</span>
+								</div>
+	
+								<div class="mdc-select__menu mdc-menu mdc-menu-surface">
+									<ul class="mdc-list">
+										<li class="mdc-list-item mdc-list-item--selected" data-value="0" aria-selected="true">
+											0
+										</li>
+										<li class="mdc-list-item" data-value="250">
+											250
+										</li>
+										<li class="mdc-list-item" data-value="500">
+											500
+										</li>
+										<li class="mdc-list-item" data-value="1000">
+											1000
+										</li>
+										<li class="mdc-list-item" data-value="1500">
+											1500
+										</li>
+										<li class="mdc-list-item" data-value="2000">
+											2000
+										</li>
+									</ul>
+								</div>
+							</div>
+						
+							<div class="message-db show">
+								<h4 class="message-db__title">Message from DB</h4>
+								<p class="message-db__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit </p>
+								<div class="message-db__btns-wrap">
+									<a href="#" class="message-db__help-link">Help</a>
+									<a href="#"class="mdc-button mdc-button--unelevated message-db__ok-btn"><span class="mdc-button__ripple"></span> Ok</a>
+								</div>
+							</div>
+						</div> -->
+
+						<!-- <p class="profile-form-desc">Please enter at least one value</p> -->
+
+						<div class="slider-displayability-wrap active">
+							<div class="slider-displayability show" id="agency-commission-slide">
+								<div class="mdc-slider-wrap message-db-wrap" >
+									<label for="" class="mdc-slider-title">Default Referral Fee</label>
+
+									<div class="mdc-slider-cover">
+										<div class="mdc-slider mdc-slider--discrete mdc-slider--points" tabindex="0" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="40"aria-label="Select Value">
+											<div class="mdc-slider__track-container">
+												<div class="mdc-slider__track"></div>
+											</div>
+											<!-- <div class="mdc-slider__track-point-wrap">
+												<div class="mdc-slider__track-point"></div>
+												<div class="mdc-slider__track-point"></div>
+												<div class="mdc-slider__track-point"></div>
+												<div class="mdc-slider__track-point"></div>
+												<div class="mdc-slider__track-point"></div>
+												<div class="mdc-slider__track-point"></div>
+												<div class="mdc-slider__track-point"></div>
+												<div class="mdc-slider__track-point"></div>
+												<div class="mdc-slider__track-point"></div>
+												<div class="mdc-slider__track-point"></div>
+												<div class="mdc-slider__track-point"></div>
+											</div> -->
+											<div class="mdc-slider__thumb-container">
+												<div class="mdc-slider__pin">
+													<span class="mdc-slider__pin-value-marker"></span>
+													<span class="mdc-slider__pin-value-marker mdc-slider__pin-value-marker--fake"></span>
+												</div>
+												<svg class="mdc-slider__thumb" width="36" height="36">
+													<circle cx="18" cy="18" r="15"></circle>
+												</svg>
+												<div class="mdc-slider__focus-ring"></div>
+											</div>
+										</div>
+										<!-- show -->
+										<div class="message-db ">
+											<h4 class="message-db__title">Message from DB</h4>
+											<p class="message-db__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit </p>
+											<div class="message-db__btns-wrap">
+												<a href="#" class="message-db__help-link">Help</a>
+												<a href="#"class="mdc-button mdc-button--unelevated message-db__ok-btn"><span class="mdc-button__ripple"></span> Ok</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="slider-displayability-bottom">
+								<div class="slider-displayability-action slider-displayability-action--default">
+									<div class="slider-displayability-action-top">
+										Your net revenue <span class="color-green">$11,500</span>
+									</div>
+									<div class="slider-displayability-action-bottom">
+										For 90 days period, $650/day contract rate
+									</div>
+								</div>
+								<div class="slider-displayability-footer">
+									<div class="slider-displayability-footer__col">
+										<div class="slider-displayability-footer__item large">
+											Referral Fee <span>$2000</span>
+										</div>
+										<div class="slider-displayability-footer__item">
+											Goes to accepted candidates
+										</div>
+									</div>
+									<div class="slider-displayability-footer__col">
+										<div class="slider-displayability-footer__item large">
+											Your revenue <span>$13,500</span>
+										</div>
+										<div class="slider-displayability-footer__item">
+											Period <span>90 days</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="slider-displayability-wrap active">
+							<div class="slider-displayability show" id="agency-commission-slide">
+								<div class="mdc-slider-wrap message-db-wrap" >
+									<label for="" class="mdc-slider-title">Average Commission Earned (%)</label>
+	
+									<div class="mdc-slider-cover">
+										<div class="mdc-slider mdc-slider--discrete" tabindex="0" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"aria-label="Select Value">
+											<div class="mdc-slider__track-container">
+												<div class="mdc-slider__track"></div>
+											</div>
+											<div class="mdc-slider__thumb-container">
+												<div class="mdc-slider__pin">
+													<span class="mdc-slider__pin-value-marker"></span>
+												</div>
+												<svg class="mdc-slider__thumb" width="36" height="36">
+													<circle cx="18" cy="18" r="15"></circle>
+												</svg>
+												<div class="mdc-slider__focus-ring"></div>
+											</div>
+										</div>
+										<!-- <p class="mdc-slider-val">50</p> -->
+										<!-- show -->
+										<div class="message-db ">
+											<h4 class="message-db__title">Message from DB</h4>
+											<p class="message-db__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit </p>
+											<div class="message-db__btns-wrap">
+												<a href="#" class="message-db__help-link">Help</a>
+												<a href="#"class="mdc-button mdc-button--unelevated message-db__ok-btn"><span class="mdc-button__ripple"></span> Ok</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- <p class="profile-form-desc">Please enter at least one value</p> -->
+							</div>
+
+							<div class="slider-displayability-bottom">
+								<div class="slider-displayability-action">
+									<div class="slider-displayability-action-top">
+										Your net revenue <span class="color-green">$30,0000</span>
+									</div>
+									<div class="slider-displayability-action-bottom">
+										From <span>$100.000</span> salary
+									</div>
+								</div>
+								<div class="slider-displayability-footer">
+									<div class="slider-displayability-footer__col">
+										<div class="slider-displayability-footer__item large color-green">
+											Your commission <span>40%</span>
+										</div>
+										<div class="slider-displayability-footer__item">
+											Candidate receives from it <span>25%</span>
+										</div>
+									</div>
+									<div class="slider-displayability-footer__col">
+										<div class="slider-displayability-footer__item large">
+											Your revenue <span>$40,000</span>
+										</div>
+										<div class="slider-displayability-footer__item">
+											Candidate earns <span>$10.000</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="profile-btn-wrap">
+						<button class="mdc-button mdc-button--unelevated mdc-button-save mdc-button-save--white"><span class="mdc-button__ripple"></span>Save</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="bottom-content light-bt bottom-content-2">
+		<div class="page-container-small">
+			<div class="mdc-grid-list custom-grid-list">
+				<ul class="mdc-grid-list__tiles">
+					<li class="mdc-grid-tile">
+						<a href="index.html" class="top-link">Home</a>
+						<a href="index.html" class="bottom-link">Homepage</a>
+					</li>
+					<li class="mdc-grid-tile">
+						<a href="about.html" class="top-link">About</a>
+						<a href="about.html" class="bottom-link">About Us</a>
+						
+					</li>
+					<li class="mdc-grid-tile">
+						<a href="help-center.html" class="top-link">Support</a>
+						<a href="help-center.html" class="bottom-link">Help Center</a>
+			
+					</li>
+					<li class="mdc-grid-tile">
+						<a href="how-it-works.html" class="top-link">The Process</a>
+						<a href="how-it-works.html" class="bottom-link">How it works</a>
+						
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer footer-2">
+		<div class="page-container-small">
+			<div class="logo-wrap">
+				<div class="footer-logo">
+					<img src="img/icons/bottom-logo.png" alt="">
+				</div>
+				<div class="copyright">
+					© Copyright 2020 CITYLANCER.APP All Rights Reserved.
+				</div>
+			</div>
+			<ul class="footer-links">
+				<li>
+					<a href="contact-us.html" class="footer-link">Contact Us</a>
+				</li>
+				<li>
+					<a href="terms-of-use.html" class="footer-link">Terms of use</a>
+				</li>
+				<li>
+					<a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<div class="cookies-block hide">
+		<div class="page-container-small">
+			<h6 class="cookies-block__title">About our cookies</h6>
+			<p class="cookies-block__desc">This site uses cookies to improve your navigation experience and to collect information on the way the site is used. By continuing to navigate this site, you implicitly accept our use of cookies. You may disable cookies with your browser settings. Find out more <a href="terms-of-use.html">here</a></p>
+			<a href="#" class="cookies-close js-cookies-close"></a>
+		</div>
+	</div>
+	
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="libs/material-components-web/material-components-web.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+	<script src="libs/taggingJS/tagging.min.js"></script>
+	<script src="libs/maskedinput/src/jquery.maskedinput.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

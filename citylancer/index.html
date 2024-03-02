@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155989268-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-155989268-1');
+	</script>
+	<meta charset="UTF-8">
+	<title>CityLancer - the recruitment marketplace</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" as="style">
+	<link rel="preload" href="libs/material-components-web/material-components-web.min.css" as="style">
+
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+	<link href="libs/material-components-web/material-components-web.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="shortcut icon" href="img/icons/bottom-logo.png" type="image/png">
+	
+</head>
+
+<body class="mdc-typography">
+	
+	<header class="header mdc-top-app-bar js-header-page header-white-bg header-2">
+		<div class="page-container-middle">
+			<div class="mdc-top-app-bar__row">
+				<div class="mdc-top-app-bar__section">
+					<div class="header-left">
+						<a href="index.html" class="logo">
+							
+							<img class="logo__green-ico" src="img/logo_city_lancer__green_.svg" alt="">
+						</a>
+						<ul class="nav">
+							<li><a href="how-it-works.html">How It Works</a></li>
+							<li><a href="help-center.html">Help Center</a></li>
+							<li><a href="about.html">About Us</a></li>
+						</ul>
+					</div>
+					<div class="side-menu__head-profile-wrap js-user-menu">
+						<a href="#" class="side-menu__head-profile">
+							<div class="side-menu__head-profile-ico">
+								<img src="img/icons/Log-In-Status-Icon.png" alt="">
+							</div>
+						</a>
+						<div class="head-profile-menu">
+							<div class="head-profile-menu__head">
+								<i class="head-profile-menu__head-ico">
+									<img src="img/icons/Lancer-profile.png" alt="">
+								</i>
+								<p class="head-profile-menu__name">some_long_email@gmail.com</p>
+								<p class="head-profile-menu__post">Lancer</p>
+							</div>
+							<div class="head-profile-menu__main">
+								<ul class="profile-user-menu">
+									<li><a href="lancer-profile.html"><i><img src="img/icons/menu-profile.png" alt=""></i> My Profile</a></li>
+									<li><a href="job-board.html"><i><img src="img/icons/menu-jobs.png" alt=""></i> My Jobs</a></li>
+									<li><a href="search-lanser.html"><i><img src="img/icons/menu-search.png" alt=""></i> Search Lancers</a></li>
+									<li><a href="history.html"><i><img src="img/icons/menu-history.png" alt=""></i> Account History</a></li>
+									<li><a href="search-lanser.html"><i><img src="img/icons/lancers-icon.png" alt=""></i> My Lancers</a></li>
+								</ul>
+							</div>
+							<div class="head-profile-menu__action-btn">
+								<a href="#" class="mdc-button mdc-button--unelevated mdc-ripple-upgraded"><span class="mdc-button__ripple"></span>Log Out</a>
+							</div>
+							<div class="head-profile-menu__footer">
+								<p class="head-profile-menu__footer-desc head-profile-menu__footer-terms-privacy"><a href="terms-of-use.html">Terms of Use</a>
+									<a href="privacy-policy.html" class="">Privacy Policy</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button js-menu-btn mob-menu-btn">menu</button>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<aside class="mdc-drawer side-menu">
+		<div class="mdc-drawer__content">
+			<div class="side-menu__head-profile">
+				<img src="img/icons/Lancer-profile.png" alt="">
+				<p>Sign In</p>
+			</div>
+			<div class="mdc-menu">
+				<ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
+					<li class="mdc-list-item active" role="menuitem">
+						<a href="#" class="mdc-list-item__text">My Profile</a>
+					</li>
+					<li class="mdc-list-item" role="menuitem">
+						<a href="job-board.html" class="mdc-list-item__text">My Jobs</a>
+					</li>
+					<li class="mdc-list-item" role="menuitem">
+						<a href="search-lanser.html" class="mdc-list-item__text">Search Lancers</a>
+					</li>
+					<li class="mdc-list-item" role="menuitem">
+						<a href="history.html" class="mdc-list-item__text">Account History</a>
+					</li>
+					<li class="mdc-list-item" role="menuitem">
+						<a href="how-it-works.html" class="mdc-list-item__text">How It Works</a>
+					</li>
+					<li class="mdc-list-item" role="menuitem">
+						<a href="help-center.html" class="mdc-list-item__text">Help Center</a>
+					</li>
+					<li class="mdc-list-item" role="menuitem">
+						<a href="about.html" class="mdc-list-item__text">About Us</a>
+					</li>
+
+
+				</ul>
+			</div>
+		</div>
+	</aside>
+
+	<div class="overlay"></div>
+	
+	<div class="offset-header">
+		<div class="sell-yourself">
+			<div class="page-container-small">
+				<h2 class="sell-yourself__title">Sell yourself <br>for more</h2>
+				<p class="sell-yourself__desc">On the CityLancer skills marketplace for office professionals <br>And get a signup bonus with every new job</p>
+				<a href="#" class="mdc-button mdc-button--unelevated mdc-ripple-upgraded"><span class="mdc-button__ripple"></span>Request an Invite</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="recruitment-block">
+		<div class="page-container-middle">
+
+
+			<div class="recruitment-block__cover">
+				<div class="recruitment-block__img-wrap">
+					<img src="img/images/img-30.png" alt="">
+				</div>
+				<div class="recruitment-block__content">
+					<div class="recruitment-content-slider js-recruitment-content-slider">
+						<div class="slide">
+							<h3 class="recruitment-block__title">Candidate profile</h3>
+							<div class="recruitment-block__desc-block">
+								<span class="recruitment-block__tag">#stay_anonymous</span>
+								<p class="recruitment-block__desc">It takes minutes to create your anonymous Profile with key indicators - location, skills, rates and availability. After verification - you are ready</p>
+							</div>
+							<div class="recruitment-block__desc-block">
+								<span class="recruitment-block__tag">#signup_bonus</span>
+								<p class="recruitment-block__desc">All Candidates shall receive a pre-negotiated Signup bonus from Recruiters on top of the market rate salary</p>
+							</div>
+						</div>
+						<div class="slide">
+							<h3 class="recruitment-block__title">Candidate Radar</h3>
+							<div class="recruitment-block__desc-block">
+								<span class="recruitment-block__tag">#skills_search</span>
+								<p class="recruitment-block__desc">Recruiters source suitable candidates or set conditional search alert for in demand set of skills</p>
+							</div>
+							<div class="recruitment-block__desc-block">
+								<span class="recruitment-block__tag">#personalized_offer</span>
+								<p class="recruitment-block__desc">Each Candidate invite can be personalised with signup bonus type and amount, salary expectations and elevator pitch</p>
+							</div>
+						</div>
+						<div class="slide">
+							<h3 class="recruitment-block__title">Job invitations</h3>
+							<div class="recruitment-block__desc-block">
+								<span class="recruitment-block__tag">#offers</span>
+								<p class="recruitment-block__desc">Lancers receive customized offers from Recruiters. They evaluate them and can accept or counteroffer if they consider it’s appropriate </p>
+							</div>
+							<div class="recruitment-block__desc-block">
+								<span class="recruitment-block__tag">#next_steps</span>
+								<p class="recruitment-block__desc">By Accepting the job invitation, the Lancer reveals their contact details and agrees to collaborate with the Recruiter towards placement </p>
+							</div>
+						</div>
+						<div class="slide">
+							<h3 class="recruitment-block__title">Agreements</h3>
+							<div class="recruitment-block__desc-block">
+								<span class="recruitment-block__tag">#agreement</span>
+								<p class="recruitment-block__desc">Lancers enter into mutually beneficial agreements with the Recruiters based on agreed commission split or signup bonus terms</p>
+							</div>
+							<div class="recruitment-block__desc-block">
+								<span class="recruitment-block__tag">#placement</span>
+								<p class="recruitment-block__desc">Financially motivated Lancers are savvy industry professionals and in most cases outperform job board seekers by great margin</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="how-change">
+		<div class="page-container-small">
+			<div class="how-change__cover">
+				
+				<div class="how-change__content">
+					<h3 class="how-change__title">we change <br>the hiring <br>experience</h3>
+					<div class="how-change__desc-block">
+						<span class="how-change__tag">#candidates</span>
+						<p class="how-change__desc">Signal Recruiters that you’re available. Enter your skills, location and expected salary</p>
+					</div>
+					<div class="how-change__desc-block">
+						<span class="how-change__tag">#offers</span>
+						<p class="how-change__desc">The demand for your skills will drive the job offers</p>
+					</div>
+					<div class="how-change__desc-block">
+						<span class="how-change__tag">#agreement</span>
+						<p class="how-change__desc">Candidates enter into agreements with Recruiters and move to the next steps</p>
+					</div>
+
+				</div>
+				<div class="how-change__img-wrap">
+					<img src="img/images/img-29.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="benefits-block">
+		<div class="page-container-small">
+			<div class="benefits-row">
+				<div class="benefits-number">
+					<p class="benefits-number__num-desc">Up to </p>
+					<p class="benefits-number__num" data-max="5000">$<span class="counter" data-max="5000">0</span></p>
+				</div>
+				<p class="benefits-row__desc">Recruiters save - Candidates gain. Example: A Signup bonus of up to $5000 is a sure way to engage a City professional. When Recruiters save time and money, they can Share these savings with candidates</p>
+			</div>
+			<div class="benefits-row">
+				<div class="benefits-number">
+					<p class="benefits-number__num-desc">Up to </p>
+					<p class="benefits-number__num" data-max="45"><span class="counter" data-max="45">0</span>%</p>
+				</div>
+				<p class="benefits-row__desc">The frantic mating dance between candidates and recruiters is not what we do on CityLancer - We get straight to the point:  - What financial reward will a Lancer get in the event of a job placement? We expect a Candidate with 5+ years of in-demand skills to can get up to 45% Split Fee bonus</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="process-block">
+		<div class="page-container-small">
+			<h3 class="section-title process-block__title mdc-typography mdc-typography--headline3">process</h3>
+			<h4 class="section-subtitle">FOLLOW THESE FIVE SIMPLE STEPS TO GET YOUR NEXT JOB AND A SIGNUP BONUS</h4>
+			<div class="process-steps-wrap">
+				<div class="process-step">
+					<div class="process-step__ico-wrap">
+						<img class="process-step__ico" src="img/icons/process/start-icon.png" alt="">
+					</div>
+					<h4 class="process-step__title">Receive <br>an invite</h4>
+					<p class="process-step__desc">You received your invite. Congratulations! You are in the top 10% of professionals in your field. Follow the link and fill in a short profile</p>
+					<div class="process-step__num"><span>1</span></div>
+				</div>
+				<div class="process-step">
+					<div class="process-step__ico-wrap">
+						<img class="process-step__ico" src="img/icons/process/validate-ico.png" alt="">
+					</div>
+					<h4 class="process-step__title">Profile validation</h4>
+					<p class="process-step__desc">Wait 1-2 business days for the Profile validation to take place. Once approved, your Profile is activated and promoted to recruiters</p>
+					<div class="process-step__num"><span>2</span></div>
+				</div>
+				<div class="process-step">
+					<div class="process-step__ico-wrap">
+						<img class="process-step__ico" src="img/icons/process/offers-ico.png" alt="">
+					</div>
+					<h4 class="process-step__title">Offers & negotiation</h4>
+					<p class="process-step__desc">Review the offers presented by recruiters. Set your own rates for the jobs you like. Negotiate with recruiters and select the best deal </p>
+					<div class="process-step__num"><span>3</span></div>
+				</div>
+				<div class="process-step">
+					<div class="process-step__ico-wrap">
+						<img class="process-step__ico" src="img/icons/process/interview-ico.png" alt="">
+					</div>
+					<h4 class="process-step__title">get the interview</h4>
+					<p class="process-step__desc">Reveal your identity to the recruiter and continue to the interview. Go through the interviewing process and selection rounds</p>
+					<div class="process-step__num"><span>4</span></div>
+				</div>
+				<div class="process-step">
+					<div class="process-step__ico-wrap">
+						<img class="process-step__ico" src="img/icons/process/finish-icon.png" alt="">
+					</div>
+					<h4 class="process-step__title">Get <br>hired</h4>
+					<p class="process-step__desc">Get hired with a better salary and benefits. If you have chosen this option, a charity you support will receive a financial award</p>
+					<div class="process-step__num"><span>5</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="about-block">
+		<div class="page-container-small">
+			<div class="about-row one-about-row">
+				<div class="about-row__img">
+					<img src="img/images/img-20.png" alt="">
+				</div>
+				<img class="about-row__separate-img" src="img/icons/connection.png" alt="">
+				<div class="about-row__content">
+					<h3 class="about-row__title">We are on <br> <span>your side</span></h3>
+					<p class="about-row__desc">Finding a job can sometimes feel like a job in itself. The current process requires a lot of effort and that can take a toll on any job seeker. Industry professionals with a proven track record and up to date skills are welcome to join CityLancer</p>
+					<a href="#" class="mdc-button mdc-button--unelevated mdc-ripple-upgraded" tabindex="0"><span class="mdc-button__ripple"></span>Find Out More</a>
+
+				</div>
+			</div>
+
+			<div class="about-row two-about-row">
+				<div class="about-row__content">
+					<h3 class="about-row__title">We value your <br> <span>time & effort</span></h3>
+					<p class="about-row__desc">Professionals in almost any field can use CityLancer to further their careers with minimal effort. Just tell us when you are ready to switch, where you are comfortable working and how much you think it’s fair in terms of remuneration. </p>
+					<a href="#" class="mdc-button mdc-button--unelevated mdc-ripple-upgraded" tabindex="0"><span class="mdc-button__ripple"></span>Find Out More</a>
+
+				</div>
+				<img class="about-row__separate-img" src="img/icons/connection-reverse.png" alt="">
+				<div class="about-row__img  reverse">
+					<img src="img/images/img-21.png" alt="">
+				</div>
+				
+				
+			</div>
+			<div class="about-row three-about-row">
+				<div class="about-row__img">
+					<img src="img/images/img-22.png" alt="">
+				</div>
+				<img class="about-row__separate-img" src="img/icons/connection.png" alt="">
+				<div class="about-row__content">
+					<h3 class="about-row__title">We respect <br> <span>your privacy</span></h3>
+					<p class="about-row__desc">We highlight the importance of privacy and have made it a cornerstone of our company’s philosophy. We won't break your anonymity and the information you share with us is stays secret. Recruiters and HRs won't know your real identity until you decide when to disclose it yourself. </p>
+					<a href="#" class="mdc-button mdc-button--unelevated mdc-ripple-upgraded" tabindex="0"><span class="mdc-button__ripple"></span>Find Out More</a>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="try-citylancer">
+		<div class="page-container-small">
+			<h2 class="try-citylancer__title">Try citylancer, it’s free</h2>
+
+			<div class="try-citylancer__btns-wrap">
+				<a href="#" class="mdc-button mdc-button--unelevated mdc-ripple-upgraded mdc-button-white" tabindex="0"><span class="mdc-button__ripple"></span>Request an invite</a>
+				<a href="#" class="mdc-button mdc-button--unelevated mdc-ripple-upgraded mdc-button-white-outline" tabindex="0"><span class="mdc-button__ripple"></span>How it works</a>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="bottom-content no-bt bottom-content-2">  
+		<div class="page-container-small">
+			<div class="mdc-grid-list custom-grid-list">
+				<ul class="mdc-grid-list__tiles">
+					<li class="mdc-grid-tile">
+						<a href="index.html" class="top-link">Home</a>
+						<a href="index.html" class="bottom-link">Homepage</a>
+					</li>
+					<li class="mdc-grid-tile">
+						<a href="about.html" class="top-link">About</a>
+						<a href="about.html" class="bottom-link">About Us</a>
+						
+					</li>
+					<li class="mdc-grid-tile">
+						<a href="help-center.html" class="top-link">Support</a>
+						<a href="help-center.html" class="bottom-link">Help Center</a>
+			
+					</li>
+					<li class="mdc-grid-tile">
+						<a href="how-it-works.html" class="top-link">The Process</a>
+						<a href="how-it-works.html" class="bottom-link">How it works</a>
+						
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<footer class="footer footer-2">
+		<div class="page-container-small">
+			<div class="logo-wrap">
+				<div class="footer-logo">
+					<img src="img/icons/bottom-logo.png" alt="">
+				</div>
+				<div class="copyright">
+					© Copyright 2020 CITYLANCER.APP All Rights Reserved.
+				</div>
+			</div>
+			<ul class="footer-links">
+				<li>
+					<a href="contact-us.html" class="footer-link">Contact Us</a>
+				</li>
+				<li>
+					<a href="terms-of-use.html" class="footer-link">Terms of use</a>
+				</li>
+				<li>
+					<a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<div class="cookies-block">
+		<div class="page-container-small">
+			<h6 class="cookies-block__title">About our cookies</h6>
+			<p class="cookies-block__desc">This site uses cookies to improve your navigation experience and to collect information on the way the site is used. By continuing to navigate this site, you implicitly accept our use of cookies. You may disable cookies with your browser settings. Find out more <a href="terms-of-use.html">here</a></p>
+			<a href="#" class="cookies-close js-cookies-close"></a>
+		</div>
+	</div>
+
+	<div class="cookies-block white">
+		<div class="page-container-small">
+			<h6 class="cookies-block__title">Important Update</h6>
+			<p class="coockies-block__subtitle">CityLancer marketplace is adapting to the rapidly changing market conditions.</p>
+			<p class="cookies-block__desc">Dear job-seeker, just a few weeks ago recruiters tried to entice you into above market rate roles with all sorts of perks and bonus. This demand is no longer sustainable.</p>
+			<ul>
+				<li>The market turned into Job driven in a matter of weeks.Employers are in a “wait and see” mode.</li>
+				<li>Your best chance to secure a new job is to get a chanceto show-off your skills.</li>
+				<li>We help you by introducing the "Try Me" option. It indicates you are ready to work as a contractor for 1 week or up to 1 month as a permanent employee on open-ended condition.</li>
+				<li>Your new Employer may terminate your agreement at any time with no penalty during your "break in" period.</li>
+			</ul>
+			<p class="cookies-block__desc">Dear recruiter. We freeze our fees at zero for 1 year. Our skilled candidates need your jobs.</p>
+			<a href="#" class="cookies-close js-cookies-close"></a>
+		</div>
+	</div>
+
+	<!-- <style>
+		.test {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			width: 60px;
+			height: 60px;
+			background: white;
+			border-radius: 50%;
+			box-shadow: 0 0 10px 4px rgba(0,0,0, 0.1);
+			z-index: 100;
+		}
+
+		.test::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 30px;
+			margin-top: -10px;
+			height: 20px;
+			margin-left: -15px;
+			border-radius: 4px;
+			background: #5ebb46;
+		}
+	</style>
+	<div class="test"></div> -->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="libs/material-components-web/material-components-web.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1 63H63V37H1V63Z" stroke="#222829" stroke-width="2" stroke-linejoin="round"/>
+<path d="M40 16H55L63 37" stroke="#222829" stroke-width="2"/>
+<path d="M1 37L9 16H24" stroke="#222829" stroke-width="2"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M46 46V49V51C46 52.656 44.657 54 43 54H21C19.344 54 18 52.657 18 51V46H46Z" stroke="#222829" stroke-width="2"/>
+<path d="M13 50H11" stroke="#222829" stroke-width="2"/>
+<path d="M53 50H51" stroke="#222829" stroke-width="2"/>
+<path d="M23 50H41" stroke="#222829" stroke-width="2"/>
+<path d="M37 0V22H43L32 33L21 22H27V0" stroke="#844BEF" stroke-width="2" stroke-linejoin="round"/>
+<path d="M9 16V34" stroke="#222829" stroke-width="2"/>
+<path d="M55 16V34" stroke="#222829" stroke-width="2"/>
+<path d="M32 23V21" stroke="#222829" stroke-width="2" stroke-linejoin="round"/>
+<path d="M32 19V17" stroke="#222829" stroke-width="2" stroke-linejoin="round"/>
+<path d="M32 15V13" stroke="#222829" stroke-width="2" stroke-linejoin="round"/>
+<path d="M32 11V9" stroke="#222829" stroke-width="2" stroke-linejoin="round"/>
+<path d="M32 7V5" stroke="#222829" stroke-width="2" stroke-linejoin="round"/>
+<path d="M32 3V1" stroke="#222829" stroke-width="2" stroke-linejoin="round"/>
+</svg>

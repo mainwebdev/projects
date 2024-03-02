@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11.82mm" height="21.65mm" viewBox="0 0 33.52 61.37">
+  <defs>
+    <clipPath id="clip-path" transform="translate(0 0)">
+      <rect width="33.52" height="61.38" style="fill: none"/>
+    </clipPath>
+  </defs>
+  <g style="clip-path: url(#clip-path)">
+    <polyline points="1.41 1.41 30.69 30.69 1.41 59.96" style="fill: none;stroke: #5266cc;stroke-miterlimit: 10;stroke-width: 4px"/>
+  </g>
+</svg>

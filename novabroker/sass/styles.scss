@@ -1,0 +1,33 @@
+$browser-context: 16; // Default
+$card_m_hight: 264;
+
+@function rem($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem;
+}
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+@function lh($lh, $fs) {
+  @return #{$lh/$fs};
+}
+
+@mixin ie {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @content;
+  }
+}
+
+
+@import "_fonts";
+@import "_reset";
+@import "_common.scss";
+@import "_header.scss";
+@import "_main.scss";
+@import "_calculator.scss";
+@import "_news.scss";
+@import "_contacts.scss";
+@import "_faq.scss";
+@import "_terms.scss";
+@import "_footer.scss";

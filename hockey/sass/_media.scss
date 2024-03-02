@@ -1,0 +1,65 @@
+$desktop-lg: 1440px;
+$desktop: 1200px;
+$laptop: 1023px;
+$tablets: 768px;
+$tablets-min: 600px;
+$phones: 480px;
+$phones-min: 320px;
+$tranz: 0.3s;
+
+@mixin gilroy {
+  font-family: 'gilroy', sans-serif;
+}
+
+@mixin sports {
+  font-family: 'sports_worldregular', sans-serif;
+}
+
+/*-------------- media --------------*/
+@mixin desktop-lg {
+  @media screen and (max-width: $desktop-lg) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (max-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (max-width: $laptop) {
+    @content;
+  }
+}
+
+@mixin tablets {
+  @media screen and (max-width: $tablets) {
+    @content;
+  }
+}
+
+@mixin tablets-min {
+  @media screen and (max-width: $tablets-min) {
+    @content;
+  }
+}
+
+@mixin phones {
+  @media screen and (max-width: $phones) {
+    @content;
+  }
+}
+
+@mixin phones-min {
+  @media screen and (max-width: $phones-min) {
+    @content;
+  }
+}
+
+@mixin custom($prop) {
+  @media screen and (max-width: $prop) {
+    @content;
+  }
+}

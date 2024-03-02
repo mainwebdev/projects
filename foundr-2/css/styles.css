@@ -1,0 +1,1336 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: "Tiempos Headline"; }
+
+a {
+  text-decoration: none; }
+
+a, input, button, textarea, select {
+  outline: none;
+  cursor: pointer; }
+
+li {
+  list-style-type: none; }
+
+body {
+  font-size: 1em;
+  font-family: "Open Sans R"; }
+
+@media (min-width: 1700px) {
+  html {
+    font-size: 1.2em; } }
+@media (min-width: 2000px) {
+  html {
+    font-size: 1.3em; } }
+@media (min-width: 2400px) {
+  html {
+    font-size: 1.6em; } }
+@media (min-width: 3000px) {
+  html {
+    font-size: 1.8em; } }
+@media (max-width: 1150px) {
+  html {
+    font-size: .75em; } }
+@media (max-width: 900px) {
+  html {
+    font-size: .6em; } }
+@media (max-width: 800px) {
+  html {
+    font-size: .5em; } }
+@media (max-width: 700px) {
+  html {
+    font-size: .4em; } }
+@media (max-width: 520px) {
+  html {
+    font-size: .35em; } }
+@media (max-width: 480px) {
+  html {
+    font-size: .75em; } }
+
+.wrapper {
+  width: 100%; }
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 56.25rem; }
+  @media (max-width: 480px) {
+    .container {
+      padding: 0 1.25rem 0 3.75rem; } }
+
+.container.container-2 {
+  max-width: 58.75rem; }
+
+.container.container-3 {
+  max-width: 64.375rem; }
+
+.container.container-4 {
+  max-width: 68.75rem; }
+
+.btn-big {
+  display: block;
+  cursor: pointer;
+  font-family: "Signika R";
+  text-transform: uppercase;
+  color: #F65116;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0.4375rem 0.4375rem 0 0 #f65116;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: all .15s; }
+  .btn-big:hover {
+    top: 0.4375rem;
+    left: 0.4375rem;
+    box-shadow: 0 0 0 0 #f65116; }
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  align-items: stretch;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  padding-bottom: 2.625rem; }
+  .header .container {
+    position: relative;
+    background-image: url(../img/0/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 2.125rem;
+    background-size: 40.625rem;
+    border-bottom: 0.125rem solid #D8D8D8; }
+    @media (max-height: 700px) and (min-width: 481px) {
+      .header .container {
+        background-size: 31.25rem; } }
+    @media (max-width: 480px) {
+      .header .container {
+        background-size: 75%;
+        background-position: 50% 25%; } }
+  .header .logo {
+    display: block;
+    position: absolute;
+    top: 3.5625rem;
+    left: 3.125rem;
+    width: 6.9375rem; }
+    .header .logo img {
+      display: block;
+      width: 100%; }
+  .header h1 {
+    color: #333;
+    font-size: 2.75rem;
+    font-family: "Signika SB";
+    line-height: 1;
+    position: absolute;
+    bottom: 3.4375rem;
+    left: 3.125rem; }
+    .header h1 span {
+      display: block;
+      font-size: 2.125rem; }
+    @media (max-width: 480px) {
+      .header h1 {
+        width: 23.125rem; } }
+
+.section {
+  padding: 2.625rem 0;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden; }
+  .section-title {
+    display: block;
+    font-family: "Signika SB";
+    font-size: 2.75rem;
+    color: #232323;
+    line-height: 3.875rem;
+    padding-bottom: 0.6875rem; }
+  .section p {
+    font-family: "Open Sans R";
+    font-size: 1rem;
+    color: #232323;
+    line-height: 1.6875rem;
+    margin-bottom: 0.9375rem; }
+    .section p.big-margin {
+      margin-bottom: 7.125rem; }
+    .section p a {
+      color: #F65116; }
+      .section p a:hover {
+        text-decoration: underline; }
+    .section p.par-block {
+      margin-bottom: 1.625rem; }
+    .section p.mb-36 {
+      margin-bottom: 2.25rem; }
+    .section p.mb-60 {
+      margin-bottom: 3.75rem; }
+    .section p.mb-50 {
+      margin-bottom: 3.125rem; }
+    .section p.mb-80 {
+      margin-bottom: 5rem; }
+    .section p.say {
+      font-family: "Open Sans I";
+      padding: 0.3125rem 0.6875rem 0.3125rem 1.25rem;
+      position: relative; }
+      .section p.say::before {
+        content: "";
+        position: absolute;
+        width: 0.3125rem;
+        height: 100%;
+        top: 0;
+        left: 0.375rem;
+        background-color: #E9E9E9;
+        border-radius: 0.15625rem; }
+  .section .text-title {
+    display: block;
+    font-family: "Signika SB";
+    font-size: 2.25rem;
+    margin-bottom: 1.6875rem;
+    position: relative; }
+    .section .text-title-little {
+      display: block;
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem; }
+    .section .text-title.text-title-num {
+      padding-left: 2.5rem; }
+      .section .text-title.text-title-num::before {
+        content: "";
+        width: 2.875rem;
+        height: 2.875rem;
+        border-radius: 50%;
+        background-color: #F65116;
+        color: #fff;
+        font-size: 1.625rem;
+        position: absolute;
+        top: 0;
+        left: -1.4375rem;
+        display: flex;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        align-items: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center; }
+      .section .text-title.text-title-num.num-1::before {
+        content: "1"; }
+      .section .text-title.text-title-num.num-2::before {
+        content: "2"; }
+      .section .text-title.text-title-num.num-3::before {
+        content: "3"; }
+      .section .text-title.text-title-num.num-4::before {
+        content: "4"; }
+      .section .text-title.text-title-num.num-5::before {
+        content: "5"; }
+      .section .text-title.text-title-num.num-6::before {
+        content: "6"; }
+      @media (max-width: 480px) {
+        .section .text-title.text-title-num {
+          padding-left: 3.75rem; }
+          .section .text-title.text-title-num::before {
+            left: 0; } }
+
+.two-sides {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  margin-bottom: 2.6875rem; }
+  .two-sides .left-side,
+  .two-sides .right-side {
+    width: 50%;
+    position: relative; }
+  .two-sides .right-side::after {
+    content: "";
+    display: block;
+    clear: both; }
+  @media (max-width: 480px) {
+    .two-sides {
+      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column; }
+      .two-sides .left-side,
+      .two-sides .right-side {
+        width: 100%; }
+      .two-sides .left-side {
+        margin-bottom: 2.5rem; } }
+
+.img-face,
+.img-face-man {
+  position: absolute;
+  width: 9.1875rem;
+  top: 0;
+  left: 1.875rem; }
+
+.img-face-man {
+  left: 0; }
+
+.img-chart {
+  float: right;
+  width: 25.3125rem;
+  max-width: 100%; }
+
+.img-chart-orange {
+  float: left;
+  width: 25.125rem;
+  max-width: 100%; }
+
+.img-block {
+  display: block;
+  width: 100%;
+  margin: 3.9375rem 0 3rem; }
+
+.orange-brown {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  color: #fff; }
+  .orange-brown .orange-block {
+    width: 46%;
+    background-color: #F65116; }
+    .orange-brown .orange-block__title {
+      font-size: 3.3125rem;
+      line-height: 3.875rem;
+      font-family: "Signika SB"; }
+  .orange-brown .brown-block {
+    width: 54%;
+    background-color: #333333; }
+    .orange-brown .brown-block p {
+      font-size: 1.125rem;
+      line-height: 1.25rem;
+      margin-bottom: 1.3125rem; }
+    .orange-brown .brown-block .fire-list__item {
+      position: relative;
+      padding-left: 1.875rem;
+      font-size: 1.125rem;
+      line-height: 1.8125rem;
+      margin-bottom: 1.5625rem;
+      max-width: 28.125rem;
+      color: #fff; }
+      .orange-brown .brown-block .fire-list__item:before {
+        content: "";
+        width: 0.9375rem;
+        height: 1.1875rem;
+        background-image: url(../img/fire.png);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 0.3125rem;
+        left: 0; }
+  .orange-brown.is-useful .orange-block {
+    height: 20.25rem;
+    padding: 2.9375rem 0 0 15.0625rem; }
+  .orange-brown.is-useful .brown-block {
+    height: 23.1875rem;
+    padding: 2.9375rem 0.625rem 2.5rem 2.1875rem; }
+  .orange-brown.training, .orange-brown.masterclass {
+    position: relative;
+    z-index: 1; }
+    .orange-brown.training .orange-block, .orange-brown.masterclass .orange-block {
+      height: 32.75rem;
+      padding: 4.25rem 5.875rem 1.25rem 2.5rem;
+      display: flex;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      align-items: flex-end;
+      -webkit-box-align: flex-end;
+      -webkit-align-items: flex-end;
+      -ms-flex-align: flex-end; }
+      .orange-brown.training .orange-block .black-title, .orange-brown.masterclass .orange-block .black-title {
+        display: block;
+        font-size: 2rem;
+        margin-bottom: 1.375rem;
+        color: #333;
+        font-family: "Signika R";
+        width: 100%;
+        max-width: 26.25rem; }
+      .orange-brown.training .orange-block .white-title, .orange-brown.masterclass .orange-block .white-title {
+        display: block;
+        font-size: 2.625rem;
+        font-family: "Signika SB";
+        width: 100%;
+        max-width: 26.25rem; }
+    .orange-brown.training .brown-block, .orange-brown.masterclass .brown-block {
+      padding: 2.9375rem 3.25rem 1.25rem;
+      height: 36.1875rem; }
+      .orange-brown.training .brown-block .training-list__row, .orange-brown.masterclass .brown-block .training-list__row {
+        display: flex;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        margin-bottom: 2.6875rem; }
+      .orange-brown.training .brown-block .training-list__item, .orange-brown.masterclass .brown-block .training-list__item {
+        width: 50%;
+        max-width: 17.5rem;
+        color: #fff; }
+      .orange-brown.training .brown-block .training-list__title, .orange-brown.masterclass .brown-block .training-list__title {
+        display: block;
+        font-size: 1.375rem;
+        margin-bottom: 0.875rem;
+        font-family: "Signika SB";
+        text-align: center; }
+      .orange-brown.training .brown-block .training-list__text, .orange-brown.masterclass .brown-block .training-list__text {
+        display: block;
+        font-size: 1rem;
+        line-height: 1.375rem;
+        font-family: "Open Sans R";
+        text-align: center;
+        width: 100%;
+        max-width: 14.75rem;
+        margin: 0 auto; }
+    .orange-brown.training .training-item__img, .orange-brown.masterclass .training-item__img {
+      display: block;
+      width: 4.8125rem;
+      height: 4.8125rem;
+      margin: 0 auto 0.75rem;
+      -webkit-background-size: contain;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 50% 0%; }
+    .orange-brown.training .training-item-1__img, .orange-brown.masterclass .training-item-1__img {
+      background-image: url(../img/list-item-1.png); }
+    .orange-brown.training .training-item-2__img, .orange-brown.masterclass .training-item-2__img {
+      background-image: url(../img/list-item-2.png); }
+    .orange-brown.training .training-item-3__img, .orange-brown.masterclass .training-item-3__img {
+      background-image: url(../img/list-item-3.png); }
+    .orange-brown.training .training-item-4__img, .orange-brown.masterclass .training-item-4__img {
+      background-image: url(../img/list-item-4.png); }
+  .orange-brown.masterclass .orange-block {
+    background-color: #FF7F00; }
+    .orange-brown.masterclass .orange-block .white-title {
+      font-size: 2.1875rem; }
+  .orange-brown.masterclass .par-big {
+    color: #fff;
+    font-size: 1.375rem; }
+  @media (max-width: 480px) {
+    .orange-brown {
+      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column; }
+      .orange-brown .orange-block,
+      .orange-brown .brown-block {
+        width: 100%; }
+      .orange-brown.is-useful .orange-block {
+        padding: 3.125rem 2.5rem;
+        text-align: center;
+        height: auto; }
+        .orange-brown.is-useful .orange-block__title {
+          font-size: 2.75rem;
+          line-height: 3.125rem; }
+      .orange-brown.is-useful .brown-block {
+        height: auto;
+        padding-left: 2.5rem; }
+      .orange-brown.training .orange-block, .orange-brown.masterclass .orange-block {
+        height: auto;
+        padding-bottom: 1.875rem; }
+      .orange-brown.training .brown-block, .orange-brown.masterclass .brown-block {
+        height: auto;
+        padding: 2.5rem 2.5rem; }
+      .orange-brown.training .training-list__item, .orange-brown.masterclass .training-list__item {
+        padding: 0 0.5rem; } }
+
+.chapter-header {
+  padding: 3.75rem 0 3rem; }
+  .chapter-header .container {
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox; }
+    .chapter-header .container > div {
+      width: 50%; }
+  .chapter-header__title {
+    padding-top: 2.5rem; }
+  .chapter-header .chapter {
+    display: inline-block;
+    font-family: "Signika R";
+    padding: 0.25rem 0.5625rem 0.25rem;
+    background-color: #F65116;
+    border-radius: 0.1875rem;
+    color: #fff;
+    margin-bottom: 0.625rem; }
+  .chapter-header .chapter-title {
+    display: block;
+    font-size: 2.6875rem;
+    font-family: "Signika SB"; }
+  @media (max-width: 480px) {
+    .chapter-header {
+      padding-top: 0; }
+      .chapter-header .container {
+        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column; }
+        .chapter-header .container > div {
+          width: 100%; } }
+
+#chapter-1 .chapter-header__img {
+  width: 30.4375rem; }
+  #chapter-1 .chapter-header__img img {
+    width: 100%; }
+
+#chapter-2 .chapter-header__img {
+  width: 36.25rem; }
+  #chapter-2 .chapter-header__img img {
+    width: 100%; }
+
+#chapter-3 .chapter-header__title {
+  width: 33%; }
+#chapter-3 .chapter-header__img {
+  width: 67%; }
+  #chapter-3 .chapter-header__img img {
+    width: 100%; }
+
+#chapter-4 .chapter-header__title {
+  width: 43%; }
+#chapter-4 .chapter-header__img {
+  width: 57%; }
+  #chapter-4 .chapter-header__img img {
+    width: 100%;
+    max-width: 31.875rem; }
+
+#chapter-5 .chapter-header__title {
+  width: 43%; }
+#chapter-5 .chapter-header__img {
+  width: 57%; }
+  #chapter-5 .chapter-header__img img {
+    width: 100%;
+    max-width: 25.8125rem; }
+
+#chapter-6 .chapter-header__title {
+  width: 43%; }
+#chapter-6 .chapter-header__img {
+  width: 57%; }
+  #chapter-6 .chapter-header__img img {
+    width: 100%;
+    max-width: 30.1875rem; }
+
+#chapter-7 .chapter-header__title {
+  width: 42%; }
+#chapter-7 .chapter-header__img {
+  width: 58%; }
+  #chapter-7 .chapter-header__img img {
+    width: 100%;
+    max-width: 32.4375rem; }
+
+#chapter-1 .chapter-header__title,
+#chapter-1 .chapter-header__img,
+#chapter-2 .chapter-header__title,
+#chapter-2 .chapter-header__img,
+#chapter-3 .chapter-header__title,
+#chapter-3 .chapter-header__img,
+#chapter-4 .chapter-header__title,
+#chapter-4 .chapter-header__img,
+#chapter-5 .chapter-header__title,
+#chapter-5 .chapter-header__img,
+#chapter-6 .chapter-header__title,
+#chapter-6 .chapter-header__img,
+#chapter-7 .chapter-header__title,
+#chapter-7 .chapter-header__img {
+  width: 100%; }
+
+.list-inline {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  padding: 4.1875rem 2.1875rem 5rem; }
+  .list-inline li {
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    font-family: "Open Sans R";
+    font-size: 1.125rem; }
+  .list-inline__marker {
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    width: 1.5625rem;
+    height: 1.5625rem;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #F65116;
+    box-shadow: 0.125rem 0.125rem 0.625rem rgba(246, 81, 22, 0.653533);
+    margin-right: 1.5625rem;
+    font-family: "Signika R";
+    font-size: 1.125rem; }
+  @media (max-width: 480px) {
+    .list-inline {
+      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column; }
+      .list-inline li {
+        margin-bottom: 1.25rem; } }
+
+.questions-answers {
+  margin-bottom: 3.25rem; }
+  .questions-answers__item {
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    margin-bottom: 3.25rem;
+    position: relative; }
+    .questions-answers__item::after {
+      content: "";
+      position: absolute;
+      width: 0.3125rem;
+      height: 100%;
+      background-color: #E9E9E9;
+      border-radius: 0.15625rem;
+      top: 0;
+      left: 16.875rem; }
+  .questions-answers .question {
+    display: block;
+    font-family: "Signika SB";
+    font-size: 2rem;
+    width: 16.875rem;
+    text-align: right;
+    padding-right: 1.5625rem; }
+  .questions-answers .answers {
+    width: calc(100% - 18.75rem);
+    padding: 0.3125rem 0 1.875rem; }
+  .questions-answers.questions-answers-orange .question {
+    color: #F65116; }
+  .questions-answers.questions-answers-orange .answers {
+    padding-bottom: 0; }
+  @media (max-width: 480px) {
+    .questions-answers .question {
+      font-size: 1.25rem;
+      width: 6.25rem;
+      padding-right: 0.4375rem; }
+    .questions-answers .answers {
+      width: calc(100% - 8rem); }
+    .questions-answers__item::after {
+      left: 6.875rem; } }
+
+.brown-blue {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  padding: 3.375rem 0 6.1875rem; }
+  .brown-blue .brown-block {
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: flex-end;
+    width: 50%;
+    height: 35.4375rem;
+    background-color: #333333; }
+    .brown-blue .brown-block img {
+      display: block;
+      width: 31.625rem;
+      margin-right: 6.0625rem; }
+  .brown-blue .blue-block {
+    width: 50%;
+    height: 31.75rem;
+    background-color: #7022FD;
+    color: #fff;
+    padding: 5.5rem 3.125rem 2.5rem; }
+    .brown-blue .blue-block__title {
+      display: block;
+      font-family: "Signika SB";
+      font-size: 2.625rem;
+      margin-bottom: 2.5rem;
+      max-width: 30.5rem; }
+    .brown-blue .blue-block__text {
+      display: block;
+      font-family: "Signika R";
+      font-size: 2rem;
+      margin-bottom: 4.125rem;
+      max-width: 30.5rem; }
+    .brown-blue .blue-block__btn {
+      width: 26.4375rem;
+      max-width: 100%;
+      height: 4.875rem;
+      font-size: 1.5625rem;
+      color: #333;
+      box-shadow: 0.4375rem 0.4375rem 0 0 #333333; }
+  @media (max-width: 480px) {
+    .brown-blue {
+      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column; }
+      .brown-blue .brown-block,
+      .brown-blue .blue-block {
+        width: 100%;
+        height: auto; }
+      .brown-blue .brown-block {
+        padding: 1.25rem 0; }
+        .brown-blue .brown-block img {
+          margin: 0 auto;
+          width: 90%; } }
+
+.pros-cons {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  padding: 0.3125rem 0 1.875rem;
+  margin-bottom: 3.75rem;
+  position: relative; }
+  .pros-cons::after {
+    content: "";
+    position: absolute;
+    width: 0.3125rem;
+    height: 100%;
+    background-color: #E9E9E9;
+    border-radius: 0.15625rem;
+    top: 0;
+    left: 50%;
+    margin-left: -0.15625rem; }
+  .pros-cons .pros {
+    width: 50%;
+    padding-right: 1.5rem; }
+    .pros-cons .pros .pros-cons__title {
+      color: #8364FF; }
+  .pros-cons .cons {
+    width: 50%;
+    padding-left: 1.125rem; }
+    .pros-cons .cons .pros-cons__title {
+      color: #F65116; }
+    .pros-cons .cons ul li {
+      margin-bottom: 1.875rem; }
+      .pros-cons .cons ul li::before {
+        background-image: url(../img/1/item-cons.png); }
+  .pros-cons img {
+    display: block;
+    width: 4rem;
+    margin: 0 auto 0.5625rem; }
+  .pros-cons__title {
+    display: block;
+    text-align: center;
+    font-family: "Signika SB";
+    font-size: 2.25rem;
+    margin-bottom: 1.875rem; }
+  .pros-cons ul li {
+    padding-left: 2.375rem;
+    margin-bottom: 3.5625rem;
+    font-family: "Open Sans R";
+    font-size: 1rem;
+    line-height: 1.6875rem;
+    position: relative; }
+    .pros-cons ul li::before {
+      content: "";
+      position: absolute;
+      width: 1.5rem;
+      height: 1.5rem;
+      top: 0.125rem;
+      left: 0;
+      background-image: url(../img/1/item-pros.png);
+      -webkit-background-size: contain;
+      background-size: contain;
+      background-position: 50% 50%;
+      background-repeat: no-repeat; }
+    .pros-cons ul li:last-child {
+      margin-bottom: 0; }
+  @media (max-width: 480px) {
+    .pros-cons {
+      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column; }
+      .pros-cons::after {
+        display: none; }
+      .pros-cons .pros,
+      .pros-cons .cons {
+        width: 100%; }
+      .pros-cons .pros {
+        margin-bottom: 2.5rem; } }
+
+.footer {
+  padding: 6.5625rem 0;
+  background-color: #494949;
+  margin-top: -4.6875rem;
+  position: relative;
+  z-index: 0; }
+  .footer__title {
+    display: block;
+    font-family: "Signika SB";
+    text-align: center;
+    color: #fff;
+    font-size: 2.6875rem;
+    margin-bottom: 5.4375rem; }
+  .footer__btn {
+    display: block;
+    width: 96%;
+    max-width: 47.125rem;
+    min-height: 4.875rem;
+    margin: 0 auto;
+    font-size: 1.5625rem; }
+    @media (max-width: 480px) {
+      .footer__btn {
+        font-size: 1rem; } }
+
+.video-block {
+  position: relative;
+  margin-bottom: 5.1875rem; }
+
+.video-list {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  justify-content: space-around;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around; }
+  .video-list__item {
+    width: 22.5rem; }
+    .video-list__item .video {
+      width: 100%;
+      height: 16.6875rem;
+      position: relative;
+      margin-bottom: 1.8125rem;
+      box-shadow: 0.625rem 0.625rem 0 0 #333333; }
+      .video-list__item .video__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/video-1.jpg);
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: 50% 0%;
+        z-index: 2;
+        cursor: pointer; }
+      .video-list__item .video iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1; }
+    .video-list__item:nth-child(2) .video__bg {
+      background-image: url(../img/video-2.jpg); }
+    .video-list__item:nth-child(3) .video__bg {
+      background-image: url(../img/video-3.jpg); }
+    .video-list__item .video.active .video__bg {
+      background-image: none;
+      background-color: #000;
+      z-index: 0; }
+    .video-list__item .video-title {
+      display: block;
+      font-family: "Signika R";
+      color: #fff;
+      text-align: center;
+      font-size: 1.125rem; }
+  @media (max-width: 480px) {
+    .video-list {
+      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      align-items: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center; }
+      .video-list__item {
+        margin-bottom: 3.125rem;
+        width: 21.25rem; }
+        .video-list__item .video {
+          height: 11.875rem;
+          background-position: 50% 50%; } }
+
+.footer-2 {
+  position: relative;
+  z-index: 0;
+  margin-top: -1.875rem;
+  margin-bottom: 4.875rem; }
+  .footer-2 .video-list__item .video__bg {
+    background-image: url(../img/footer-2/video-1.jpg); }
+  .footer-2 .video-list__item:nth-child(2) .video__bg {
+    background-image: url(../img/footer-2/video-2.jpg); }
+  .footer-2 .video-list__item:nth-child(3) .video__bg {
+    background-image: url(../img/footer-2/video-3.jpg); }
+
+.orange-line-text {
+  padding: 0 0 0.3125rem 1.5625rem;
+  position: relative;
+  margin-bottom: 1.875rem; }
+  .orange-line-text::before {
+    content: "";
+    position: absolute;
+    width: 0.3125rem;
+    height: 100%;
+    border-radius: 0.15625rem;
+    background-color: #F68516;
+    top: 0;
+    left: 0; }
+  .orange-line-text p:last-child {
+    margin-bottom: 0; }
+
+.two-columns {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  margin-bottom: 2.1875rem; }
+  .two-columns.mb-70 {
+    margin-bottom: 4.375rem; }
+  .two-columns__left {
+    width: 50%;
+    padding-right: 1.75rem;
+    padding-top: 1.875rem; }
+  .two-columns__right {
+    width: 50%;
+    padding-left: 1.75rem;
+    padding-top: 1.875rem; }
+  .two-columns__title {
+    display: block;
+    font-family: "Signika SB";
+    font-size: 1.5rem;
+    margin-bottom: 1rem; }
+  .two-columns p {
+    font-size: 1rem;
+    margin-bottom: 0.625rem;
+    line-height: 1.6875rem; }
+  .two-columns__attention {
+    background-color: #333;
+    padding-right: 2.5625rem;
+    padding-bottom: 2.625rem;
+    width: calc(50% + 3.625rem);
+    margin-right: -3.625rem; }
+    .two-columns__attention .two-columns__title {
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 1.25rem; }
+    .two-columns__attention p {
+      color: #B4B4B4; }
+    .two-columns__attention--btn {
+      margin-top: 3.125rem;
+      width: 100%;
+      max-width: 27.1875rem;
+      height: 3.75rem;
+      font-size: 1.25rem;
+      color: #F68516;
+      box-shadow: 0.4375rem 0.4375rem 0 0 #f68516; }
+  @media (max-width: 480px) {
+    .two-columns {
+      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column; }
+      .two-columns__left, .two-columns__right {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0; }
+      .two-columns__attention {
+        padding: 1.875rem 1.25rem; }
+        .two-columns__attention--btn {
+          font-size: 0.9375rem; } }
+
+.fire-list {
+  margin-bottom: 2.5rem; }
+  .fire-list__item {
+    color: #F65116;
+    padding-left: 2.5rem;
+    font-family: "Open Sans R";
+    font-size: 1.125rem;
+    margin-bottom: 0.9375rem;
+    position: relative; }
+    .fire-list__item::before {
+      content: "";
+      position: absolute;
+      width: 2.5rem;
+      height: 1.0625rem;
+      top: 0;
+      left: 0;
+      background-image: url(../img/fire.png);
+      -webkit-background-size: contain;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 50% 50%; }
+
+.first-worksheet {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  margin-bottom: 3.0625rem; }
+  .first-worksheet > a {
+    display: block;
+    width: 4.9375rem;
+    margin: 0 2.25rem 0 0.9375rem; }
+    .first-worksheet > a img {
+      display: block;
+      width: 100%; }
+  .first-worksheet__text {
+    width: calc(100% - 8.125rem);
+    max-width: 31.25rem;
+    font-size: 1.125rem;
+    color: #A5A5A5; }
+    .first-worksheet__text p {
+      line-height: 100%; }
+  .first-worksheet__link {
+    display: block;
+    font-family: "Signika R";
+    font-size: 1.4375rem;
+    color: #F65116;
+    margin-bottom: 0.3125rem; }
+
+img.section-img {
+  display: block;
+  width: 100%;
+  max-width: 53.5rem;
+  margin-bottom: 1.1875rem; }
+
+.ring-list {
+  padding-bottom: 0.9375rem; }
+  .ring-list__item {
+    font-size: 1rem;
+    margin-bottom: 1.875rem;
+    padding-left: 3.125rem;
+    position: relative; }
+    .ring-list__item::before {
+      content: "";
+      position: absolute;
+      width: 0.875rem;
+      height: 0.875rem;
+      border: 0.125rem solid #F68516;
+      border-radius: 50%;
+      top: 0.25rem;
+      left: 0.875rem;
+      box-shadow: 0 0 0.9375rem rgba(246, 81, 22, 0.3), 0 0 0.9375rem rgba(246, 81, 22, 0.2) inset; }
+
+.line-list {
+  margin-bottom: 3.5625rem; }
+  .line-list__item {
+    padding: 1.9375rem 0 0 2.875rem;
+    position: relative; }
+    .line-list__item::before {
+      content: "1";
+      position: absolute;
+      width: 2rem;
+      height: 2rem;
+      background-color: #F65116;
+      border-radius: 50%;
+      color: #fff;
+      top: 2.1875rem;
+      left: 0;
+      display: flex;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      justify-content: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      align-items: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      z-index: 1; }
+    .line-list__item:nth-child(2)::before {
+      content: "2"; }
+    .line-list__item:nth-child(3)::before {
+      content: "3"; }
+    .line-list__item:nth-child(4)::before {
+      content: "4"; }
+    .line-list__item:nth-child(5)::before {
+      content: "5"; }
+    .line-list__item:nth-child(6)::before {
+      content: "6"; }
+    .line-list__item:nth-child(7)::before {
+      content: "7"; }
+    .line-list__item:nth-child(8)::before {
+      content: "8"; }
+    .line-list__item:nth-child(9)::before {
+      content: "9"; }
+    .line-list__item::after {
+      content: "";
+      position: absolute;
+      width: 0.3125rem;
+      height: 100%;
+      background-color: #E9E9E9;
+      border-radius: 0.15625rem;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      top: 0;
+      left: 0.84375rem;
+      z-index: 0; }
+    .line-list__item:nth-child(1)::after {
+      border-top-left-radius: 0.15625rem;
+      border-top-right-radius: 0.15625rem; }
+    .line-list__item p:last-child {
+      margin-bottom: 0; }
+  .line-list__title {
+    display: block;
+    font-family: "Signika SB";
+    font-size: 2rem;
+    margin-bottom: 1.0625rem; }
+  .line-list.line-list-little .line-list__item::before {
+    top: 1.6875rem; }
+  .line-list.line-list-little .line-list__item:first-child {
+    padding-top: 0.9375rem; }
+    .line-list.line-list-little .line-list__item:first-child::before {
+      top: 0.75rem; }
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 2.3125rem;
+  background-color: #333333;
+  padding-top: 1.25rem;
+  z-index: 3; }
+  .nav__item {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 0.625rem; }
+    @media (min-width: 1025px) {
+      .nav__item:hover > .nav__item--title {
+        left: 100%;
+        opacity: 1;
+        pointer-events: auto; } }
+  .nav .nav__item--link,
+  .nav .nav__item--link-first {
+    display: block;
+    font-size: 1rem;
+    color: #F65116;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    transition: all .3s;
+    z-index: 1; }
+    .nav .nav__item--link:hover,
+    .nav .nav__item--link-first:hover {
+      color: #fff; }
+    .nav .nav__item--link.active,
+    .nav .nav__item--link-first.active {
+      color: #fff; }
+    .nav .nav__item--link.progress,
+    .nav .nav__item--link-first.progress {
+      color: #fff; }
+  .nav__item--title {
+    position: absolute;
+    top: 0;
+    left: calc(100% + 2.5rem);
+    width: 11.25rem;
+    font-family: "Signika R";
+    background-color: #333333;
+    font-size: 1rem;
+    color: #fff;
+    padding: 0.4375rem 0.75rem;
+    opacity: 0;
+    transition: all .3s;
+    pointer-events: none;
+    z-index: 0; }
+
+progress {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0.1875rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: #F00;
+  z-index: 4; }
+  progress::-webkit-progress-bar {
+    background: transparent;
+    border-radius: 0.1875rem; }
+  progress::-webkit-progress-value {
+    background: #F00;
+    border-radius: 0.1875rem; }
+  progress::-moz-progress-bar {
+    background: #F00;
+    border-radius: 0.1875rem; }
+
+.progress-container {
+  width: 100%;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 0.1875rem;
+  display: block; }
+
+.progress-bar {
+  background: #F00;
+  width: 0%;
+  display: block;
+  height: inherit; }
+
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: none; }
+  .modal__close {
+    position: absolute;
+    width: 1.875rem;
+    height: 1.875rem;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer; }
+    .modal__close::before, .modal__close::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 0.125rem;
+      background-color: #D8D8D8;
+      left: 0;
+      top: 50%;
+      margin-top: -0.0625rem;
+      transform: rotate(45deg); }
+    .modal__close::after {
+      transform: rotate(-45deg); }
+  .modal__block {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center; }
+  .modal__form {
+    width: 100%;
+    max-width: 61.875rem;
+    padding: 6.75rem 5.3125rem 4.1875rem;
+    background-color: #7022FD;
+    border-radius: 0.375rem;
+    position: relative; }
+    .modal__form--title {
+      display: block;
+      text-align: center;
+      font-family: "Signika SB";
+      font-size: 2.6875rem;
+      color: #fff;
+      margin-bottom: 6.1875rem; }
+    .modal__form--field {
+      display: flex;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      justify-content: space-between;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify; }
+      .modal__form--field input {
+        display: block;
+        width: 28.375rem;
+        height: 4.875rem;
+        font-family: "Signika R";
+        font-size: 1.5625rem;
+        color: #fff;
+        background-color: rgba(255, 255, 255, 0.2);
+        border: none;
+        padding: 0 1.8125rem; }
+        .modal__form--field input::-webkit-input-placeholder {
+          color: #fff;
+          opacity: .2; }
+        .modal__form--field input::-moz-placeholder {
+          color: #fff;
+          opacity: .2; }
+        .modal__form--field input:-moz-placeholder {
+          color: #fff;
+          opacity: .2; }
+        .modal__form--field input:-ms-input-placeholder {
+          color: #fff;
+          opacity: .2; }
+      .modal__form--field button {
+        width: 21.875rem;
+        font-size: 1.5625rem;
+        color: #333;
+        box-shadow: 0.4375rem 0.4375rem 0 0 #333333; }
+  @media (max-width: 480px) {
+    .modal__form {
+      padding: 3.75rem 1.25rem 3.125rem; }
+      .modal__form--title {
+        font-size: 1.875rem;
+        margin-bottom: 1.875rem; }
+      .modal__form--field {
+        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column; }
+        .modal__form--field input {
+          width: 100%;
+          height: 3.125rem;
+          margin-bottom: 1.25rem; }
+        .modal__form--field button {
+          width: 100%;
+          height: 3.125rem; } }
+
+/*# sourceMappingURL=styles.css.map */

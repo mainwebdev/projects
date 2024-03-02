@@ -1,0 +1,486 @@
+.project-hero {
+  padding-top: rem(75);
+  color: #1F1F1F;
+  padding-bottom: rem(140);
+
+  @include tablets-down() {
+    padding-bottom: rem(75);
+  }
+
+  &__cover {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 rem(-30);
+  }
+
+  &__main {
+    padding: 0 rem(30);
+    max-width: rem(615);
+
+    @include tablets-down() {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  &__info {
+    padding: 0 rem(30);
+    max-width: rem(512);
+
+    @include tablets-down() {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  &__name {
+    font-weight: 300;
+    font-size: rem(24);
+    line-height: rem(37);
+    margin-bottom: rem(50);
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: rem(46);
+    line-height: 119.7%;
+    margin-bottom: rem(80);
+
+    @include tablets-down() {
+      margin-bottom: rem(40);
+    }
+  }
+
+  &__breadcrumb {
+    font-weight: 300;
+    font-size: rem(24);
+    line-height: rem(37);
+    color: rgba(47, 47, 47, 0.57);
+    margin-bottom: rem(64);
+
+    @include tablets-down() {
+      margin-bottom: rem(40);
+    }
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: rem(16);
+    line-height: rem(25);
+    color: #2F2F2F;
+
+    @include tablets-down() {
+      margin-bottom: rem(40);
+    }
+  }
+
+  &__intro {
+    font-size: rem(20);
+    line-height: rem(32);
+    margin-bottom: rem(60);
+
+    @include tablets-down() {
+      margin-bottom: rem(40);
+    }
+
+    span {
+      color: rgba(31, 31, 31, 0.64);
+    }
+  }
+
+}
+
+.more-soc-link {
+  font-size: rem(16);
+  line-height: rem(27);
+  color: #A247FA;
+  display: inline-flex;
+  align-items: center;
+
+  .icon {
+    margin-left: rem(5);
+  }
+}
+
+.project-full-img {
+  margin-bottom: rem(273);
+
+  @include tablets-down() {
+    margin-bottom: rem(100);
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.project-img {
+  &--1 {
+    margin-bottom: rem(90);
+
+    @include tablets-down() {
+      margin-bottom: rem(45);
+    }
+
+    .project-img__row {
+      margin: 0 rem(-34);
+
+      @include phones-lg-down() {
+        margin: 0 rem(-15);
+      }
+    }
+
+    .project-img__col {
+      padding: 0 rem(34);
+
+      @include phones-lg-down() {
+        padding: 0 rem(15);
+      }
+      
+
+      &:nth-child(1) {
+        width: 32%;
+
+        @include tablets-down() {
+          width: 50%;
+        }
+      }
+
+      &:nth-child(2) {
+        width: 68%;
+
+        @include tablets-down() {
+          width: 50%;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50%;
+      }
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap; 
+  }
+
+}
+
+.project-campaign {
+  position: relative;
+
+  &__title {
+    font-weight: 500;
+    font-size: rem(60);
+    line-height: rem(96);
+    margin-bottom: rem(90);
+    max-width: rem(790);
+
+    @include tablets-down() {
+      margin-bottom: rem(45);
+    }
+
+    @include phones-lg-down() {
+      font-size: rem(40);
+      line-height: lh(96, 60);
+    }
+  }
+
+  &__main {
+    padding: 0 rem(150);
+    font-weight: 300;
+    font-size: rem(16);
+    line-height: rem(25);
+    color: #020202;
+    margin-bottom: rem(140);
+    max-width: rem(804);
+
+    @include tablets-down() {
+      padding: 0;
+      margin-bottom: rem(75);
+    }
+  }
+
+  &__link {
+    font-size: rem(16);
+    line-height: rem(27);
+    color: #A247FA;
+    position: absolute;
+    right: 0;
+    top: rem(20);
+
+    @include tablets-down() {
+      position: relative;
+      top: 0;
+      display: inline-block;
+      margin-bottom: rem(75);
+    }
+
+    span {
+      border-bottom: rem(1) solid #A247FA
+    }
+  }
+
+  &__img-1 {
+    margin-bottom: rem(100);
+    width: 100%;
+
+    @include tablets-down() {
+      margin-bottom: rem(50);
+    }
+  }
+
+  &__img-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 rem(-57);
+
+    @include tablets-down() {
+      margin: 0 rem(-25);
+    }
+
+    @include phones-lg-down() {
+      margin: 0 rem(-15);
+    }
+
+  }
+
+  &__img-col {
+    padding: 0 rem(57);
+    width: 50%;
+
+    @include tablets-down() {
+      padding: 0 rem(25);
+    }
+
+    @include phones-lg-down() {
+      padding: 0 rem(15);
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.project-result {
+  padding-top: rem(135);
+  padding-bottom: rem(110);
+
+  @include tablets-down() {
+    padding-top: rem(75);
+    padding-bottom: rem(75);
+  }
+  
+  &__cover {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: rem(65);
+
+    @include tablets-down() {
+      flex-flow: column;
+      margin-bottom: rem(45);
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: rem(60);
+    line-height: rem(96);
+    margin-right: rem(150);
+
+    @include phones-lg-down() {
+      font-size: rem(40);
+      line-height: lh(96, 60);
+    }
+  }
+
+  &__main {
+    max-width: rem(500);
+    padding-top: rem(20);
+  }
+
+  &__large {
+    font-weight: 500;
+    font-size: rem(28);
+    line-height: rem(45);
+    margin-bottom: rem(80);
+
+    @include tablets-down() {
+      margin-bottom: rem(40);
+    }
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: rem(16);
+    line-height: rem(25);
+    color: #020202;
+  }
+
+  .more-soc-link {
+    margin-left: auto;
+    font-size: rem(24);
+    line-height: rem(34);
+    align-self: flex-start;
+
+    .icon {
+      margin-left: rem(24);
+    }
+  }
+
+  &__right-content {
+    text-align: right;
+    
+  }
+}
+
+.our-works {
+  padding-top: rem(125);
+  padding-bottom: rem(100);
+  background: #151515;
+
+  @include tablets-down() {
+    padding-top: rem(75);
+    padding-bottom: rem(75);
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: rem(60);
+    line-height: rem(96);
+    color: #FFFFFF;
+    margin-bottom: rem(60);
+
+    @include tablets-down() {
+      margin-bottom: rem(30);
+    }
+
+    @include phones-lg-down() {
+      font-size: rem(40);
+      line-height: lh(96, 60);
+    }
+  }
+
+  &__swiper {
+    max-width: rem(2050);
+    margin: 0 auto;
+    padding: 0 rem(25);
+   
+    .swiper-container {
+      margin: 0 rem(-34);
+
+      @include tablets-down() {
+        margin: 0 rem(-15);
+      }
+    }
+
+    .swiper-slide {
+      padding: 0 rem(34);
+
+      @include tablets-down() {
+        padding: 0 rem(15);
+        width: auto;
+      }
+      
+    }
+  }
+}
+
+.work-card {
+  display: block;
+
+  @include tablets-down() {
+    min-width: rem(450);
+  }
+
+  &:hover {
+    .work-card__title {
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &--white {
+    color: #fff;
+  }
+
+  &__img {
+    padding-top: 70%;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50%;
+    }
+  }
+
+  &__main {
+    padding: rem(16) 0;
+    position: relative;
+    padding-right: rem(150);
+  }
+
+  &__tag {
+    font-weight: 300;
+    font-size: rem(20);
+    line-height: rem(31);
+    color: #FFFFFF;
+    margin-bottom: rem(17);
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: rem(40);
+    line-height: rem(62);
+    position: relative;
+    display: inline-block;
+
+    &:before {
+      content: "";
+      width: 100%;
+      height: rem(20);
+      background: #A247FA;
+      position: absolute;
+      bottom: rem(5);
+      left: 0;
+      z-index: -1;
+      opacity: 0;
+      transition: .3s;
+    }
+  }
+
+  &__view-link {
+    font-weight: bold;
+    font-size: rem(16);
+    line-height: rem(26);
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: rem(60);
+    right: 0;
+
+    &:after {
+      content: "";
+      display: block;
+      width: rem(51);
+      height: rem(51);
+      margin-left: rem(30);
+      background: url("../img/icons/chevron-round-light.svg") no-repeat 50% / rem(50);
+    }
+  }
+}

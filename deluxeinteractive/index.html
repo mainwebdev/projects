@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/libs/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Deluxe Interactive</title>
+</head>
+<body data-preloader-run="true">
+  <svg class="hidden">
+    <defs>
+      <filter id="filter-1">
+        <feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="1" result="warp"></feTurbulence>
+        <feOffset dx="-90" result="warpOffset"></feOffset>
+        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warpOffset"></feDisplacementMap>
+      </filter>
+      <filter id="filter-2">
+        <feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="20" result="warp"></feTurbulence>
+        <feOffset dx="-90" result="warpOffset"></feOffset>
+        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="40" in="SourceGraphic" in2="warpOffset"></feDisplacementMap>
+      </filter>
+      <filter id="filter-3">
+        <feTurbulence type="fractalNoise" baseFrequency="0.15 0.02" numOctaves="3" result="warp"></feTurbulence>
+        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="0" in="SourceGraphic" in2="warp"></feDisplacementMap>
+      </filter>
+      <filter id="filter-4">
+        <feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="5" result="warp"></feTurbulence>
+        <feOffset dx="-90" result="warpOffset"></feOffset>
+        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="35" in="SourceGraphic" in2="warpOffset"></feDisplacementMap>
+      </filter>
+      <filter id="filter-5">
+        <feTurbulence type="fractalNoise" baseFrequency="0.01 0.7" numOctaves="5" result="warp"></feTurbulence>
+        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="0" in="SourceGraphic" in2="warp"></feDisplacementMap>
+      </filter>
+      <filter id="filter-6">
+        <feTurbulence type="fractalNoise" baseFrequency="0.01 0.07" numOctaves="5" seed="2" result="noise"></feTurbulence>
+        <feDisplacementMap in="SourceGraphic" in2="warp" scale="0" xChannelSelector="R" yChannelSelector="B"></feDisplacementMap>
+      </filter>
+      <filter id="filter-7">
+        <feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="5" result="warp"></feTurbulence>
+        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="90" in="SourceGraphic" in2="warp"></feDisplacementMap>
+      </filter>
+    </defs>
+  </svg>
+  <div class="wrapper">
+
+    <!-- header -->
+    <header class="header" id="header">
+      <div class="project-filter" id="project-filter">
+        <div class="project-filter__inner" data-smooth-bar>
+          <div class="project-filter__top">
+            <ul>
+              <li>
+                <label class="project-filter-item">
+                  <input class="project-filter-item__control" type="radio" name="project-filter-item" value="All Projects" checked>
+                  <span class="project-filter-item__label">All Projects</span>
+                </label>
+              </li>
+              <li>
+                <label class="project-filter-item">
+                  <input class="project-filter-item__control" type="radio" name="project-filter-item" value="Creative">
+                  <span class="project-filter-item__label">Creative</span>
+                </label>
+              </li>
+              <li>
+                <label class="project-filter-item">
+                  <input class="project-filter-item__control" type="radio" name="project-filter-item" value="Websites">
+                  <span class="project-filter-item__label">Websites</span>
+                </label>
+              </li>
+              <li>
+                <label class="project-filter-item">
+                  <input class="project-filter-item__control" type="radio" name="project-filter-item" value="Video">
+                  <span class="project-filter-item__label">Video</span>
+                </label>
+              </li>
+              <li>
+                <label class="project-filter-item">
+                  <input class="project-filter-item__control" type="radio" name="project-filter-item" value="VR">
+                  <span class="project-filter-item__label">VR</span>
+                </label>
+              </li>
+              <li>
+                <label class="project-filter-item">
+                  <input class="project-filter-item__control" type="radio" name="project-filter-item" value="Branding">
+                  <span class="project-filter-item__label">Branding</span>
+                </label>
+              </li>
+              <li>
+                <label class="project-filter-item">
+                  <input class="project-filter-item__control" type="radio" name="project-filter-item" value="Social Media">
+                  <span class="project-filter-item__label">Social Media</span>
+                </label>
+              </li>
+              <li>
+                <label class="project-filter-item">
+                  <input class="project-filter-item__control" type="radio" name="project-filter-item" value="Apps">
+                  <span class="project-filter-item__label">Apps</span>
+                </label>
+              </li>
+              <li>
+                <label class="project-filter-item">
+                  <input class="project-filter-item__control" type="radio" name="project-filter-item" value="Interactive installations">
+                  <span class="project-filter-item__label">Interactive installations</span>
+                </label>
+              </li>
+              <li>
+                <label class="project-filter-item">
+                  <input class="project-filter-item__control" type="radio" name="project-filter-item" value="Posm">
+                  <span class="project-filter-item__label">Posm</span>
+                </label>
+              </li>
+              <li>
+                <label class="project-filter-item">
+                  <input class="project-filter-item__control" type="radio" name="project-filter-item" value="Print">
+                  <span class="project-filter-item__label">Print</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button type="button" class="project-filter__close all-project-close js-all-project-close" aria-label="Close Filters">
+          <!-- <span></span> -->
+        </button>
+      </div>
+      <div class="mob-menu" id="mob-menu">
+        <div class="mob-menu__inner">
+          <div class="mob-menu__top">
+            <nav class="mob-menu__nav">
+              <ul>
+                <li class="l1"><a href="#">Agency</a></li>
+                <li class="l2"><a href="#" class="active">Works</a></li>
+                <li class="l3"><a href="#">Clients</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="container header__container">
+        <a href="#" class="logo header__logo">
+          <img src="assets/img/icons/logo.svg" width="25" height="34" alt="Deluxe Interactive logo">
+        </a>
+
+        <button type="button" class="all-project header__all-project" aria-label="All Projects">All Projects</button>
+
+        <button type="button" class="project-filter-burger js-all-project-close">
+          <span class="project-filter-burger__inner">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+        <button type="button" class="mob-burger active">
+          <span class="mob-burger__inner">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <!-- main -->
+    <main class="main main--home">
+      <section class="hero">
+        <div class="container">
+          <div class="hero__content">
+            <div class="hero__text-top">
+              <h1>
+                <span class="letter">Deluxe</span>
+                <span class="letter">Interactive</span>
+                <span class="letter">is</span>
+                <span class="letter">a</span>
+                <span class="letter">digital</span>
+                <span class="letter">creative</span>
+                <span class="letter">agency.</span>
+                <span class="letter">We</span>
+                <span class="letter">know</span>
+                <span class="letter">the</span>
+                <span class="letter">shortest</span>
+                <span class="letter">way</span>
+                <span class="letter">from</span>
+                <span class="letter">creative</span>
+                <span class="letter">thought</span>
+                <span class="letter">to</span>
+                <span class="letter">it’s</span>
+                <span class="letter">realization.</span>
+              </h1>
+            </div>
+            <div class="hero__text-bottom">
+              We make
+              <span id="typewrite-1" class="typewrite" data-period="3000" data-type='["creative", "websites", "social"]'>
+                <span class="typewrite-wrap">it</span>
+              </span>
+              real!
+            </div>
+            <div class="hero__action anim-btns">
+              <button type="button" class="anim-btn anim-btn--play anim-btn--left js-call-fancy" data-href="#video-modal">
+                <img class="anim-btn__text-ico" src="assets/img/icons/showreel-text.svg" alt="">
+                <span class="anim-btn__content">
+                </span>
+              </button>
+              <button type="button" class="anim-btn anim-btn--see">
+                <img class="anim-btn__text-ico" src="assets/img/icons/watch-text.svg" alt="">
+                <span class="anim-btn__content">
+                </span>
+              </button>
+              <button type="button" class="anim-btn anim-btn--play anim-btn--right js-call-fancy" data-href="#video-modal">
+                <img class="anim-btn__text-ico" src="assets/img/icons/smm-showreel-text.svg" alt="">
+                <span class="anim-btn__content">
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects">
+        <div class="container">
+          <div class="projects__top">
+            <button type="button" class="all-project projects__all-project" aria-label="All Projects">All Projects</button>
+          </div>
+        </div>
+        <div class="projects__grid" id="projects">
+          <div class="grid">
+
+            <!-- grid-item -->
+            <div class="grid-item">
+              <a href="#" class="project-card">
+                <div class="project-card__inner">
+                  <img src="assets/img/images/project-1.jpg" alt="">
+                  <div class="project-card__content">
+                    <h4 class="project-card__title">Izmeni Soznanie</h4>
+                    <div class="project-card__type">Branding</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item">
+              <a href="#" class="project-card">
+                <div class="project-card__inner">
+                  <img src="assets/img/images/project-2.jpg" alt="">
+                  <div class="project-card__content">
+                    <h4 class="project-card__title">Izmeni Soznanie</h4>
+                    <div class="project-card__type">Branding</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item">
+              <a href="#" class="project-card">
+                <div class="project-card__inner">
+                  <img src="assets/img/images/project-3.jpg" alt="">
+                  <div class="project-card__content">
+                    <h4 class="project-card__title">Service of the future</h4>
+                    <div class="project-card__type">Design, Development</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item">
+              <a href="#" class="project-card">
+                <div class="project-card__inner">
+                  <img src="assets/img/images/project-4.jpg" alt="">
+                  <div class="project-card__content">
+                    <h4 class="project-card__title">Izmeni Soznanie</h4>
+                    <div class="project-card__type">Branding</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item">
+              <a href="#" class="project-card">
+                <div class="project-card__inner">
+                  <img src="assets/img/images/project-5.jpg" alt="">
+                  <div class="project-card__content">
+                    <h4 class="project-card__title">Izmeni Soznanie</h4>
+                    <div class="project-card__type">Branding</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item">
+              <a href="#" class="project-card">
+                <div class="project-card__inner">
+                  <img src="assets/img/images/project-6.jpg" alt="">
+                  <div class="project-card__content">
+                    <h4 class="project-card__title">Izmeni Soznanie</h4>
+                    <div class="project-card__type">Branding</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item">
+              <a href="#" class="project-card">
+                <div class="project-card__inner">
+                  <img src="assets/img/images/project-7.jpg" alt="">
+                  <div class="project-card__content">
+                    <h4 class="project-card__title">Izmeni Soznanie</h4>
+                    <div class="project-card__type">Branding</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item">
+              <a href="#" class="project-card">
+                <div class="project-card__inner">
+                  <img src="assets/img/images/project-8.jpg" alt="">
+                  <div class="project-card__content">
+                    <h4 class="project-card__title">Izmeni Soznanie</h4>
+                    <div class="project-card__type">Branding</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item">
+              <a href="#" class="project-card">
+                <div class="project-card__inner">
+                  <img src="assets/img/images/project-9.jpg" alt="">
+                  <div class="project-card__content">
+                    <h4 class="project-card__title">Izmeni Soznanie</h4>
+                    <div class="project-card__type">Branding</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item">
+              <a href="#" class="project-card">
+                <div class="project-card__inner">
+                  <img src="assets/img/images/project-10.jpg" alt="">
+                  <div class="project-card__content">
+                    <h4 class="project-card__title">Izmeni Soznanie</h4>
+                    <div class="project-card__type">Branding</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item">
+              <a href="#" class="project-card">
+                <div class="project-card__inner">
+                  <img src="assets/img/images/project-11.jpg" alt="">
+                  <div class="project-card__content">
+                    <h4 class="project-card__title">Izmeni Soznanie</h4>
+                    <div class="project-card__type">Branding</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item">
+              <a href="#" class="project-card">
+                <div class="project-card__inner">
+                  <img src="assets/img/images/project-12.jpg" alt="">
+                  <div class="project-card__content">
+                    <h4 class="project-card__title">Izmeni Soznanie</h4>
+                    <div class="project-card__type">Branding</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item">
+              <a href="#" class="project-card">
+                <div class="project-card__inner">
+                  <img src="assets/img/images/project-13.jpg" alt="">
+                  <div class="project-card__content">
+                    <h4 class="project-card__title">Izmeni Soznanie</h4>
+                    <div class="project-card__type">Branding</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- /grid-item -->
+
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="projects__bottom">
+            <button type="button" class="projects__more" aria-label="Show more">Show more</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- /main -->
+  </div>
+
+  <!-- Modal -->
+  <div class="modal video-modal" id="video-modal" style="display: none;" data-slide-class="fancybox-slide-mobile">
+    <div class="video-modal-content">
+      <div class="video-modal__video">
+        <video controls="">
+          <source src="https://deluxe-interactive.com/upload/155440352041480372.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div><!-- /Modal -->
+
+  <!-- preloader -->
+  <div class="preloader-wrap">
+    <div class="preloader" id="preloader">
+      <div class="preloader__inner">
+        <div class="preloader__content">
+          <div class="preloader__title">
+            <!-- <svg width="375" height="390" viewBox="0 0 375 390" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 244H306V390H0V244Z" fill="white"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 130H147V244H0V130Z" fill="white"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H375V141H0V0Z" fill="white"/>
+              <path d="M29.576 115H50.056V70.456L74.888 95.2879L99.72 70.456V115H120.2V23.0959L74.888 68.536L29.576 23.0959V115Z" fill="#1B1B1D"/>
+              <path d="M177.902 115H197.23V51H177.902V54.84C174.19 51.768 169.07 49.976 163.822 49.976C144.878 49.976 132.846 65.464 132.846 83C132.846 100.536 144.878 116.024 163.822 116.024C169.07 116.024 174.19 114.36 177.902 111.288V115ZM167.022 98.36C157.806 98.36 152.302 91.448 152.302 83C152.302 74.552 157.806 67.64 167.022 67.64C171.758 67.64 175.214 69.56 177.902 73.016V93.112C175.214 96.568 171.758 98.36 167.022 98.36Z" fill="#1B1B1D"/>
+              <path d="M212.302 115H231.63V83.128L255.31 115H278.094L253.006 81.336L274.766 51H252.494L231.63 80.184V24.1199H212.302V115Z" fill="#1B1B1D"/>
+              <path d="M308.98 116.024C321.652 116.024 332.02 109.88 337.908 100.664L322.548 90.296C319.988 95.032 315.636 98.36 308.852 98.36C303.092 98.36 295.796 95.032 294.9 86.456H339.828C340.084 84.536 340.212 82.616 340.212 80.824C340.212 60.6 325.62 49.976 309.364 49.976C289.652 49.976 276.34 64.184 276.34 83C276.34 102.712 292.084 116.024 308.98 116.024ZM308.212 65.464C314.484 65.464 320.116 68.408 321.14 75.192H295.028C296.82 67.512 303.604 65.464 308.212 65.464Z" fill="#1B1B1D"/>
+              <path d="M29.32 165.912H47.24C48.904 163.992 49.8 161.432 49.8 158.616C49.8 152.216 44.68 147.096 38.28 147.096C31.88 147.096 26.76 152.216 26.76 158.616C26.76 161.432 27.656 163.992 29.32 165.912ZM28.552 239H47.88V175H28.552V239Z" fill="#1B1B1D"/>
+              <path d="M58.188 191.896H66.508V219.288C66.508 231.448 74.06 239 86.092 239H103.756V221.336H93.26C88.012 221.336 85.836 219.16 85.836 213.784V191.896H101.836L106.06 175H85.836V155.8L66.508 165.4V175H53.964L58.188 191.896Z" fill="#1B1B1D"/>
+              <path d="M78.472 363H102.92L73.352 324.472C83.848 320.376 90.888 310.52 90.888 299.128C90.888 284.28 78.728 272.12 63.88 272.12H29.576V363H50.056V326.136H50.312L78.472 363ZM50.056 308.856V290.808H61.576C67.08 290.808 71.048 294.904 71.048 299.896C71.048 304.888 67.08 308.856 61.576 308.856H50.056Z" fill="#1B1B1D"/>
+              <path d="M133.98 364.024C146.652 364.024 157.02 357.88 162.908 348.664L147.548 338.296C144.988 343.032 140.636 346.36 133.852 346.36C128.092 346.36 120.796 343.032 119.9 334.456H164.828C165.084 332.536 165.212 330.616 165.212 328.824C165.212 308.6 150.62 297.976 134.364 297.976C114.652 297.976 101.34 312.184 101.34 331C101.34 350.712 117.084 364.024 133.98 364.024ZM133.212 313.464C139.484 313.464 145.116 316.408 146.14 323.192H120.028C121.82 315.512 128.604 313.464 133.212 313.464Z" fill="#1B1B1D"/>
+              <path d="M218.027 363H237.355V299H218.027V302.84C214.315 299.768 209.195 297.976 203.947 297.976C185.003 297.976 172.971 313.464 172.971 331C172.971 348.536 185.003 364.024 203.947 364.024C209.195 364.024 214.315 362.36 218.027 359.288V363ZM207.147 346.36C197.931 346.36 192.427 339.448 192.427 331C192.427 322.552 197.931 315.64 207.147 315.64C211.883 315.64 215.339 317.56 218.027 321.016V341.112C215.339 344.568 211.883 346.36 207.147 346.36Z" fill="#1B1B1D"/>
+              <path d="M252.427 363H271.755V272.12H252.427V363Z" fill="#1B1B1D"/>
+            </svg> -->
+            <svg class="preloader-title-ico preloader-title-ico--1" width="375" height="141" viewBox="0 0 375 141" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H375V141H0V0Z" fill="white"/>
+              <path d="M26 115.904H46.48V71.36L71.312 96.192L96.144 71.36V115.904H116.624V24L71.312 69.44L26 24V115.904Z" fill="#1B1B1D"/>
+              <path d="M174.326 115.904H193.654V51.904H174.326V55.744C170.614 52.672 165.494 50.88 160.246 50.88C141.302 50.88 129.27 66.368 129.27 83.904C129.27 101.44 141.302 116.928 160.246 116.928C165.494 116.928 170.614 115.264 174.326 112.192V115.904ZM163.446 99.264C154.23 99.264 148.726 92.352 148.726 83.904C148.726 75.456 154.23 68.544 163.446 68.544C168.182 68.544 171.638 70.464 174.326 73.92V94.016C171.638 97.472 168.182 99.264 163.446 99.264Z" fill="#1B1B1D"/>
+              <path d="M208.726 115.904H228.054V84.032L251.734 115.904H274.518L249.43 82.24L271.19 51.904H248.918L228.054 81.088V25.024H208.726V115.904Z" fill="#1B1B1D"/>
+              <path d="M305.404 116.928C318.076 116.928 328.444 110.784 334.332 101.568L318.972 91.2C316.412 95.936 312.06 99.264 305.276 99.264C299.516 99.264 292.22 95.936 291.324 87.36H336.252C336.508 85.44 336.636 83.52 336.636 81.728C336.636 61.504 322.044 50.88 305.788 50.88C286.076 50.88 272.764 65.088 272.764 83.904C272.764 103.616 288.508 116.928 305.404 116.928ZM304.636 66.368C310.908 66.368 316.54 69.312 317.564 76.096H291.452C293.244 68.416 300.028 66.368 304.636 66.368Z" fill="#1B1B1D"/>
+            </svg>
+            <svg class="preloader-title-ico preloader-title-ico--2" width="375" height="114" viewBox="0 0 375 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H147V114H0V0Z" fill="white"/>
+              <path d="M28.56 35.816H46.48C48.144 33.896 49.04 31.336 49.04 28.52C49.04 22.12 43.92 17 37.52 17C31.12 17 26 22.12 26 28.52C26 31.336 26.896 33.896 28.56 35.816ZM27.792 108.904H47.12V44.904H27.792V108.904Z" fill="#1B1B1D"/>
+              <path d="M57.428 61.8H65.748V89.192C65.748 101.352 73.3 108.904 85.332 108.904H102.996V91.24H92.5C87.252 91.24 85.076 89.064 85.076 83.688V61.8H101.076L105.3 44.904H85.076V25.704L65.748 35.304V44.904H53.204L57.428 61.8Z" fill="#1B1B1D"/>
+            </svg>
+            <svg class="preloader-title-ico preloader-title-ico--3" width="375" height="146" viewBox="0 0 375 146" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H306V146H0V0Z" fill="white"/>
+              <path d="M74.896 117.88H99.344L69.776 79.352C80.272 75.256 87.312 65.4 87.312 54.008C87.312 39.16 75.152 27 60.304 27H26V117.88H46.48V81.016H46.736L74.896 117.88ZM46.48 63.736V45.688H58C63.504 45.688 67.472 49.784 67.472 54.776C67.472 59.768 63.504 63.736 58 63.736H46.48Z" fill="#1B1B1D"/>
+              <path d="M130.404 118.904C143.076 118.904 153.444 112.76 159.332 103.544L143.972 93.176C141.412 97.912 137.06 101.24 130.276 101.24C124.516 101.24 117.22 97.912 116.324 89.336H161.252C161.508 87.416 161.636 85.496 161.636 83.704C161.636 63.48 147.044 52.856 130.788 52.856C111.076 52.856 97.764 67.064 97.764 85.88C97.764 105.592 113.508 118.904 130.404 118.904ZM129.636 68.344C135.908 68.344 141.54 71.288 142.564 78.072H116.452C118.244 70.392 125.028 68.344 129.636 68.344Z" fill="#1B1B1D"/>
+              <path d="M214.451 117.88H233.779V53.88H214.451V57.72C210.739 54.648 205.619 52.856 200.371 52.856C181.427 52.856 169.395 68.344 169.395 85.88C169.395 103.416 181.427 118.904 200.371 118.904C205.619 118.904 210.739 117.24 214.451 114.168V117.88ZM203.571 101.24C194.355 101.24 188.851 94.328 188.851 85.88C188.851 77.432 194.355 70.52 203.571 70.52C208.307 70.52 211.763 72.44 214.451 75.896V95.992C211.763 99.448 208.307 101.24 203.571 101.24Z" fill="#1B1B1D"/>
+              <path d="M248.851 117.88H268.179V27H248.851V117.88Z" fill="#1B1B1D"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <link rel="stylesheet" href="assets/css/preloader.css">
+    <script>
+      (function () {
+        var SHOW_PRELOADER_ATTR = 'data-preloader';
+        var body = document.body;
+        var header = document.getElementById('header');
+
+        var Preloader = (function () {
+          function Preloader(elem) {
+            this.preloader = elem;
+
+            if (!this.preloader) {
+              throw new Error('element not found');
+            }
+
+            this.show = this.show.bind(this);
+            this._showHandler = this._showHandler.bind(this);
+            this.hide = this.hide.bind(this);
+            this._hideHandler = this._hideHandler.bind(this);
+            this._progress = this._progress.bind(this);
+            this.pageLoad = this.pageLoad.bind(this);
+            this.isShowAnimation = false;
+            this.pageIsLoad = false;
+            this.progress = 0;
+          }
+
+          var _proto = Preloader.prototype;
+
+          _proto.show = function show() {
+            var pRight = this._getScrollbarWidth();
+            this.isShowAnimation = true;
+            body.setAttribute(SHOW_PRELOADER_ATTR, '');
+            body.style.paddingRight = pRight + 'px';
+            header.style.paddingRight = pRight + 'px';
+            this.preloader.querySelector('.preloader__content').addEventListener('animationend', this._showHandler);
+          };
+
+          _proto._showHandler = function _showHandler(e) {
+            if (e.target === this.preloader.querySelector('.preloader__content')) {
+              this.isShowAnimation = false;
+              this.preloader.querySelector('.preloader__content').removeEventListener('animationend', this._showHandler);
+
+              this._progress();
+            }
+          };
+
+          _proto._progress = function _progress() {
+            var _this = this;
+
+            if (!this.pageIsLoad) {
+              if (this.progress < 82) {
+                var pgrs = getProgress();
+                var progress = this.progress;
+                var newProgress = progress + pgrs.percent;
+                this.progress = newProgress;
+                setProgress(progress, newProgress, this._progress);
+              } else if (this.progress > 82) {
+                var _progress2 = this.progress;
+                var _newProgress = this.progress;
+                setProgress(_progress2, _newProgress, this._progress);
+              }
+            } else {
+              var _progress3 = this.progress;
+              var _newProgress2 = 100;
+              setProgress(_progress3, _newProgress2, function () {
+                return setTimeout(_this.hide, 0);
+              });
+            }
+          };
+
+          _proto.pageLoad = function pageLoad() {
+            this.pageIsLoad = true;
+          };
+
+          _proto.hide = function hide() {
+            if (!this.isShowAnimation) {
+              this.preloader.classList.add('loaded');
+              this.preloader.addEventListener('animationend', this._hideHandler);
+            }
+          };
+
+          _proto._hideHandler = function _hideHandler(e) {
+            if (e.target === this.preloader) {
+              this.isAnimation = false;
+              this.preloader.classList.remove('loaded');
+              body.removeAttribute(SHOW_PRELOADER_ATTR);
+              body.style.paddingRight = '';
+              header.style.paddingRight = '';
+              this.preloader.removeEventListener('animationend', this._hideHandler);
+            }
+          };
+
+          _proto._getScrollbarWidth = function _getScrollbarWidth() {
+            if (this._getDocHeight() > window.innerHeight) {
+              var scrollDiv = document.createElement('div');
+              scrollDiv.className = 'modal-scrollbar-measure';
+              body.appendChild(scrollDiv);
+              var scrollbarWidth = scrollDiv.getBoundingClientRect().width - scrollDiv.clientWidth;
+              body.removeChild(scrollDiv);
+              return scrollbarWidth;
+            } else {
+              return 0;
+            }
+          };
+
+          _proto._getDocHeight = function _getDocHeight() {
+            var D = document;
+            return Math.max(
+              D.body.scrollHeight,
+              D.documentElement.scrollHeight,
+              D.body.offsetHeight,
+              D.documentElement.offsetHeight,
+              D.body.clientHeight,
+              D.documentElement.clientHeight
+            );
+          };
+
+          return Preloader;
+        })();
+
+        function getProgress() {
+          return {
+            percent: Math.floor(Math.random() * 15 + 5),
+          };
+        }
+
+        function setProgress(base, progress, cb) {
+          var i = 0;
+          var interval = setInterval(
+            function () {
+              if (base + i <= progress) {
+                i++;
+              } else {
+                clearInterval(interval);
+                typeof cb === 'function' && cb();
+              }
+            },
+            progress === 100 ? 15 : Math.floor(Math.random() * 100) + 30
+          );
+        }
+
+        var pr = document.querySelector('#preloader');
+        var isPreloader = document.body.getAttribute('data-preloader-run') === 'true' ? true : false;
+        if (pr && isPreloader) {
+          var preloader = new Preloader(pr);
+          pr.instance = preloader;
+          preloader.show();
+        }
+      })();
+    </script>
+  </div>
+  <!-- /preloader -->
+
+  <script id="project-template" type="text/template">
+    <div class="grid-item">
+      <a href="#" class="project-card" data-link>
+        <div class="project-card__inner">
+          <img src="assets/img/images/project-13.jpg" alt="" data-image>
+          <div class="project-card__content">
+            <h4 class="project-card__title" data-title>Izmeni Soznanie</h4>
+            <div class="project-card__type" data-type>Branding</div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="assets/libs/object-fit-images_v3.2.4.js"></script>
+  <script src="assets/libs/jquery-3.5.1.min.js"></script>
+  <script src="assets/libs/gsap.min.js"></script>
+  <script src="assets/libs/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/libs/masonry.pkgd.min.js"></script>
+  <script src="assets/libs/smooth-scrollbar.js"></script>
+  <script src="assets/libs/fancybox/jquery.fancybox.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
